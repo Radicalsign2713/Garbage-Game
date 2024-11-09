@@ -27,6 +27,14 @@ public class PlayerMovementController : MonoBehaviour
                                             // Representation Invariant: must be either "up", "down", "left", or "right"
                                             // Read only
     public bool is_moving; // Read only
+
+    public bool on_lava = false;
+    public float lava_intensity;
+    public bool on_ice = false;
+    public bool on_mud = false;
+    public bool on_liquid = false;
+    public float liquid_dx = 1;
+    public float liquid_dy = 1;
         
     // Handles the roll over of directional inputs. 
     // Must be called every frame. 
@@ -94,32 +102,36 @@ public class PlayerMovementController : MonoBehaviour
     // Updates the horizontal velocity of Steve-E based on the given input. 
     //Precondition: dh must either be "right", "left", or "none"
     void update_horizontal_velocity(string dh) { 
+        float acelleration_scalar = 1;
+        if(on_ice) {acelleration_scalar = 0.2f;}
+        float speed_scalar = 1;
+        if(on_mud) {speed_scalar = 0.33f;}
         if (dh == "right") {
-            if (horizontal_velocity < max_speed) {
-                horizontal_velocity += acelleration * Time.deltaTime;
-                if (horizontal_velocity > max_speed) {
-                    horizontal_velocity = max_speed;
+            if (horizontal_velocity < speed_scalar * max_speed) {
+                horizontal_velocity += acelleration_scalar * acelleration * Time.deltaTime;
+                if (horizontal_velocity > speed_scalar * max_speed) {
+                    horizontal_velocity = speed_scalar * max_speed;
                 }
             }
         }
         else if (dh == "left") {
-            if (horizontal_velocity > -max_speed) {
-                horizontal_velocity -= acelleration * Time.deltaTime;
-                if (horizontal_velocity < -max_speed) {
-                    horizontal_velocity = -max_speed;
+            if (horizontal_velocity > speed_scalar * -max_speed) {
+                horizontal_velocity -= acelleration_scalar * acelleration * Time.deltaTime;
+                if (horizontal_velocity < speed_scalar * -max_speed) {
+                    horizontal_velocity = speed_scalar * -max_speed;
                 }
             }
 
         }
         else if (dh == "none") {
             if (horizontal_velocity > 0) {
-                horizontal_velocity -= player_friction * Time.deltaTime;
+                horizontal_velocity -= acelleration_scalar * acelleration_scalar * player_friction * Time.deltaTime;
                 if (horizontal_velocity < 0) {
                     horizontal_velocity = 0;
                 }
             }
             else if (horizontal_velocity < 0) {
-                horizontal_velocity += player_friction * Time.deltaTime;
+                horizontal_velocity += acelleration_scalar * acelleration_scalar * player_friction * Time.deltaTime;
                 if (horizontal_velocity > 0) {
                     horizontal_velocity = 0;
                 }
@@ -127,35 +139,39 @@ public class PlayerMovementController : MonoBehaviour
         }
     }
 
-    // Updates the horizontal velocity of Steve-E based on the given input. 
+    // Updates the vertical velocity of Steve-E based on the given input. 
     // Precondition: dv must either be "up", "down", or "none"
-    void update_vertical_velocity(string dv) { 
+    void update_vertical_velocity(string dv) {
+        float acelleration_scalar = 1;
+        if(on_ice) {acelleration_scalar = 0.2f;} 
+        float speed_scalar = 1;
+        if(on_mud) {speed_scalar = 0.33f;}
         if (dv == "up") {
-            if (vertical_velocity < max_speed) {
-                vertical_velocity += acelleration * Time.deltaTime;
-                if (vertical_velocity > max_speed) {
-                    vertical_velocity = max_speed;
+            if (vertical_velocity < speed_scalar * max_speed) {
+                vertical_velocity += acelleration_scalar * acelleration * Time.deltaTime;
+                if (vertical_velocity > speed_scalar * max_speed) {
+                    vertical_velocity = speed_scalar * max_speed;
                 }
             }
         }
         else if (dv == "down") {
-            if (vertical_velocity > -max_speed) {
-                vertical_velocity -= acelleration * Time.deltaTime;
-                if (vertical_velocity < -max_speed) {
-                    vertical_velocity = -max_speed;
+            if (vertical_velocity > speed_scalar * -max_speed) {
+                vertical_velocity -= acelleration_scalar * acelleration * Time.deltaTime;
+                if (vertical_velocity < speed_scalar * -max_speed) {
+                    vertical_velocity = speed_scalar * -max_speed;
                 }
             }
 
         }
         else if (dv == "none") {
             if (vertical_velocity > 0) {
-                vertical_velocity -= player_friction * Time.deltaTime;
+                vertical_velocity -= acelleration_scalar * acelleration_scalar * player_friction * Time.deltaTime;
                 if (vertical_velocity < 0) {
                     vertical_velocity = 0;
                 }
             }
             else if (vertical_velocity < 0) {
-                vertical_velocity += player_friction * Time.deltaTime;
+                vertical_velocity += acelleration_scalar * acelleration_scalar * player_friction * Time.deltaTime;
                 if (vertical_velocity > 0) {
                     vertical_velocity = 0;
                 }
@@ -199,16 +215,31 @@ public class PlayerMovementController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        float extra_horizontal_velocity = 0;
+        float extra_vertical_velocity = 0;
+        if(on_liquid) {
+            extra_horizontal_velocity = liquid_dx;
+            extra_vertical_velocity = liquid_dy;
+        }
+
         string dh = get_horizontal_directional_input();
-        horizontal_velocity = rb.velocity.x;
+        horizontal_velocity = rb.velocity.x - extra_horizontal_velocity;
         update_horizontal_velocity(dh);
         string dv = get_vertical_directional_input();
-        vertical_velocity = rb.velocity.y;
+        vertical_velocity = rb.velocity.y - extra_vertical_velocity;
         update_vertical_velocity(dv);
         update_direction_facing(dh, dv);
-        if(dh == "none" & dv == "none"){battery -= 0.1f*Time.deltaTime;}
-        else {battery -= 0.5f*Time.deltaTime;}
-        rb.AddForce(new Vector2(horizontal_velocity - rb.velocity.x, vertical_velocity - rb.velocity.y), ForceMode2D.Impulse);
+
+        float battery_scaler = 1;
+        if(on_lava){
+            battery_scaler += lava_intensity;
+            lava_intensity += 2*Time.deltaTime;
+        }
+        else{lava_intensity = 0;}
+        if(dh == "none" & dv == "none"){battery -= 0.1f*Time.deltaTime*battery_scaler;}
+        else {battery -= 0.5f*Time.deltaTime*battery_scaler;}
+        
+        rb.AddForce(new Vector2(horizontal_velocity - rb.velocity.x + extra_horizontal_velocity, vertical_velocity - rb.velocity.y + extra_vertical_velocity), ForceMode2D.Impulse);
         // transform.position += new Vector3(Time.deltaTime * horizontal_velocity,Time.deltaTime * vertical_velocity,0);
     }
 }
