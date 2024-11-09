@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aac242485b1926641806649b7934dd7f, type: 3}
+  m_Name: GameConfig
+  m_EditorClassIdentifier: 
+  playerProperties:
+  - maxSpeed: 1
+    acelleration: 30
+    friction: 25
+  - maxSpeed: 4
+    acelleration: 60
+    friction: 45
+  - maxSpeed: 10
+    acelleration: 100
+    friction: 100

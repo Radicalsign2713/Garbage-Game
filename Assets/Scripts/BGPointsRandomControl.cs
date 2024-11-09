@@ -44,9 +44,9 @@ public class BGPointsRandomControl : MonoBehaviour
 
             //t.position += Vector3.one * Random.Range(-moveStep, moveStep);
 
-            
+            // 移动物体到目标位置
             t.position = Vector2.Lerp(t.position, targetPositions[i], moveStep * Time.deltaTime);
-           
+            // 如果已经接近目标位置, 选择新的目标位置
             if (Vector2.Distance(t.position, targetPositions[i]) < diffDistance)
             {
                 targetPositions[i] = GetRandomPosition();
@@ -54,11 +54,12 @@ public class BGPointsRandomControl : MonoBehaviour
         }
     }
 
+    // 获取在边界内的随机位置
     private Vector2 GetRandomPosition()
     {
         float randomX = Random.Range(boundMinX, boundMaxX);
         float randomY = Random.Range(boundMinY, boundMaxY);
-        
+        // 生成带有正弦波的平滑变化，增加自然感
         float sineOffsetX = Mathf.Sin(Time.time) * randomFactor;
         float sineOffsetY = Mathf.Cos(Time.time) * randomFactor;
         return new Vector2(randomX + sineOffsetX, randomY + sineOffsetY);
