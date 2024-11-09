@@ -46,7 +46,7 @@ public class ResourceControl : MonoBehaviour
     }
     private void CollectResource()
     {
-
+        if (PlayerControl.instance.State != GameSate.playMode) return;
         Destroy(gameObject);
 
         taskControl.AddCompleted();
@@ -68,6 +68,7 @@ public class ResourceControl : MonoBehaviour
 
     private void Update()
     {
+<<<<<<< Updated upstream
         if (Mathf.Sqrt(Mathf.Pow(rb.position.x - transform.position.x, 2) + Mathf.Pow(rb.position.y - transform.position.y, 2)) <= range){
             if (!isInDistance){
                 isInDistance = true;
@@ -76,6 +77,46 @@ public class ResourceControl : MonoBehaviour
                 progressBar.fillAmount = 0;
             }
         } else {isInDistance = false;}
+=======
+        if (Input.GetMouseButtonDown(0))
+        {
+            print("resource  get mouse down " + isInDistance);
+        }
+        if (Input.GetMouseButtonDown(0) && isInDistance)
+        {
+            print("resource  get mouse down ");
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction);
+            if (hit.collider != null && hit.collider.gameObject == this.gameObject)
+            {
+                Debug.Log("�����Sprite�ϰ��£����߼�⣩");
+
+                print("on Mouse down");
+                
+                isMouseDown = true;
+            }
+        }
+        if (Input.GetMouseButtonUp(0))
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction);
+            if (hit.collider != null && hit.collider.gameObject == this.gameObject)
+            {
+                Debug.Log("�����Sprite��̧�����߼�⣩");
+
+                if (isMouseDown)
+                {
+                    isMouseDown = false;
+
+                    if (timer >= duration)
+                    {
+                        CollectResource();
+                    }
+                }
+            }
+        }
+
+>>>>>>> Stashed changes
         if ( isInDistance && isMouseDown)
         {
             timer += Time.deltaTime;

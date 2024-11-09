@@ -23,5 +23,11 @@ public class UIUtils : MonoBehaviour
 #endif
     }
 
-
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            ExitGame();
+        }
+    }
 }

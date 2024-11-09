@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
+<<<<<<< Updated upstream
   tags: []
+=======
+  tags:
+  - PlayerGetter
+  - Base
+  - ChargePrompt
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
@@ -40,4 +47,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: New Layer 1
+    uniqueID: 3874683371
     locked: 0

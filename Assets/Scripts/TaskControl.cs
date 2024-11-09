@@ -23,8 +23,15 @@ public class TaskControl : MonoBehaviour
         if(currentCompleted == taskTargetCount)
         {
             MissionCompletedPanel.SetActive(true);
-            Time.timeScale = 0;
+            Invoke(nameof(HidePanel), 2);
+            //Time.timeScale = 0;
+            PlayerControl.instance.WaitForCharge();
         }
+    }
+
+    private void HidePanel()
+    {
+        MissionCompletedPanel.SetActive(false);
     }
 
     private TMP_Text text;
