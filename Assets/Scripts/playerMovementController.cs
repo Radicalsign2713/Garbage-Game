@@ -29,7 +29,7 @@ public class PlayerMovementController : MonoBehaviour
     public bool is_moving; // Read only
 
     public bool on_lava = false;
-    private float lava_intensity;
+    public float lava_intensity;
     public bool on_ice = false;
     public bool on_mud = false;
     public bool on_liquid = false;
