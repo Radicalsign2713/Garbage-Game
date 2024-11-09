@@ -14,7 +14,7 @@ public class ObjectPointingArrow : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.Find("Steve-E");
+        player = GameObject.Find("coner_dimmer");
         cam = GameObject.Find("Main Camera").GetComponent<Camera>();
     }
 
