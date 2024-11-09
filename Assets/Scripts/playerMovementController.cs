@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMovementController : MonoBehaviour
 {
+    public float battery = 100;
     [SerializeField] float max_speed = 3; // The maximum speed the player can acheive in any one direction
     [SerializeField] float acelleration = 2; // The acelleration imparted by the directional movment keys
     [SerializeField] float player_friction = .7F; // The amount the player slows down when no buttons are pressed
@@ -205,6 +206,8 @@ public class PlayerMovementController : MonoBehaviour
         vertical_velocity = rb.velocity.y;
         update_vertical_velocity(dv);
         update_direction_facing(dh, dv);
+        if(dh == "none" & dv == "none"){battery -= 0.1f*Time.deltaTime;}
+        else {battery -= 0.5f*Time.deltaTime;}
         rb.AddForce(new Vector2(horizontal_velocity - rb.velocity.x, vertical_velocity - rb.velocity.y), ForceMode2D.Impulse);
         // transform.position += new Vector3(Time.deltaTime * horizontal_velocity,Time.deltaTime * vertical_velocity,0);
     }
