@@ -1,10 +1,12 @@
 using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class ResourceControl : MonoBehaviour
+public class ResourceControl : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
     private bool isInDistance = false;//if the resource is in collectable distance
     private bool isMouseDown = false;
@@ -18,16 +20,38 @@ public class ResourceControl : MonoBehaviour
 
     private GameObject progressCanvas;
     private Image progressBar;
-    private Rigidbody2D rb;
-    [SerializeField] float range = 2;
 
     private void OnMouseDown()
     {
+        print("on Mouse down");
+        if (!isInDistance) return;
+
+        CollectResource();
+
+        isMouseDown = true;
+    }
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        print("on Mouse down");
         if (!isInDistance) return;
 
         isMouseDown = true;
     }
 
+    public void OnPointerUp(PointerEventData eventData)
+    {
+        if (!isInDistance) return;
+
+        if (isMouseDown)
+        {
+            isMouseDown = false;
+
+            if (timer >= duration)
+            {
+                CollectResource();
+            }
+        }
+    }
 
     private void OnMouseUpAsButton()
     {
@@ -46,7 +70,7 @@ public class ResourceControl : MonoBehaviour
     }
     private void CollectResource()
     {
-
+        if (PlayerControl.instance.State != GameSate.playMode) return;
         Destroy(gameObject);
 
         taskControl.AddCompleted();
@@ -60,25 +84,52 @@ public class ResourceControl : MonoBehaviour
         progressBar.fillAmount = 0;
         progressCanvas.SetActive(false);
     }
-    private void Start()
-    {
-        GameObject player = GameObject.Find("Steve-E");
-        rb = player.GetComponent<Rigidbody2D>(); 
-    }
 
     private void Update()
     {
-        if (Mathf.Sqrt(Mathf.Pow(rb.position.x - transform.position.x, 2) + Mathf.Pow(rb.position.y - transform.position.y, 2)) <= range){
-            if (!isInDistance){
-                isInDistance = true;
-                StartCoroutine(CollectableAnimating());
-                // progressCanvas.SetActive(true);
-                progressBar.fillAmount = 0;
+        if (Input.GetMouseButtonDown(0))
+        {
+            print("resource  get mouse down " + isInDistance);
+        }
+        if (Input.GetMouseButtonDown(0) && isInDistance)
+        {
+            print("resource  get mouse down ");
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction);
+            if (hit.collider != null && hit.collider.gameObject == this.gameObject)
+            {
+                Debug.Log("�����Sprite�ϰ��£����߼�⣩");
+
+                print("on Mouse down");
+                
+                isMouseDown = true;
             }
-        } else {isInDistance = false;}
+        }
+        if (Input.GetMouseButtonUp(0))
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction);
+            if (hit.collider != null && hit.collider.gameObject == this.gameObject)
+            {
+                Debug.Log("�����Sprite��̧�����߼�⣩");
+
+                if (isMouseDown)
+                {
+                    isMouseDown = false;
+
+                    if (timer >= duration)
+                    {
+                        CollectResource();
+                    }
+                }
+            }
+        }
+
         if ( isInDistance && isMouseDown)
         {
             timer += Time.deltaTime;
+
+            progressCanvas.SetActive(true);
         }
         else
         {
@@ -90,6 +141,31 @@ public class ResourceControl : MonoBehaviour
         if(progressBar.fillAmount >= 1)
         {
             CollectResource();
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            print($"trigger isInDistance {isInDistance} ");
+            isInDistance = true;
+            StartCoroutine(CollectableAnimating());
+            //progressCanvas.SetActive(true);
+            progressBar.fillAmount = 0;
+        }
+        else if (collision.CompareTag("PlayerGetter"))
+        {
+            CollectResource();
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            isInDistance = false;
+            progressCanvas.SetActive(false);
         }
     }
 
