@@ -7346,7 +7346,7 @@ MonoBehaviour:
   follow_me: {fileID: 519420028}
   displacement_x: 0
   displacement_y: 0
-  displacement_z: -1
+  displacement_z: 16
 --- !u!212 &1336885897
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8976,6 +8976,7 @@ MonoBehaviour:
   direction_facing: 
   is_moving: 0
   on_lava: 0
+  lava_intensity: 0
   on_ice: 0
   on_mud: 0
   on_liquid: 0
