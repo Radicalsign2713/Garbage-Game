@@ -47,3 +47,6 @@ TagManager:
   - name: Steve-E
     uniqueID: 3456026979
     locked: 0
+  - name: Overlays
+    uniqueID: 2773158955
+    locked: 0
