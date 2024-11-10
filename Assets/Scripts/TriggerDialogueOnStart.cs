@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TriggerDialogueOnStart : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class TriggerDialogueOnStart : MonoBehaviour
         if (manager.isFinished)
         {
             // Troy Add scene switch here
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         } 
     }
 }
