@@ -14,75 +14,75 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - characterName: Scrapp
-    characterPortrait: {fileID: 21300000, guid: f38e3df6c765246d6a25281e74e4297f, type: 3}
+    characterPortrait: {fileID: 21300000, guid: 3f6c269d49154cc4e8772fa752cae3ad, type: 3}
     sentence: "You know, Salva, if you\u2019d just see it my way\u2026 this trash
       mountain would look like a diamond mountain."
     side: 0
   - characterName: Salvage
-    characterPortrait: {fileID: 21300000, guid: 070602d5b5a7b4b07a9be99dd7f1d288, type: 3}
+    characterPortrait: {fileID: 21300000, guid: 03b3f5f793980224da33e03501db8a8e, type: 3}
     sentence: Only diamond I see here is the one buried under five tons of broken
       toilets and plastic bags.
     side: 1
   - characterName: Scrapp
-    characterPortrait: {fileID: 21300000, guid: f38e3df6c765246d6a25281e74e4297f, type: 3}
+    characterPortrait: {fileID: 21300000, guid: f619f38b297f67c47ab9a994081a0854, type: 3}
     sentence: "And what\u2019s wrong with that? One \u2018bot\u2019s trash is another
       bot\u2019s treasure!"
     side: 0
   - characterName: Salvage
-    characterPortrait: {fileID: 21300000, guid: 070602d5b5a7b4b07a9be99dd7f1d288, type: 3}
+    characterPortrait: {fileID: 21300000, guid: ce6a7aa7e94d6a84b88e322731465de8, type: 3}
     sentence: "Can\u2019t believe we\u2019re out here searching for another Steve-E.
       What was wrong with the last one, and the one before last one, again?"
     side: 1
   - characterName: Scrapp
-    characterPortrait: {fileID: 21300000, guid: f38e3df6c765246d6a25281e74e4297f, type: 3}
+    characterPortrait: {fileID: 21300000, guid: 3627770099f24d54393a5aca19110a00, type: 3}
     sentence: "Steve-E-193 had\u2026 well, let\u2019s say an \u2018accident\u2019
       with the shredder drone. I told him to zig, and he zagged, 192 soaked itself
       in a green pond."
     side: 0
   - characterName: Salvage
-    characterPortrait: {fileID: 21300000, guid: 070602d5b5a7b4b07a9be99dd7f1d288, type: 3}
+    characterPortrait: {fileID: 21300000, guid: 03b3f5f793980224da33e03501db8a8e, type: 3}
     sentence: "These machines, what a crap\u2026 All right, let\u2019s find 194 before
       he decides to join his siblings under this \u2018diamond mine\u2019 of yours."
     side: 1
   - characterName: Salvage
-    characterPortrait: {fileID: 21300000, guid: 070602d5b5a7b4b07a9be99dd7f1d288, type: 3}
+    characterPortrait: {fileID: 21300000, guid: ce6a7aa7e94d6a84b88e322731465de8, type: 3}
     sentence: "Hey, Scrap! Got something here. Think it\u2019s him?"
     side: 1
   - characterName: Scrapp
-    characterPortrait: {fileID: 21300000, guid: f38e3df6c765246d6a25281e74e4297f, type: 3}
+    characterPortrait: {fileID: 21300000, guid: 0d8872f581c4cb94fa566cfa45ea86bd, type: 3}
     sentence: "(wipes some dust off) Let me see\u2026 yep, that\u2019s our Steve-E-194!
       Still in one piece, too. Let\u2019s haul him back to base and see what he remembers."
     side: 0
   - characterName: Scrapp
-    characterPortrait: {fileID: 21300000, guid: f38e3df6c765246d6a25281e74e4297f, type: 3}
+    characterPortrait: {fileID: 21300000, guid: 0d8872f581c4cb94fa566cfa45ea86bd, type: 3}
     sentence: "All right, let\u2019s hear what you\u2019ve got to say, Steve-E."
     side: 0
   - characterName: Salvage
-    characterPortrait: {fileID: 21300000, guid: 070602d5b5a7b4b07a9be99dd7f1d288, type: 3}
+    characterPortrait: {fileID: 21300000, guid: 03b3f5f793980224da33e03501db8a8e, type: 3}
     sentence: Not exactly a chatterbox, is he?
     side: 1
   - characterName: Scrapp
-    characterPortrait: {fileID: 21300000, guid: f38e3df6c765246d6a25281e74e4297f, type: 3}
+    characterPortrait: {fileID: 21300000, guid: 251eb05ff2cef5446aa4c0f3bdebe3b6, type: 3}
     sentence: "(fiddling with the bot\u2019s settings) Strange\u2026 he should be
       talking. But wait, this\u2014this memory core\u2026 it\u2019s like he\u2019s
       stuck back when Earth was still green. Look, rivers, fields\u2026 a whole different
       world. Poor thing has no idea what he\u2019s woken up to."
     side: 0
   - characterName: Salvage
-    characterPortrait: {fileID: 21300000, guid: 070602d5b5a7b4b07a9be99dd7f1d288, type: 3}
+    characterPortrait: {fileID: 21300000, guid: ce6a7aa7e94d6a84b88e322731465de8, type: 3}
     sentence: "He\u2019ll have to learn fast. This place isn\u2019t a picnic anymore."
     side: 1
   - characterName: Scrapp
-    characterPortrait: {fileID: 21300000, guid: f38e3df6c765246d6a25281e74e4297f, type: 3}
+    characterPortrait: {fileID: 21300000, guid: 0d8872f581c4cb94fa566cfa45ea86bd, type: 3}
     sentence: "(to the bot) Don\u2019t worry, buddy. We\u2019ll catch you up. Just
       need to get you used to a world of scrap and salvage, that\u2019s all."
     side: 0
   - characterName: Scrapp
-    characterPortrait: {fileID: 21300000, guid: f38e3df6c765246d6a25281e74e4297f, type: 3}
-    sentence: PAT PAT
+    characterPortrait: {fileID: 21300000, guid: 0d8872f581c4cb94fa566cfa45ea86bd, type: 3}
+    sentence: (PAT PAT)
     side: 0
   - characterName: Salvage
-    characterPortrait: {fileID: 21300000, guid: 070602d5b5a7b4b07a9be99dd7f1d288, type: 3}
+    characterPortrait: {fileID: 21300000, guid: d61176972e8d1e440a7cdaa0f39d7409, type: 3}
     sentence: "Yeah. Adapting is survival now. Guess that\u2019s the next lesson
       for him."
     side: 1
