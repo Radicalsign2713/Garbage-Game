@@ -267,6 +267,7 @@ GameObject:
   - component: {fileID: 452371638}
   - component: {fileID: 452371637}
   - component: {fileID: 452371639}
+  - component: {fileID: 452371640}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -291,10 +292,11 @@ MonoBehaviour:
   characterLeftPortrait: {fileID: 804920687}
   characterRightPortrait: {fileID: 2136290532}
   dialogueUI: {fileID: 2069351290}
-  typingSpeed: 0.05
+  typingSpeed: 0.03
   bounceAmount: 5
   bounceSpeed: 2
   testDialogue: {fileID: 11400000, guid: cc9b02cbf05c00c438abdae4a7d30583, type: 2}
+  isFinished: 0
 --- !u!4 &452371638
 Transform:
   m_ObjectHideFlags: 0
@@ -311,6 +313,18 @@ Transform:
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &452371639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452371636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83ba194c34b83fe4e9f4624e20a02398, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &452371640
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
