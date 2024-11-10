@@ -30,6 +30,8 @@ public class DialogueManager : MonoBehaviour
 
     private bool isTyping; // Flag to check if typing is in progress
 
+    public bool isFinished = false;
+
     void Awake()
     {
         // Store the original position of both character portraits
@@ -227,5 +229,7 @@ public class DialogueManager : MonoBehaviour
         dialogueUI.SetActive(false);
         characterLeftPortrait.gameObject.SetActive(false);
         characterRightPortrait.gameObject.SetActive(false);
+
+        isFinished = true;
     }
 }
