@@ -293,7 +293,7 @@ MonoBehaviour:
   typingSpeed: 0.05
   bounceAmount: 5
   bounceSpeed: 2
-  testDialogue: {fileID: 11400000, guid: 4094f7e11a61b40edacbfe500f89a323, type: 2}
+  testDialogue: {fileID: 11400000, guid: 0be50a23b56665a499804a8488ebcb0c, type: 2}
 --- !u!4 &452371638
 Transform:
   m_ObjectHideFlags: 0
@@ -412,6 +412,7 @@ GameObject:
   - component: {fileID: 690800250}
   - component: {fileID: 690800249}
   - component: {fileID: 690800248}
+  - component: {fileID: 690800251}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -469,6 +470,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &690800251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690800247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83ba194c34b83fe4e9f4624e20a02398, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 452371637}
 --- !u!1 &784664148
 GameObject:
   m_ObjectHideFlags: 0

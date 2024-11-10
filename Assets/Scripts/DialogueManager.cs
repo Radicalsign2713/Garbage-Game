@@ -27,7 +27,7 @@ public class DialogueManager : MonoBehaviour
 
     private Dialogue.CharacterSide lastSpeakingSide; // To keep track of who spoke last
 
-    void Start()
+    void Awake()
     {
         // Store the original position of both character portraits
         initialLeftPortraitPosition = characterLeftPortrait.rectTransform.localPosition;
@@ -40,6 +40,7 @@ public class DialogueManager : MonoBehaviour
         dialogueUI.SetActive(false);
         characterLeftPortrait.gameObject.SetActive(false);
         characterRightPortrait.gameObject.SetActive(false);
+        //TriggerDialogue();
     }
 
     void Update()
@@ -51,10 +52,10 @@ public class DialogueManager : MonoBehaviour
         }
 
         // Trigger dialogue for testing purposes by pressing D key
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            TriggerDialogue();
-        }
+        //if (Input.GetKeyDown(KeyCode.D))
+        //{
+        //    TriggerDialogue();
+        //}
     }
 
     // Method to trigger dialogue manually or by receiving a signal
