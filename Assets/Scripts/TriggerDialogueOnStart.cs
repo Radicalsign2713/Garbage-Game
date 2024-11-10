@@ -15,6 +15,9 @@ public class TriggerDialogueOnStart : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (manager.isFinished)
+        {
+            // Troy Add scene switch here
+        } 
     }
 }
