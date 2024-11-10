@@ -2,53 +2,47 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlayerMovementController : MonoBehaviour
 {
-    public float battery = 100;
-    [SerializeField] float max_speed = 3; // The maximum speed the player can acheive in any one direction
-    [SerializeField] float acelleration = 2; // The acelleration imparted by the directional movment keys
-    [SerializeField] float player_friction = .7F; // The amount the player slows down when no buttons are pressed
-    [SerializeField] string button_left1; // Key for left (should use unity scripting api strings)
-    [SerializeField] string button_right1; // all th eother button_ are the same concept
-    [SerializeField] string button_up1; 
-    [SerializeField] string button_down1;
-    [SerializeField] string button_left2;
-    [SerializeField] string button_right2;
-    [SerializeField] string button_up2;
-    [SerializeField] string button_down2;
+    [SerializeField] float max_speed = 4; // The maximum speed the player can acheive in any one direction
+    [SerializeField] float acelleration = 60; // The acelleration imparted by the directional movment keys
+    [SerializeField] float player_friction = 45F; // The amount the player slows down when no buttons are pressed
+    public void SetPlayerMovementProperty(float maxSpeed, float pAcelleration, float friction)
+    {
+        max_speed = maxSpeed;
+        acelleration = pAcelleration;
+        player_friction = friction;
+    }
+
+    [SerializeField] string button_left = "left"; // Key for left (should use unity scripting api strings)
+    [SerializeField] string button_right = "right"; // all th eother button_ are the same concept
+    [SerializeField] string button_up = "up"; 
+    [SerializeField] string button_down = "down";
     private string last_pressed_horizontal = "right"; // Representation Invariant: must be either "right" or "left" 
     private string last_pressed_vertical = "up"; // Representation Invariant: must be either "up or "down"
     private string axis_priority; // Tracks weather the last pressed directional input was on the horizontal or vertical axis
                                   // Representation Invariant: must be either "vertical" or "horizontal"
     private float horizontal_velocity = 0; 
     private float vertical_velocity = 0;
-    private Rigidbody2D rb;
     public string direction_facing; // The direction that Steve-E is facing. Always is whatever the last key pressed was, or the only key being held down. 
                                             // Representation Invariant: must be either "up", "down", "left", or "right"
                                             // Read only
     public bool is_moving; // Read only
-
-    public bool on_lava = false;
-    public float lava_intensity;
-    public bool on_ice = false;
-    public bool on_mud = false;
-    public bool on_liquid = false;
-    public float liquid_dx = 1;
-    public float liquid_dy = 1;
         
     // Handles the roll over of directional inputs. 
     // Must be called every frame. 
     // Returns "left", "right", or "none"
     string get_horizontal_directional_input() {
-        if (Input.GetKeyDown(button_left1) | Input.GetKeyDown(button_left2)) {
+        if (Input.GetKeyDown(button_left)) {
             last_pressed_horizontal = "left";
             axis_priority = "horizontal";
         }
-        else if (Input.GetKeyDown(button_right1) | Input.GetKeyDown(button_right2)) {
+        else if (Input.GetKeyDown(button_right)) {
             last_pressed_horizontal = "right";
             axis_priority = "horizontal";
         }
-        if ((Input.GetKey(button_left1) | Input.GetKey(button_left2)) & (Input.GetKey(button_right1) | Input.GetKey(button_right2))) {
+        if (Input.GetKey(button_left) & Input.GetKey(button_right)) {
             if (last_pressed_horizontal == "left"){
                 return "left";
             }
@@ -56,10 +50,10 @@ public class PlayerMovementController : MonoBehaviour
                 return "right";
             }
         }
-        else if (Input.GetKey(button_left1) | Input.GetKey(button_left2)) {
+        else if (Input.GetKey(button_left)) {
             return "left";
         }
-        else if (Input.GetKey(button_right1) | Input.GetKey(button_right2)) {
+        else if (Input.GetKey(button_right)) {
             return "right";
         }
         else {
@@ -71,16 +65,16 @@ public class PlayerMovementController : MonoBehaviour
     // Returns "up", "down", or "none". 
     // Must be called every frame.
     string get_vertical_directional_input() { 
-        if (Input.GetKeyDown(button_up1) | Input.GetKeyDown(button_up2)) {
+        if (Input.GetKeyDown(button_up)) {
             last_pressed_vertical = "up";
             axis_priority = "vertical";
         }
-        else if (Input.GetKeyDown(button_down1) | Input.GetKeyDown(button_down2)) {
+        else if (Input.GetKeyDown(button_down)) {
             last_pressed_vertical = "down";
             axis_priority = "vertical";
         }
 
-        if ((Input.GetKey(button_up1) | Input.GetKey(button_up2)) & (Input.GetKey(button_down1) | Input.GetKey(button_down2))) {
+        if (Input.GetKey(button_up) & Input.GetKey(button_down)) {
             if (last_pressed_vertical == "up") {
                 return "up";
             }
@@ -88,10 +82,10 @@ public class PlayerMovementController : MonoBehaviour
                 return "down";
             }
         }
-        else if (Input.GetKey(button_up1) | Input.GetKey(button_up2)) {
+        else if (Input.GetKey(button_up)) {
             return "up";
         }
-        else if (Input.GetKey(button_down1) | Input.GetKey(button_down2)) {
+        else if (Input.GetKey(button_down)) {
             return "down";
         }
         else {
@@ -102,36 +96,32 @@ public class PlayerMovementController : MonoBehaviour
     // Updates the horizontal velocity of Steve-E based on the given input. 
     //Precondition: dh must either be "right", "left", or "none"
     void update_horizontal_velocity(string dh) { 
-        float acelleration_scalar = 1;
-        if(on_ice) {acelleration_scalar = 0.2f;}
-        float speed_scalar = 1;
-        if(on_mud) {speed_scalar = 0.33f;}
         if (dh == "right") {
-            if (horizontal_velocity < speed_scalar * max_speed) {
-                horizontal_velocity += acelleration_scalar * acelleration * Time.deltaTime;
-                if (horizontal_velocity > speed_scalar * max_speed) {
-                    horizontal_velocity = speed_scalar * max_speed;
+            if (horizontal_velocity < max_speed) {
+                horizontal_velocity += acelleration * Time.deltaTime;
+                if (horizontal_velocity > max_speed) {
+                    horizontal_velocity = max_speed;
                 }
             }
         }
         else if (dh == "left") {
-            if (horizontal_velocity > speed_scalar * -max_speed) {
-                horizontal_velocity -= acelleration_scalar * acelleration * Time.deltaTime;
-                if (horizontal_velocity < speed_scalar * -max_speed) {
-                    horizontal_velocity = speed_scalar * -max_speed;
+            if (horizontal_velocity > -max_speed) {
+                horizontal_velocity -= acelleration * Time.deltaTime;
+                if (horizontal_velocity < -max_speed) {
+                    horizontal_velocity = -max_speed;
                 }
             }
 
         }
         else if (dh == "none") {
             if (horizontal_velocity > 0) {
-                horizontal_velocity -= acelleration_scalar * acelleration_scalar * player_friction * Time.deltaTime;
+                horizontal_velocity -= player_friction * Time.deltaTime;
                 if (horizontal_velocity < 0) {
                     horizontal_velocity = 0;
                 }
             }
             else if (horizontal_velocity < 0) {
-                horizontal_velocity += acelleration_scalar * acelleration_scalar * player_friction * Time.deltaTime;
+                horizontal_velocity += player_friction * Time.deltaTime;
                 if (horizontal_velocity > 0) {
                     horizontal_velocity = 0;
                 }
@@ -139,39 +129,35 @@ public class PlayerMovementController : MonoBehaviour
         }
     }
 
-    // Updates the vertical velocity of Steve-E based on the given input. 
+    // Updates the horizontal velocity of Steve-E based on the given input. 
     // Precondition: dv must either be "up", "down", or "none"
-    void update_vertical_velocity(string dv) {
-        float acelleration_scalar = 1;
-        if(on_ice) {acelleration_scalar = 0.2f;} 
-        float speed_scalar = 1;
-        if(on_mud) {speed_scalar = 0.33f;}
+    void update_vertical_velocity(string dv) { 
         if (dv == "up") {
-            if (vertical_velocity < speed_scalar * max_speed) {
-                vertical_velocity += acelleration_scalar * acelleration * Time.deltaTime;
-                if (vertical_velocity > speed_scalar * max_speed) {
-                    vertical_velocity = speed_scalar * max_speed;
+            if (vertical_velocity < max_speed) {
+                vertical_velocity += acelleration * Time.deltaTime;
+                if (vertical_velocity > max_speed) {
+                    vertical_velocity = max_speed;
                 }
             }
         }
         else if (dv == "down") {
-            if (vertical_velocity > speed_scalar * -max_speed) {
-                vertical_velocity -= acelleration_scalar * acelleration * Time.deltaTime;
-                if (vertical_velocity < speed_scalar * -max_speed) {
-                    vertical_velocity = speed_scalar * -max_speed;
+            if (vertical_velocity > -max_speed) {
+                vertical_velocity -= acelleration * Time.deltaTime;
+                if (vertical_velocity < -max_speed) {
+                    vertical_velocity = -max_speed;
                 }
             }
 
         }
         else if (dv == "none") {
             if (vertical_velocity > 0) {
-                vertical_velocity -= acelleration_scalar * acelleration_scalar * player_friction * Time.deltaTime;
+                vertical_velocity -= player_friction * Time.deltaTime;
                 if (vertical_velocity < 0) {
                     vertical_velocity = 0;
                 }
             }
             else if (vertical_velocity < 0) {
-                vertical_velocity += acelleration_scalar * acelleration_scalar * player_friction * Time.deltaTime;
+                vertical_velocity += player_friction * Time.deltaTime;
                 if (vertical_velocity > 0) {
                     vertical_velocity = 0;
                 }
@@ -200,46 +186,65 @@ public class PlayerMovementController : MonoBehaviour
                 else {direction_facing = "left";}
             }
 
+            if(direction_facing == "right")
+            {
+                GetterDown.enabled = false;
+                GetterRight.enabled = true;
+                GetterLeft.enabled = false;
+            }
+            else if(direction_facing == "left")
+            {
+                GetterDown.enabled = false;
+                GetterRight.enabled = false;
+                GetterLeft.enabled = true;
+            }
+            else
+            {
+                GetterDown.enabled = true;
+                GetterRight.enabled = false;
+                GetterLeft.enabled = false;
+            }
         }
         else {is_moving = false;}
     }
 
+    // trigger to detect & collect rubish
+    private Collider2D GetterDown, GetterRight, GetterLeft;
     // Start is called before the first frame update
     void Start()
     {
+        GetterDown = transform.Find("GetterDown").GetComponent<Collider2D>();
+        GetterRight = transform.Find("GetterRight").GetComponent<Collider2D>();
+        GetterLeft = transform.Find("GetterLeft").GetComponent<Collider2D>();
+
         direction_facing = "down";
+        GetterDown.enabled = true;
+        GetterRight.enabled = false;
+        GetterLeft.enabled = false;
+
         axis_priority = "vertical";
-        rb = gameObject.GetComponent<Rigidbody2D>();
+
+        Time.timeScale = 1.0f;
+
+        Physics2D.queriesHitTriggers = false;
+
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        float extra_horizontal_velocity = 0;
-        float extra_vertical_velocity = 0;
-        if(on_liquid) {
-            extra_horizontal_velocity = liquid_dx;
-            extra_vertical_velocity = liquid_dy;
-        }
-
         string dh = get_horizontal_directional_input();
-        horizontal_velocity = rb.velocity.x - extra_horizontal_velocity;
         update_horizontal_velocity(dh);
         string dv = get_vertical_directional_input();
-        vertical_velocity = rb.velocity.y - extra_vertical_velocity;
         update_vertical_velocity(dv);
         update_direction_facing(dh, dv);
+        transform.position += new Vector3(Time.deltaTime * horizontal_velocity,Time.deltaTime * vertical_velocity,0);
 
-        float battery_scaler = 1;
-        if(on_lava){
-            battery_scaler += lava_intensity;
-            lava_intensity += 2*Time.deltaTime;
+        if (Input.GetMouseButtonDown(0))
+        {
+            //print("mouse button down 0");
         }
-        else{lava_intensity = 0;}
-        if(dh == "none" & dv == "none"){battery -= 0.1f*Time.deltaTime*battery_scaler;}
-        else {battery -= 0.5f*Time.deltaTime*battery_scaler;}
-        
-        rb.AddForce(new Vector2(horizontal_velocity - rb.velocity.x + extra_horizontal_velocity, vertical_velocity - rb.velocity.y + extra_vertical_velocity), ForceMode2D.Impulse);
-        // transform.position += new Vector3(Time.deltaTime * horizontal_velocity,Time.deltaTime * vertical_velocity,0);
     }
 }
+

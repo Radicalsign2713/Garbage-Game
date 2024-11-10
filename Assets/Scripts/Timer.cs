@@ -17,22 +17,51 @@ public class Timer : MonoBehaviour
 
     void Start()
     {
+<<<<<<< Updated upstream
         //timerBar = transform.Find("TimerBar").GetComponent<Image>();
         //timerBar.fillAmount = 1.0f;
+=======
+        timerBar = transform.Find("TimerBar").GetComponent<Image>();
+        timerBar.fillAmount = 1.0f;
+>>>>>>> Stashed changes
 
         totalTime = time;
     }
 
     void Update()
     {
+<<<<<<< Updated upstream
         time -= Time.deltaTime;
         if (time <= 0) 
         {
             time = 0;
             UpdateTimeText();
             Time.timeScale = 0;
+=======
+        if (PlayerControl.instance.State != GameSate.playMode) return;
+
+        time -= Time.deltaTime;
+        if (time < -finalTime) 
+        {
+            time = 0; 
+            // Todo : finish the game
+
+            //Time.timeScale = 0f;
+
+            MissionCompletedPanel.SetActive(true);
+            Invoke(nameof(HidePanel), 2);
+
+            TMP_Text txt = MissionCompletedPanel.GetComponentInChildren<TMP_Text>();
+            txt.text = "Mission Fail";
+
+            PlayerControl.instance.WaitForCharge();
+>>>>>>> Stashed changes
         }
         UpdateTimeText();
+    }
+    private void HidePanel()
+    {
+        MissionCompletedPanel.SetActive(false);
     }
 
     void UpdateTimeText() 
@@ -57,4 +86,15 @@ public class Timer : MonoBehaviour
             //timerBar.color = Color.red;
         }
     }
+<<<<<<< Updated upstream
+=======
+
+    public void ResetTimer()
+    {
+        timerBar = transform.Find("TimerBar").GetComponent<Image>();
+        timerBar.fillAmount = 1.0f;
+
+        time = totalTime;
+    }
+>>>>>>> Stashed changes
 }

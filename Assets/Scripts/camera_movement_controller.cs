@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class camera_movement_controller : MonoBehaviour {
-    public float minX;
-    public float maxX;
-    public float minY;
-    public float maxY;
+    public float minX = -25;
+    public float maxX = 25;
+    public float minY = -25;
+    public float maxY = 25;
     [SerializeField] GameObject player;
-    [SerializeField] float zoom; // Should be positive
     // Start is called before the first frame update
     void Start() {
 
@@ -17,7 +16,7 @@ public class camera_movement_controller : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         // for some reason camera needs to be offset in the z direction.
-        transform.position = player.transform.position + new Vector3(0, 0, -zoom); 
+        transform.position = player.transform.position + new Vector3(0, 0, -10); 
 
         // check if the camera is to far to the left 
         if (transform.position.x < minX) { 

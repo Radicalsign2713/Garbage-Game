@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Animator : MonoBehaviour {
     private SpriteRenderer spriteRenderer;
+    private MonoBehaviour movement;
     private string direction;
     private int numberOfFrames; // length of sprite arrays
     private float accumulator; // total time.delta time, used to ensure 15 fps
@@ -32,14 +33,6 @@ public class Animator : MonoBehaviour {
         accumulator += Time.deltaTime * fps;
         if (accumulator >= numberOfFrames) {accumulator -= numberOfFrames;}
         frame = (int)accumulator;
-
-        spriteRenderer.color = Color.white;
-        if (movement_Script.on_lava){
-            float period = (3*fps/(1 + movement_Script.lava_intensity)) + 0.2f*fps;
-            if (accumulator % period <= period/2){
-                spriteRenderer.color = new Color(1, 0.5f, 0.5f);
-            } else {spriteRenderer.color = Color.white;}
-        }
 
         direction = movement_Script.direction_facing;
 
