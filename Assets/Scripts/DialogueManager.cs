@@ -25,9 +25,12 @@ public class DialogueManager : MonoBehaviour
 
     private Queue<Dialogue.DialogueLine> sentences; // Stores dialogue lines
 
+    private Dialogue.DialogueLine currentLine; // Stores the current dialogue line
     private Dialogue.CharacterSide lastSpeakingSide; // To keep track of who spoke last
 
-    void Start()
+    private bool isTyping; // Flag to check if typing is in progress
+
+    void Awake()
     {
         // Store the original position of both character portraits
         initialLeftPortraitPosition = characterLeftPortrait.rectTransform.localPosition;
@@ -40,6 +43,7 @@ public class DialogueManager : MonoBehaviour
         dialogueUI.SetActive(false);
         characterLeftPortrait.gameObject.SetActive(false);
         characterRightPortrait.gameObject.SetActive(false);
+        //TriggerDialogue();
     }
 
     void Update()
@@ -47,13 +51,16 @@ public class DialogueManager : MonoBehaviour
         // Check if the player presses Space, Enter, or Left Click to proceed through the dialogue
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return) || Input.GetMouseButtonDown(0))
         {
-            DisplayNextSentence();
-        }
-
-        // Trigger dialogue for testing purposes by pressing D key
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            TriggerDialogue();
+            if (isTyping)
+            {
+                // If typing is in progress, finish typing the current line
+                FinishTyping();
+            }
+            else
+            {
+                // If typing is not in progress, display the next sentence
+                DisplayNextSentence();
+            }
         }
     }
 
@@ -114,16 +121,16 @@ public class DialogueManager : MonoBehaviour
         }
 
         // Get the next dialogue line
-        Dialogue.DialogueLine line = sentences.Dequeue();
+        currentLine = sentences.Dequeue();
 
         // Update character name in UI
-        characterNameText.text = line.characterName;
+        characterNameText.text = currentLine.characterName;
 
         // Highlight the active character based on which side they are on
-        if (line.side == Dialogue.CharacterSide.Left)
+        if (currentLine.side == Dialogue.CharacterSide.Left)
         {
             characterLeftPortrait.gameObject.SetActive(true);
-            characterLeftPortrait.sprite = line.characterPortrait;
+            characterLeftPortrait.sprite = currentLine.characterPortrait;
             HighlightCharacter(characterLeftPortrait, initialLeftPortraitPosition);
             lastSpeakingSide = Dialogue.CharacterSide.Left;
 
@@ -137,10 +144,10 @@ public class DialogueManager : MonoBehaviour
                 DimCharacter(characterRightPortrait, initialRightPortraitPosition);
             }
         }
-        else if (line.side == Dialogue.CharacterSide.Right)
+        else if (currentLine.side == Dialogue.CharacterSide.Right)
         {
             characterRightPortrait.gameObject.SetActive(true);
-            characterRightPortrait.sprite = line.characterPortrait;
+            characterRightPortrait.sprite = currentLine.characterPortrait;
             HighlightCharacter(characterRightPortrait, initialRightPortraitPosition);
             lastSpeakingSide = Dialogue.CharacterSide.Right;
 
@@ -155,18 +162,31 @@ public class DialogueManager : MonoBehaviour
             }
         }
 
-        // Type out the dialogue sentence
-        typingCoroutine = StartCoroutine(TypeSentence(line.sentence));
+        // Start typing the dialogue sentence
+        typingCoroutine = StartCoroutine(TypeSentence(currentLine.sentence));
     }
 
     IEnumerator TypeSentence(string sentence)
     {
+        isTyping = true;
         dialogueText.text = "";
         foreach (char letter in sentence.ToCharArray())
         {
             dialogueText.text += letter;
             yield return new WaitForSeconds(typingSpeed);
         }
+        isTyping = false;
+    }
+
+    void FinishTyping()
+    {
+        // Finish typing the current sentence immediately
+        if (typingCoroutine != null)
+        {
+            StopCoroutine(typingCoroutine);
+        }
+        isTyping = false;
+        dialogueText.text = currentLine.sentence;
     }
 
     void HighlightCharacter(Image characterPortrait, Vector3 originalPosition)
