@@ -294,7 +294,7 @@ MonoBehaviour:
   typingSpeed: 0.05
   bounceAmount: 5
   bounceSpeed: 2
-  testDialogue: {fileID: 11400000, guid: 902b8bbe506313f4597272c1c33861d5, type: 2}
+  testDialogue: {fileID: 11400000, guid: cc9b02cbf05c00c438abdae4a7d30583, type: 2}
 --- !u!4 &452371638
 Transform:
   m_ObjectHideFlags: 0
