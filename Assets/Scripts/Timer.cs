@@ -7,54 +7,76 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
-    [SerializeField]
+    private PlayerMovementController player;
     private float time = 120; // seconds
     private float totalTime = 0;
-    private bool isWarning = false;//if time less than 30 seconds , show warning by change UI color
-    public TMP_Text timeText;
-    //private Image timerBar;
 
+
+    [SerializeField]
+    private float noticeTime = 30;
+    [SerializeField]
+    private float warningTime = 10;
+    [SerializeField]
+    private float finalTime = 2;
+
+    private bool isNotice = false;//if time less than 30 seconds , show notice by change UI color
+    private bool isWarning = false;//if time less than 10 seconds , show warning by change UI color
+    public TMP_Text timeText;
+
+    private Image timerBar;
+    private GameObject MissionCompletedPanel;
+
+    private void Awake()
+    {
+        MissionCompletedPanel = GameObject.Find("MissionCompletedPanel");
+    }
 
     void Start()
     {
-        //timerBar = transform.Find("TimerBar").GetComponent<Image>();
-        //timerBar.fillAmount = 1.0f;
+        timerBar = transform.Find("TimerBar").GetComponent<Image>();
+        timerBar.fillAmount = 1.0f;
+        player = GameObject.Find("Steve-E").GetComponent<PlayerMovementController>();
 
-        totalTime = time;
+        totalTime = player.battery;
     }
 
     void Update()
     {
-        time -= Time.deltaTime;
-        if (time <= 0) 
+        time = player.battery;
+        if (time < -finalTime) 
         {
-            time = 0;
-            UpdateTimeText();
-            Time.timeScale = 0;
+            time = 0; 
+            // Todo : finish the game
+
+            Time.timeScale = 0f;
+
+            MissionCompletedPanel.SetActive(true);
+            TMP_Text txt = MissionCompletedPanel.GetComponentInChildren<TMP_Text>();
+            txt.text = "Mission Fail";
         }
         UpdateTimeText();
     }
 
     void UpdateTimeText() 
     {
-        // float minutes = (float)Math.Floor(time / 60);
-        // float seconds = time - minutes * 60;
-        int seconds = (int)Math.Ceiling(time);
-        int minutes = seconds / 60;
-        seconds = seconds % 60;
+        float _time = Math.Clamp(time, 0, totalTime);
 
-        string str;
-        if (seconds <= 9) {str = $"{minutes}:0{seconds}";}
-        else {str = $"{minutes}:{seconds}";}
-
+        float minutes = (float)Math.Floor(_time / 60);
+        float seconds = _time - minutes * 60;
+        string str = $"{minutes}:{(int)Math.Floor(seconds)}";
         timeText.text = str; // 3:30
 
-        // timerBar.fillAmount = time / totalTime;
+        timerBar.fillAmount = _time / totalTime;
 
-        if(!isWarning && time <= 5)
+        if(!isWarning && time <= warningTime)
         {
             isWarning = true;
-            //timerBar.color = Color.red;
+            timerBar.color = Color.red;
+        }
+        else if(!isNotice && time <= noticeTime)
+        {
+            isNotice = true;
+            timerBar.color = Color.yellow;
         }
     }
 }
