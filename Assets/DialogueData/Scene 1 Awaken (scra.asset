@@ -74,13 +74,16 @@ MonoBehaviour:
     sentence: "Well, one \u2018bot\u2019s trash is another bot\u2019s treasure!"
     side: 0
   - characterName: Salvage
+    characterPortrait: {fileID: 21300000, guid: e1c9d15029099db408049ff37f8c7812, type: 3}
+    sentence: "Can\u2019t believe we\u2019re out here searching for another Steve-E"
+    side: 1
+  - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: 3879ae633b8e1db408baaa58cdfc2915, type: 3}
-    sentence: "Can\u2019t believe we\u2019re out here searching for another Steve-E.
-      What was wrong with the last one, and the one before last one, again?"
+    sentence: What was wrong with the last one, and the one before last one, again?
     side: 1
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 3627770099f24d54393a5aca19110a00, type: 3}
-    sentence: "Steve-E-193 had\u2026"
+    sentence: "Steve-E193 had\u2026"
     side: 0
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 376349d1c4716cb42b7369453ee22532, type: 3}
@@ -98,46 +101,60 @@ MonoBehaviour:
     side: 1
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: d61176972e8d1e440a7cdaa0f39d7409, type: 3}
-    sentence: "Hey, Scrap! Got something here. Think it\u2019s him?"
+    sentence: Hey, Scrap! Got something here.
     side: 1
-  - characterName: Steve-E-194
-    characterPortrait: {fileID: 21300000, guid: d61176972e8d1e440a7cdaa0f39d7409, type: 3}
+  - characterName: Steve-E194
+    characterPortrait: {fileID: 21300000, guid: 0c1943b4994a7b640a2ac6ddcbee8556, type: 3}
     sentence: (...)
     side: 1
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: d61176972e8d1e440a7cdaa0f39d7409, type: 3}
-    sentence: "Hey, Scrap! Got something here. Think it\u2019s him?"
+    sentence: "Think it\u2019s him?"
     side: 1
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 0d8872f581c4cb94fa566cfa45ea86bd, type: 3}
-    sentence: "(wipes some dust off) Let me see\u2026 yep, that\u2019s our Steve-E-194!
-      Still in one piece, too. Let\u2019s haul him back to base and see what he remembers."
+    sentence: (wipes some dust off)
     side: 0
   - characterName: Scrapp
-    characterPortrait: {fileID: 21300000, guid: 0d8872f581c4cb94fa566cfa45ea86bd, type: 3}
-    sentence: "All right, let\u2019s hear what you\u2019ve got to say, Steve-E."
+    characterPortrait: {fileID: 21300000, guid: 251eb05ff2cef5446aa4c0f3bdebe3b6, type: 3}
+    sentence: "Let me see\u2026 yep, that\u2019s our Steve-E-194! Still in one piece,
+      too."
+    side: 0
+  - characterName: Scrapp
+    characterPortrait: {fileID: 21300000, guid: f619f38b297f67c47ab9a994081a0854, type: 3}
+    sentence: " Let\u2019s haul him back to base and see what he remembers."
+    side: 0
+  - characterName: Scrapp
+    characterPortrait: {fileID: 21300000, guid: 3f6c269d49154cc4e8772fa752cae3ad, type: 3}
+    sentence: "...All right, let\u2019s hear what you\u2019ve got to say, Steve-E."
     side: 0
   - characterName: Steve-E194
     characterPortrait: {fileID: 21300000, guid: 0c1943b4994a7b640a2ac6ddcbee8556, type: 3}
     sentence: (......)
     side: 1
   - characterName: Salvage
-    characterPortrait: {fileID: 21300000, guid: 03b3f5f793980224da33e03501db8a8e, type: 3}
+    characterPortrait: {fileID: 21300000, guid: ce6a7aa7e94d6a84b88e322731465de8, type: 3}
     sentence: Not exactly a chatterbox, is he?
     side: 1
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 0d8872f581c4cb94fa566cfa45ea86bd, type: 3}
-    sentence: "(fiddling with the bot\u2019s settings) Strange\u2026 he should be
-      talking. "
+    sentence: "(fiddling with the bot\u2019s settings)"
     side: 0
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 251eb05ff2cef5446aa4c0f3bdebe3b6, type: 3}
+    sentence: " Strange\u2026 he should be talking. "
+    side: 0
+  - characterName: Scrapp
+    characterPortrait: {fileID: 21300000, guid: 3627770099f24d54393a5aca19110a00, type: 3}
     sentence: "But wait, this\u2014this memory core\u2026"
     side: 0
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 251eb05ff2cef5446aa4c0f3bdebe3b6, type: 3}
-    sentence: "It's like he\u2019s stuck back when Earth was still green. Look, rivers,
-      fields\u2026 a whole different world. "
+    sentence: "Look, rivers, fields\u2026 a whole different world. "
+    side: 0
+  - characterName: Scrapp
+    characterPortrait: {fileID: 21300000, guid: 376349d1c4716cb42b7369453ee22532, type: 3}
+    sentence: "It's like he\u2019s stuck back when Earth was still green."
     side: 0
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 3627770099f24d54393a5aca19110a00, type: 3}
@@ -152,12 +169,33 @@ MonoBehaviour:
     sentence: "Don\u2019t worry, buddy. We\u2019ll catch you up. Just need to get
       you used to a world of scrap and salvage, that\u2019s all."
     side: 0
-  - characterName: Scrapp
-    characterPortrait: {fileID: 21300000, guid: 0d8872f581c4cb94fa566cfa45ea86bd, type: 3}
-    sentence: (PAT PAT)
-    side: 0
+  - characterName: Steve-E194
+    characterPortrait: {fileID: 21300000, guid: 0c1943b4994a7b640a2ac6ddcbee8556, type: 3}
+    sentence: (......)
+    side: 1
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: d61176972e8d1e440a7cdaa0f39d7409, type: 3}
     sentence: "Yeah. Adapting is survival now. Guess that\u2019s the next lesson
       for him."
+    side: 1
+  - characterName: Day 2
+    characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
+    sentence: ' '
+    side: 1
+  - characterName: Day 2
+    characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
+    sentence: ' '
+    side: 0
+  - characterName: Steve-E194
+    characterPortrait: {fileID: 21300000, guid: 0c1943b4994a7b640a2ac6ddcbee8556, type: 3}
+    sentence: (......)
+    side: 0
+  - characterName: Salvage
+    characterPortrait: {fileID: 21300000, guid: ce6a7aa7e94d6a84b88e322731465de8, type: 3}
+    sentence: All right, Steve-E, time to earn your keep.
+    side: 1
+  - characterName: Salvage
+    characterPortrait: {fileID: 21300000, guid: 03b3f5f793980224da33e03501db8a8e, type: 3}
+    sentence: " We\u2019re part of the HUMAN FLY FAR project \u2014last-ditch plan
+      to get off this wreck of a planet.  "
     side: 1
