@@ -28,6 +28,7 @@ public class PlayerMovementController : MonoBehaviour
                                             // Read only
     public bool is_moving; // Read only
 
+    public bool game_frozen = false;
     public bool on_lava = false;
     public float lava_intensity;
     public bool on_ice = false;
@@ -215,31 +216,39 @@ public class PlayerMovementController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float extra_horizontal_velocity = 0;
-        float extra_vertical_velocity = 0;
-        if(on_liquid) {
-            extra_horizontal_velocity = liquid_dx;
-            extra_vertical_velocity = liquid_dy;
+        if (game_frozen)
+        {
+            rb.AddForce(new Vector2(-rb.velocity.x, -rb.velocity.y), ForceMode2D.Impulse);
+            is_moving = false;
         }
+        else
+        {
+            float extra_horizontal_velocity = 0;
+            float extra_vertical_velocity = 0;
+            if(on_liquid) {
+                extra_horizontal_velocity = liquid_dx;
+                extra_vertical_velocity = liquid_dy;
+            }
 
-        string dh = get_horizontal_directional_input();
-        horizontal_velocity = rb.velocity.x - extra_horizontal_velocity;
-        update_horizontal_velocity(dh);
-        string dv = get_vertical_directional_input();
-        vertical_velocity = rb.velocity.y - extra_vertical_velocity;
-        update_vertical_velocity(dv);
-        update_direction_facing(dh, dv);
+            string dh = get_horizontal_directional_input();
+            horizontal_velocity = rb.velocity.x - extra_horizontal_velocity;
+            update_horizontal_velocity(dh);
+            string dv = get_vertical_directional_input();
+            vertical_velocity = rb.velocity.y - extra_vertical_velocity;
+            update_vertical_velocity(dv);
+            update_direction_facing(dh, dv);
 
-        float battery_scaler = 1;
-        if(on_lava){
-            battery_scaler += lava_intensity;
-            lava_intensity += 2*Time.deltaTime;
+            float battery_scaler = 1;
+            if(on_lava){
+                battery_scaler += lava_intensity;
+                lava_intensity += 2*Time.deltaTime;
+            }
+            else{lava_intensity = 0;}
+            if(dh == "none" & dv == "none"){battery -= 0.1f*Time.deltaTime*battery_scaler;}
+            else {battery -= 0.5f*Time.deltaTime*battery_scaler;}
+            
+            rb.AddForce(new Vector2(horizontal_velocity - rb.velocity.x + extra_horizontal_velocity, vertical_velocity - rb.velocity.y + extra_vertical_velocity), ForceMode2D.Impulse);
+            // transform.position += new Vector3(Time.deltaTime * horizontal_velocity,Time.deltaTime * vertical_velocity,0);
         }
-        else{lava_intensity = 0;}
-        if(dh == "none" & dv == "none"){battery -= 0.1f*Time.deltaTime*battery_scaler;}
-        else {battery -= 0.5f*Time.deltaTime*battery_scaler;}
-        
-        rb.AddForce(new Vector2(horizontal_velocity - rb.velocity.x + extra_horizontal_velocity, vertical_velocity - rb.velocity.y + extra_vertical_velocity), ForceMode2D.Impulse);
-        // transform.position += new Vector3(Time.deltaTime * horizontal_velocity,Time.deltaTime * vertical_velocity,0);
     }
 }
