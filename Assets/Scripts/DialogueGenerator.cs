@@ -3,67 +3,67 @@ using UnityEditor;
 
 public class DialogueGenerator
 {
-    [MenuItem("Tools/Generate ScrappSalvage Dialogue")]
-    public static void CreateScrappSalvageDialogue()
+    [MenuItem("Tools/Generate SalvageScrapp Dialogue")]
+    public static void CreateSalvageScrappDialogue()
     {
         // Create an instance of the Dialogue ScriptableObject
         Dialogue dialogue = ScriptableObject.CreateInstance<Dialogue>();
 
         // Set up the dialogue lines
-        dialogue.lines = new Dialogue.DialogueLine[16];
+        dialogue.lines = new Dialogue.DialogueLine[10];
 
-        // Line 1: Scrapp
+        // Line 1: Salvage
         dialogue.lines[0] = new Dialogue.DialogueLine
-        {
-            characterName = "Scrapp",
-            characterPortrait = null, // Assign Scrapp's portrait in the Inspector later
-            sentence = "You know, Salva, if you’d just see it my way… this trash mountain would look like a diamond mountain.",
-            side = Dialogue.CharacterSide.Left
-        };
-
-        // Line 2: Salvage
-        dialogue.lines[1] = new Dialogue.DialogueLine
         {
             characterName = "Salvage",
             characterPortrait = null, // Assign Salvage's portrait in the Inspector later
-            sentence = "Only diamond I see here is the one buried under five tons of broken toilets and plastic bags.",
+            sentence = "All right, Steve-E, time to earn your keep. We’re part of the HUMAN FLY FAR project—last-ditch plan to get off this wreck of a planet. While most of the big rockets are already gone, a few of us stayed behind, prepping for one final shot at survival. We are building Small rockets, each just strong enough to make it to Mars… if we’re lucky.",
             side = Dialogue.CharacterSide.Right
         };
 
-        // Line 3: Scrapp
+        // Line 2: Scrapp
+        dialogue.lines[1] = new Dialogue.DialogueLine
+        {
+            characterName = "Scrapp",
+            characterPortrait = null, // Assign Scrapp's portrait in the Inspector later
+            sentence = "Yeah, picture it—a bunch of scrappy, rusty little rockets blasting out of Earth like, whoosh! Just us and a few leftover nuts and bolts, headed to a whole new life on the red planet. That’s the plan! And you, Steve-E, get to help make it happen by fetching us the goodies we need.",
+            side = Dialogue.CharacterSide.Left
+        };
+
+        // Line 3: Salvage
         dialogue.lines[2] = new Dialogue.DialogueLine
         {
-            characterName = "Scrapp",
+            characterName = "Salvage",
             characterPortrait = null,
-            sentence = "And what’s wrong with that? One ‘bot’s trash is another bot’s treasure!",
-            side = Dialogue.CharacterSide.Left
+            sentence = "‘Goodies’ being whatever scrap, metal, fuel cells, and circuits you can dig up in the wild. Everything here is either broken, buried, or both, so you’ll be sent out to salvage what’s left. Every bolt you bring back means one more piece we can use to build these rockets.",
+            side = Dialogue.CharacterSide.Right
         };
 
-        // Line 4: Salvage
+        // Line 4: Scrapp
         dialogue.lines[3] = new Dialogue.DialogueLine
         {
-            characterName = "Salvage",
-            characterPortrait = null,
-            sentence = "Can’t believe we’re out here searching for another Steve-E. What was wrong with the last one, and the one before last one, again?",
-            side = Dialogue.CharacterSide.Right
-        };
-
-        // Line 5: Scrapp
-        dialogue.lines[4] = new Dialogue.DialogueLine
-        {
             characterName = "Scrapp",
             characterPortrait = null,
-            sentence = "Steve-E-193 had… well, let’s say an ‘accident’ with the shredder drone. I told him to zig, and he zagged, 192 soaked itself in a green pond.",
+            sentence = "Think of it as treasure hunting! But, y’know… with a lot more rust, radiation, and roaches.",
             side = Dialogue.CharacterSide.Left
         };
 
-        // Line 6: Salvage
-        dialogue.lines[5] = new Dialogue.DialogueLine
+        // Line 5: Salvage
+        dialogue.lines[4] = new Dialogue.DialogueLine
         {
             characterName = "Salvage",
             characterPortrait = null,
-            sentence = "These machines, what a crap… All right, let’s find 194 before he decides to join his siblings under this ‘diamond mine’ of yours.",
+            sentence = "This isn’t playtime, Scrap. The project’s all we’ve got. And if we fail… well, we won’t get another chance.",
             side = Dialogue.CharacterSide.Right
+        };
+
+        // Line 6: Scrapp
+        dialogue.lines[5] = new Dialogue.DialogueLine
+        {
+            characterName = "Scrapp",
+            characterPortrait = null,
+            sentence = "Right, right, serious stuff. So, Steve-E, just bring us whatever junk you find, and we’ll make it shine. Trust us—we’ve turned worse into wonders.",
+            side = Dialogue.CharacterSide.Left
         };
 
         // Line 7: Salvage
@@ -71,90 +71,18 @@ public class DialogueGenerator
         {
             characterName = "Salvage",
             characterPortrait = null,
-            sentence = "Hey, Scrap! Got something here. Think it’s him?",
-            side = Dialogue.CharacterSide.Right
-        };
-
-        // Line 8: Scrapp
-        dialogue.lines[7] = new Dialogue.DialogueLine
-        {
-            characterName = "Scrapp",
-            characterPortrait = null,
-            sentence = "(wipes some dust off) Let me see… yep, that’s our Steve-E-194! Still in one piece, too. Let’s haul him back to base and see what he remembers.",
-            side = Dialogue.CharacterSide.Left
-        };
-
-        // Line 9: Scrapp
-        dialogue.lines[8] = new Dialogue.DialogueLine
-        {
-            characterName = "Scrapp",
-            characterPortrait = null,
-            sentence = "All right, let’s hear what you’ve got to say, Steve-E.",
-            side = Dialogue.CharacterSide.Left
-        };
-
-        // Line 10: Salvage
-        dialogue.lines[9] = new Dialogue.DialogueLine
-        {
-            characterName = "Salvage",
-            characterPortrait = null,
-            sentence = "Not exactly a chatterbox, is he?",
-            side = Dialogue.CharacterSide.Right
-        };
-
-        // Line 11: Scrapp
-        dialogue.lines[10] = new Dialogue.DialogueLine
-        {
-            characterName = "Scrapp",
-            characterPortrait = null,
-            sentence = "(fiddling with the bot’s settings) Strange… he should be talking. But wait, this—this memory core… it’s like he’s stuck back when Earth was still green. Look, rivers, fields… a whole different world. Poor thing has no idea what he’s woken up to.",
-            side = Dialogue.CharacterSide.Left
-        };
-
-        // Line 12: Salvage
-        dialogue.lines[11] = new Dialogue.DialogueLine
-        {
-            characterName = "Salvage",
-            characterPortrait = null,
-            sentence = "He’ll have to learn fast. This place isn’t a picnic anymore.",
-            side = Dialogue.CharacterSide.Right
-        };
-
-        // Line 13: Scrapp
-        dialogue.lines[12] = new Dialogue.DialogueLine
-        {
-            characterName = "Scrapp",
-            characterPortrait = null,
-            sentence = "(to the bot) Don’t worry, buddy. We’ll catch you up. Just need to get you used to a world of scrap and salvage, that’s all.",
-            side = Dialogue.CharacterSide.Left
-        };
-
-        // Line 14: Scrapp
-        dialogue.lines[13] = new Dialogue.DialogueLine
-        {
-            characterName = "Scrapp",
-            characterPortrait = null,
-            sentence = "PAT PAT",
-            side = Dialogue.CharacterSide.Left
-        };
-
-        // Line 15: Salvage
-        dialogue.lines[14] = new Dialogue.DialogueLine
-        {
-            characterName = "Salvage",
-            characterPortrait = null,
-            sentence = "Yeah. Adapting is survival now. Guess that’s the next lesson for him.",
+            sentence = "We’re counting on you, Steve-E. Now, get out there and start scavenging. Open the Gate.",
             side = Dialogue.CharacterSide.Right
         };
 
         // Save the ScriptableObject as an asset
-        AssetDatabase.CreateAsset(dialogue, "Assets/ScrappSalvageDialogue.asset");
+        AssetDatabase.CreateAsset(dialogue, "Assets/SalvageScrappDialogue.asset");
         AssetDatabase.SaveAssets();
 
         // Select the newly created asset in the Project window
         EditorUtility.FocusProjectWindow();
         Selection.activeObject = dialogue;
 
-        Debug.Log("ScrappSalvageDialogue ScriptableObject created successfully!");
+        Debug.Log("SalvageScrappDialogue ScriptableObject created successfully!");
     }
 }
