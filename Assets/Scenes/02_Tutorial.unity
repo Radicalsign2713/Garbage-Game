@@ -1237,6 +1237,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1708970906}
   - component: {fileID: 1708970907}
+  - component: {fileID: 1708970908}
   m_Layer: 0
   m_Name: Progress Bar
   m_TagString: Untagged
@@ -1253,8 +1254,8 @@ Transform:
   m_GameObject: {fileID: 1708970905}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.07, y: -6.91, z: 0}
-  m_LocalScale: {x: 8.93951, y: 5.325, z: 1}
+  m_LocalPosition: {x: -14.64, y: -6.91, z: 0}
+  m_LocalScale: {x: 8.179888, y: 5.325, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1279323181}
@@ -1311,6 +1312,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1708970908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708970905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3beda7c94db894a6c9fc8d51ed2d0f1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2121915688 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3858730063050138965, guid: b23756ad5e3304010a07ddfe8c2fe52c, type: 3}
