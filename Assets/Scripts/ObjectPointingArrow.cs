@@ -36,16 +36,9 @@ public class ObjectPointingArrow : MonoBehaviour
             // global position
             transform.position =  delta_world + player.transform.position;
         }
-        // if ((transform.parent.position - player.transform.position).magnitude < 5){
         else {
             transform.position = transform.parent.position + (Vector3.up * hight);
             transform.eulerAngles = new Vector3(0f, 0f, 180f); 
         } 
-        // else {
-        //     delta = (transform.parent.position - player.transform.position).normalized * 2.5f;
-        //     transform.eulerAngles = new Vector3(0f, 0f, Vector3.SignedAngle(Vector3.up, delta, Vector3.forward));
-        //     // global position
-        //     transform.position =  delta + player.transform.position;
-        // }
     }
 }
