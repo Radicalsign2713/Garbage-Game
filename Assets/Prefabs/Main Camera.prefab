@@ -105,9 +105,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ad44a9667e014194a1e8f3e727e2d23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minX: -14.2
-  maxX: 24
-  minY: -20
-  maxY: 10.5
+  minX: -49.9
+  maxX: 49.9
+  minY: -55.2
+  maxY: 59
   player: {fileID: 0}
   zoom: 16

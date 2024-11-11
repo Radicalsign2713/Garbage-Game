@@ -63,6 +63,7 @@ MonoBehaviour:
   button_down2: down
   direction_facing: 
   is_moving: 0
+  game_frozen: 0
   on_lava: 0
   lava_intensity: 0
   on_ice: 0
@@ -92,7 +93,7 @@ Rigidbody2D:
     m_Bits: 4294967295
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 2
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
@@ -129,7 +130,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.04936135, y: -0.28629613}
+  m_Offset: {x: -0.0054145455, y: -0.28629613}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -140,7 +141,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.2961683, y: 1.6515698}
+  m_Size: {x: 1.3840619, y: 1.6515698}
   m_EdgeRadius: 0
 --- !u!82 &5051429030311280860
 AudioSource:
@@ -317,13 +318,13 @@ SpriteMask:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cecc20697b47d48a792f573d2cdebbb9, type: 3}
   m_MaskAlphaCutoff: 0.507
-  m_FrontSortingLayerID: 0
-  m_BackSortingLayerID: 0
-  m_FrontSortingLayer: 0
-  m_BackSortingLayer: 0
-  m_FrontSortingOrder: 0
+  m_FrontSortingLayerID: -838940317
+  m_BackSortingLayerID: -838940317
+  m_FrontSortingLayer: 2
+  m_BackSortingLayer: 2
+  m_FrontSortingOrder: 10
   m_BackSortingOrder: 0
-  m_IsCustomRangeActive: 0
+  m_IsCustomRangeActive: 1
   m_SpriteSortPoint: 0
 --- !u!1 &5461474925779321099
 GameObject:
@@ -400,8 +401,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -838940317
+  m_SortingLayer: 2
   m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 6411b331e02274435bb519bd7c4d5089, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

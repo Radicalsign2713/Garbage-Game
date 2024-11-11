@@ -5,42 +5,32 @@ using UnityEngine;
 
 public class TaskControl : MonoBehaviour
 {
-    [SerializeField]
-    [Header("target missions count")]
-    private int taskTargetCount = 5;
+    private int total_garbages;
+    private int collected_garbages;
+    private int total_upgrades;
+    private int collected_upgrades;
+    public bool tasks_completed;
+    
 
-    private int currentCompleted = 0;
-    private GameObject MissionCompletedPanel;
-
-    /// <summary>
-    /// add the completed count of tasks
-    /// </summary>
-    public void AddCompleted()
+    public void AddCompleted(string tag)
     {
-        currentCompleted ++;
-        UPdateUI();
-
-        if(currentCompleted == taskTargetCount)
-        {
-            MissionCompletedPanel.SetActive(true);
-            Time.timeScale = 0;
-        }
+        if(tag == "Garbage") {collected_garbages ++;}
+        else if(tag == "Upgrade") {collected_upgrades ++;}
+        if(total_garbages == collected_garbages & total_upgrades == collected_upgrades) {tasks_completed = true;}
     }
-
-    private TMP_Text text;
 
     // Start is called before the first frame update
     void Start()
     {
-        MissionCompletedPanel = GameObject.Find("MissionCompletedPanel");
-        MissionCompletedPanel.SetActive(false);
-
-        text = transform.GetComponent<TMP_Text>();
-        UPdateUI();
+        tasks_completed = false;
+        collected_garbages = 0;
+        collected_upgrades = 0;
+        total_garbages = GameObject.FindGameObjectsWithTag("Garbage").Length;
+        total_upgrades = GameObject.FindGameObjectsWithTag("Upgrade").Length;
     }
     private void UPdateUI()
     {
-        text.text = $"{currentCompleted}/{taskTargetCount}";
+        //text.text = $"{currentCompleted}/{taskTargetCount}";
     }
 
 }

@@ -31,7 +31,7 @@ public class ObjectPointingArrow : MonoBehaviour
                 delta_screen = delta_screen / (2 * Math.Abs(delta_screen.y));
             }
             delta_world = cam.ViewportToWorldPoint(delta_screen + cam.WorldToViewportPoint(player.transform.position)) - player.transform.position;
-            delta_world -= delta_world.normalized * .75f;
+            delta_world -= delta_world.normalized * .3f * hight;
             transform.eulerAngles = new Vector3(0f, 0f, Vector3.SignedAngle(Vector3.up, delta_world, Vector3.forward));
             // global position
             transform.position =  delta_world + player.transform.position;

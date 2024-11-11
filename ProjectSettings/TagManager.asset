@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Garbage
+  - Upgrade
+  - Lava
+  - Ice
+  - Liquid
+  - Mud
   layers:
   - Default
   - TransparentFX
