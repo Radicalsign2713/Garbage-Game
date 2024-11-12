@@ -106,22 +106,23 @@ public class PlayerMovementController : MonoBehaviour
         float acelleration_scalar = 1;
         if(on_ice) {acelleration_scalar = 0.2f;}
         float speed_scalar = 1;
-        if(on_mud) {speed_scalar = 0.33f;}
         if (dh == "right") {
             if (horizontal_velocity < speed_scalar * max_speed) {
                 horizontal_velocity += acelleration_scalar * acelleration * Time.deltaTime;
-                if (horizontal_velocity > speed_scalar * max_speed) {
-                    horizontal_velocity = speed_scalar * max_speed;
-                }
             }
+            if (horizontal_velocity > speed_scalar * max_speed) {
+                horizontal_velocity = speed_scalar * max_speed;
+            }
+            
         }
         else if (dh == "left") {
             if (horizontal_velocity > speed_scalar * -max_speed) {
                 horizontal_velocity -= acelleration_scalar * acelleration * Time.deltaTime;
-                if (horizontal_velocity < speed_scalar * -max_speed) {
-                    horizontal_velocity = speed_scalar * -max_speed;
-                }
             }
+            if (horizontal_velocity < speed_scalar * -max_speed) {
+                horizontal_velocity = speed_scalar * -max_speed;
+            }
+            
 
         }
         else if (dh == "none") {
@@ -150,19 +151,18 @@ public class PlayerMovementController : MonoBehaviour
         if (dv == "up") {
             if (vertical_velocity < speed_scalar * max_speed) {
                 vertical_velocity += acelleration_scalar * acelleration * Time.deltaTime;
-                if (vertical_velocity > speed_scalar * max_speed) {
-                    vertical_velocity = speed_scalar * max_speed;
-                }
+            }
+            if (vertical_velocity > speed_scalar * max_speed) {
+                vertical_velocity = speed_scalar * max_speed;
             }
         }
         else if (dv == "down") {
             if (vertical_velocity > speed_scalar * -max_speed) {
                 vertical_velocity -= acelleration_scalar * acelleration * Time.deltaTime;
-                if (vertical_velocity < speed_scalar * -max_speed) {
-                    vertical_velocity = speed_scalar * -max_speed;
-                }
             }
-
+            if (vertical_velocity < speed_scalar * -max_speed) {
+                vertical_velocity = speed_scalar * -max_speed;
+            }
         }
         else if (dv == "none") {
             if (vertical_velocity > 0) {

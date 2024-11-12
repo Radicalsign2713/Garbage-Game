@@ -29,6 +29,9 @@ public class Stagehazardv2 : MonoBehaviour
             } else if(gameObject.tag == "Mud"){
                 player.on_mud = true;
             }
+            else if(gameObject.tag == "Island"){
+                player.on_liquid = false;
+            }
         }
     }
 
@@ -44,6 +47,9 @@ public class Stagehazardv2 : MonoBehaviour
                 player.on_liquid = false;
             } else if(gameObject.tag == "Mud"){
                 player.on_mud = false;
+            }
+            else if(gameObject.tag == "Island"){
+                player.on_liquid = false;
             }
         }
     }
