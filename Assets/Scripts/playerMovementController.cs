@@ -107,6 +107,7 @@ public class PlayerMovementController : MonoBehaviour
         float acelleration_scalar = 1;
         if(on_ice) {acelleration_scalar = 0.2f;}
         float speed_scalar = 1;
+        if(on_mud) {speed_scalar = 0.33f;}
         if (dh == "right") {
             if (horizontal_velocity < speed_scalar * max_speed) {
                 horizontal_velocity += acelleration_scalar * acelleration * Time.deltaTime;
