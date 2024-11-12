@@ -69,8 +69,8 @@ MonoBehaviour:
   on_ice: 0
   on_mud: 0
   on_liquid: 0
-  liquid_dx: -1
-  liquid_dy: -1
+  liquid_dx: 0
+  liquid_dy: 2.5
 --- !u!50 &932404901574285455
 Rigidbody2D:
   serializedVersion: 4
