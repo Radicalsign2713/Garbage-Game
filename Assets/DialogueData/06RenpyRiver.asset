@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 764f48e2076824ba58cc3eb7f0536e0b, type: 3}
+  m_Name: 06RenpyRiver
+  m_EditorClassIdentifier: 
+  lines:
+  - characterName: Salvage
+    characterPortrait: {fileID: 21300000, guid: ce6a7aa7e94d6a84b88e322731465de8, type: 3}
+    sentence: "Welcome back, Steve-E. Good to see that you\u2019re back in one piece."
+    side: 1
+  - characterName: Scrapp
+    characterPortrait: {fileID: 21300000, guid: 0d8872f581c4cb94fa566cfa45ea86bd, type: 3}
+    sentence: 'Hey, look at that! You found another upgrade! '
+    side: 0
+  - characterName: Scrapp
+    characterPortrait: {fileID: 21300000, guid: f619f38b297f67c47ab9a994081a0854, type: 3}
+    sentence: "This could help\u2014"
+    side: 0
+  - characterName: Steve-E194
+    characterPortrait: {fileID: 21300000, guid: 0c1943b4994a7b640a2ac6ddcbee8556, type: 3}
+    sentence: 'UPGRADE GRANTED: Move on liquid'
+    side: 1
+  - characterName: Scrapp
+    characterPortrait: {fileID: 21300000, guid: 3f6c269d49154cc4e8772fa752cae3ad, type: 3}
+    sentence: Now you can move faster through that radioactive water
+    side: 0
+  - characterName: Scrapp
+    characterPortrait: {fileID: 21300000, guid: 376349d1c4716cb42b7369453ee22532, type: 3}
+    sentence: "\u2014and avoid getting stuck in poison pools!"
+    side: 0
+  - characterName: Day 4
+    characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
+    sentence: 
+    side: 0
+  - characterName: Day 4
+    characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
+    sentence: 
+    side: 1
+  - characterName: Salvage
+    characterPortrait: {fileID: 21300000, guid: ce6a7aa7e94d6a84b88e322731465de8, type: 3}
+    sentence: Next mission, Steve-E. Head south to the toxic lake.
+    side: 1
+  - characterName: Scrapp
+    characterPortrait: {fileID: 21300000, guid: 3f6c269d49154cc4e8772fa752cae3ad, type: 3}
+    sentence: Another New Day!
+    side: 0
+  - characterName: Salvage
+    characterPortrait: {fileID: 21300000, guid: 03b3f5f793980224da33e03501db8a8e, type: 3}
+    sentence: Your objective is to collect some resources from the ponds for fuels.
+    side: 1
+  - characterName: Salvage
+    characterPortrait: {fileID: 21300000, guid: e1c9d15029099db408049ff37f8c7812, type: 3}
+    sentence: " And remember, this area\u2019s no safer than the last, so keep your
+      sensors sharp"
+    side: 1
+  - characterName: Scrapp
+    characterPortrait: {fileID: 21300000, guid: f619f38b297f67c47ab9a994081a0854, type: 3}
+    sentence: (singing)
+    side: 0
+  - characterName: Scrapp
+    characterPortrait: {fileID: 21300000, guid: 3f6c269d49154cc4e8772fa752cae3ad, type: 3}
+    sentence: " \u201CThere once was a ship that put to sea\u2026\u201D"
+    side: 0
+  - characterName: Salvage
+    characterPortrait: {fileID: 21300000, guid: 3879ae633b8e1db408baaa58cdfc2915, type: 3}
+    sentence: "You won\u2019t be swimming in a sea, just some poison ponds. Please
+      ignore Dr. Scrapp."
+    side: 1
+  - characterName: Scrapp
+    characterPortrait: {fileID: 21300000, guid: 376349d1c4716cb42b7369453ee22532, type: 3}
+    sentence: Aww, Salva, listen to me for once!
+    side: 0
+  - characterName: Scrapp
+    characterPortrait: {fileID: 21300000, guid: 0d8872f581c4cb94fa566cfa45ea86bd, type: 3}
+    sentence: "This used to be a massive nuclear reactor down the hill, handling
+      biowaste and all that good stuff\u2026"
+    side: 0
+  - characterName: Scrapp
+    characterPortrait: {fileID: 21300000, guid: 376349d1c4716cb42b7369453ee22532, type: 3}
+    sentence: Until they went bankrupt a few decades back.
+    side: 0
+  - characterName: Salvage
+    characterPortrait: {fileID: 21300000, guid: ce6a7aa7e94d6a84b88e322731465de8, type: 3}
+    sentence: Right. And now all those toxic rivers flow down into tons of little
+      lovely, deadly basins.
+    side: 1
+  - characterName: Scrapp
+    characterPortrait: {fileID: 21300000, guid: 3f6c269d49154cc4e8772fa752cae3ad, type: 3}
+    sentence: "Anyway, Steve-E, it\u2019s your time to shine!"
+    side: 0
+  - characterName: Scrapp
+    characterPortrait: {fileID: 21300000, guid: f619f38b297f67c47ab9a994081a0854, type: 3}
+    sentence: "Open the gate! and let\u2019s get the collecting starting!"
+    side: 0
