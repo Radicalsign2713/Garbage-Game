@@ -294,7 +294,7 @@ MonoBehaviour:
   typingSpeed: 0.05
   bounceAmount: 5
   bounceSpeed: 2
-  testDialogue: {fileID: 11400000, guid: cc9b02cbf05c00c438abdae4a7d30583, type: 2}
+  testDialogue: {fileID: 11400000, guid: 71e3eafd1ee10b844ae1e7ccadc3079d, type: 2}
   isFinished: 0
 --- !u!4 &452371638
 Transform:
@@ -772,7 +772,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -67.5}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 1000, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1944029994
 MonoBehaviour:
