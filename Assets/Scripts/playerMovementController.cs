@@ -34,6 +34,7 @@ public class PlayerMovementController : MonoBehaviour
     public bool on_ice = false;
     public bool on_mud = false;
     public bool on_liquid = false;
+    public bool on_island = false;
     public float liquid_dx = 1;
     public float liquid_dy = 1;
         
@@ -106,6 +107,7 @@ public class PlayerMovementController : MonoBehaviour
         float acelleration_scalar = 1;
         if(on_ice) {acelleration_scalar = 0.2f;}
         float speed_scalar = 1;
+        if(on_mud) {speed_scalar = 0.33f;}
         if (dh == "right") {
             if (horizontal_velocity < speed_scalar * max_speed) {
                 horizontal_velocity += acelleration_scalar * acelleration * Time.deltaTime;
@@ -225,7 +227,7 @@ public class PlayerMovementController : MonoBehaviour
         {
             float extra_horizontal_velocity = 0;
             float extra_vertical_velocity = 0;
-            if(on_liquid) {
+            if(on_liquid & !on_island) {
                 extra_horizontal_velocity = liquid_dx;
                 extra_vertical_velocity = liquid_dy;
             }

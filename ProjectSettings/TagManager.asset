@@ -45,11 +45,11 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
-    uniqueID: 0
-    locked: 0
   - name: Water
     uniqueID: 4284184773
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0
   - name: Steve-E
     uniqueID: 3456026979
