@@ -1667,10 +1667,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barriers
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2201522757807345875, guid: 0d12c8381fcb44706974ff82f3479924, type: 3}
     m_RemovedGameObjects:
     - {fileID: 2211753590776162434, guid: 0d12c8381fcb44706974ff82f3479924, type: 3}
-    - {fileID: 3740103351819039452, guid: 0d12c8381fcb44706974ff82f3479924, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d12c8381fcb44706974ff82f3479924, type: 3}

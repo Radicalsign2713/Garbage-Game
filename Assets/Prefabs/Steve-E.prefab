@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 932404901574285455}
   - component: {fileID: 4531002022545599861}
   - component: {fileID: 5051429030311280860}
+  - component: {fileID: 2943525779179886531}
   m_Layer: 0
   m_Name: Steve-E
   m_TagString: Player
@@ -50,7 +51,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   battery: 100
-  max_speed: 4
+  max_speed: 5.5
   acelleration: 60
   player_friction: 45
   button_left1: a
@@ -69,6 +70,7 @@ MonoBehaviour:
   on_ice: 0
   on_mud: 0
   on_liquid: 0
+  on_island: 0
   liquid_dx: 0
   liquid_dy: 2.5
 --- !u!50 &932404901574285455
@@ -153,12 +155,12 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: de709b5458a5a448eabc7aaa8593d381, type: 3}
+  m_audioClip: {fileID: 8300000, guid: bf338b7eaedf54431938d8f842c2d3c5, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 1
-  Mute: 0
+  Mute: 1
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
@@ -239,6 +241,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2943525779179886531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2263208197557889762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e15c38f03639e49788d9364ab3d8470d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4028987972420848352
 GameObject:
   m_ObjectHideFlags: 0
@@ -320,8 +334,8 @@ SpriteMask:
   m_MaskAlphaCutoff: 0.507
   m_FrontSortingLayerID: -838940317
   m_BackSortingLayerID: -838940317
-  m_FrontSortingLayer: 2
-  m_BackSortingLayer: 2
+  m_FrontSortingLayer: 1
+  m_BackSortingLayer: 1
   m_FrontSortingOrder: 10
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 1
@@ -402,7 +416,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -838940317
-  m_SortingLayer: 2
+  m_SortingLayer: 1
   m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 6411b331e02274435bb519bd7c4d5089, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
