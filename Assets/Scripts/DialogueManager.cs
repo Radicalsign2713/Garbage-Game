@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement; // Required for scene management
 
 public class DialogueManager : MonoBehaviour
 {
@@ -11,6 +12,11 @@ public class DialogueManager : MonoBehaviour
     public Image characterLeftPortrait; // Portrait for the character on the left
     public Image characterRightPortrait; // Portrait for the character on the right
     public GameObject dialogueUI; // Reference to the dialogue UI panel
+    public GameObject skipDialoguePanel; // UI panel for skip confirmation
+    public TMP_Text skipSummaryText; // Text for skip summary
+    public Button skipButton; // Button to trigger skip confirmation
+    public Button confirmSkipButton; // Button to confirm skipping dialogue
+    public Button cancelSkipButton; // Button to cancel skipping dialogue
 
     public float typingSpeed = 0.05f;
     public float bounceAmount = 5f; // Amount of movement for the hop
@@ -45,7 +51,12 @@ public class DialogueManager : MonoBehaviour
         dialogueUI.SetActive(false);
         characterLeftPortrait.gameObject.SetActive(false);
         characterRightPortrait.gameObject.SetActive(false);
-        //TriggerDialogue();
+        skipDialoguePanel.SetActive(false);
+
+        // Add listeners to buttons
+        skipButton.onClick.AddListener(ShowSkipConfirmation);
+        confirmSkipButton.onClick.AddListener(SkipDialogue);
+        cancelSkipButton.onClick.AddListener(HideSkipConfirmation);
     }
 
     void Update()
@@ -180,7 +191,7 @@ public class DialogueManager : MonoBehaviour
         isTyping = false;
     }
 
-    void FinishTyping()
+    public void FinishTyping()
     {
         // Finish typing the current sentence immediately
         if (typingCoroutine != null)
@@ -191,7 +202,7 @@ public class DialogueManager : MonoBehaviour
         dialogueText.text = currentLine.sentence;
     }
 
-    void HighlightCharacter(Image characterPortrait, Vector3 originalPosition)
+    public void HighlightCharacter(Image characterPortrait, Vector3 originalPosition)
     {
         // Set the character to full brightness and start the hop animation
         characterPortrait.color = new Color(1f, 1f, 1f, 1f); // Full brightness
@@ -201,7 +212,7 @@ public class DialogueManager : MonoBehaviour
         portraitCoroutine = StartCoroutine(AnimateCharacterPortrait(characterPortrait, originalPosition));
     }
 
-    void DimCharacter(Image characterPortrait, Vector3 originalPosition)
+    public void DimCharacter(Image characterPortrait, Vector3 originalPosition)
     {
         // Dim the character and stop any bounce animation
         characterPortrait.color = new Color(0.5f, 0.5f, 0.5f, 1f); // Dimmed brightness
@@ -231,5 +242,25 @@ public class DialogueManager : MonoBehaviour
         characterRightPortrait.gameObject.SetActive(false);
 
         isFinished = true;
+    }
+
+    // Show the skip confirmation panel
+    public void ShowSkipConfirmation()
+    {
+        skipDialoguePanel.SetActive(true);
+        skipSummaryText.text = "Summary: This dialogue is about Steve-E being given instructions to help with the HUMAN FLY FAR project and scavenging for parts.";
+    }
+
+    // Hide the skip confirmation panel
+    public void HideSkipConfirmation()
+    {
+        skipDialoguePanel.SetActive(false);
+    }
+
+    // Skip the current dialogue and load the next scene
+    public void SkipDialogue()
+    {
+        skipDialoguePanel.SetActive(false);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
