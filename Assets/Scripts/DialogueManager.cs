@@ -95,6 +95,7 @@ public class DialogueManager : MonoBehaviour
     {
         // Show the dialogue UI
         dialogueUI.SetActive(true);
+        skipButton.gameObject.SetActive(true);
 
         // Clear out any existing sentences
         sentences.Clear();
@@ -191,7 +192,7 @@ public class DialogueManager : MonoBehaviour
         isTyping = false;
     }
 
-    public void FinishTyping()
+    void FinishTyping()
     {
         // Finish typing the current sentence immediately
         if (typingCoroutine != null)
@@ -202,7 +203,7 @@ public class DialogueManager : MonoBehaviour
         dialogueText.text = currentLine.sentence;
     }
 
-    public void HighlightCharacter(Image characterPortrait, Vector3 originalPosition)
+    void HighlightCharacter(Image characterPortrait, Vector3 originalPosition)
     {
         // Set the character to full brightness and start the hop animation
         characterPortrait.color = new Color(1f, 1f, 1f, 1f); // Full brightness
@@ -212,7 +213,7 @@ public class DialogueManager : MonoBehaviour
         portraitCoroutine = StartCoroutine(AnimateCharacterPortrait(characterPortrait, originalPosition));
     }
 
-    public void DimCharacter(Image characterPortrait, Vector3 originalPosition)
+    void DimCharacter(Image characterPortrait, Vector3 originalPosition)
     {
         // Dim the character and stop any bounce animation
         characterPortrait.color = new Color(0.5f, 0.5f, 0.5f, 1f); // Dimmed brightness
@@ -236,29 +237,33 @@ public class DialogueManager : MonoBehaviour
         characterLeftPortrait.rectTransform.localPosition = initialLeftPortraitPosition;
         characterRightPortrait.rectTransform.localPosition = initialRightPortraitPosition;
 
-        // Hide the dialogue UI and portraits
+        // Hide the dialogue UI, portraits, and skip button
         dialogueUI.SetActive(false);
         characterLeftPortrait.gameObject.SetActive(false);
         characterRightPortrait.gameObject.SetActive(false);
+        skipButton.gameObject.SetActive(false);
 
         isFinished = true;
     }
 
     // Show the skip confirmation panel
-    public void ShowSkipConfirmation()
+    void ShowSkipConfirmation()
     {
         skipDialoguePanel.SetActive(true);
-        skipSummaryText.text = "Summary: This dialogue is about Steve-E being given instructions to help with the HUMAN FLY FAR project and scavenging for parts.";
+        if (testDialogue != null)
+        {
+            skipSummaryText.text = testDialogue.dialogueSummary; // Use the summary from the dialogue object
+        }
     }
 
     // Hide the skip confirmation panel
-    public void HideSkipConfirmation()
+    void HideSkipConfirmation()
     {
         skipDialoguePanel.SetActive(false);
     }
 
     // Skip the current dialogue and load the next scene
-    public void SkipDialogue()
+    void SkipDialogue()
     {
         skipDialoguePanel.SetActive(false);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);

@@ -20,4 +20,8 @@ public class Dialogue : ScriptableObject
         Left,
         Right
     }
+
+    // Add the dialogue summary for skip dialogue functionality
+    [TextArea(3, 10)]
+    public string dialogueSummary; // Summary of the dialogue, used in skip confirmation panel
 }
