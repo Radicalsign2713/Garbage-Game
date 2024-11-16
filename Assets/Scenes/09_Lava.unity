@@ -1934,6 +1934,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1528132015859995631, guid: 0d12c8381fcb44706974ff82f3479924, type: 3}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
     - target: {fileID: 4080060567471462545, guid: 0d12c8381fcb44706974ff82f3479924, type: 3}
       propertyPath: m_LocalPosition.x
       value: 19.412676
@@ -1978,11 +1982,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barriers
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6276136203825335417, guid: 0d12c8381fcb44706974ff82f3479924, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2201522757807345875, guid: 0d12c8381fcb44706974ff82f3479924, type: 3}
     m_RemovedGameObjects:
     - {fileID: 2211753590776162434, guid: 0d12c8381fcb44706974ff82f3479924, type: 3}
-    - {fileID: 3740103351819039452, guid: 0d12c8381fcb44706974ff82f3479924, type: 3}
-    - {fileID: 1528132015859995631, guid: 0d12c8381fcb44706974ff82f3479924, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d12c8381fcb44706974ff82f3479924, type: 3}
