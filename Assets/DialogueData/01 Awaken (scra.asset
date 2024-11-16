@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 764f48e2076824ba58cc3eb7f0536e0b, type: 3}
-  m_Name: Scene 1 Awaken (scra
+  m_Name: 01 Awaken (scra
   m_EditorClassIdentifier: 
   lines:
   - characterName: 
@@ -291,3 +291,6 @@ MonoBehaviour:
     characterPortrait: {fileID: 21300000, guid: 3879ae633b8e1db408baaa58cdfc2915, type: 3}
     sentence: Open the Gate!
     side: 1
+  dialogueSummary: In 2099, with Earth buried in trash and humanity near extinction,
+    Steve-E194 is revived by Dr. Scrapp and Captain Salvage to help the HUMAN FLY
+    FAR project by scavenging parts for rockets to escape to Mars.

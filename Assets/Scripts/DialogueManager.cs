@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement; // Required for scene management
 
 public class DialogueManager : MonoBehaviour
 {
@@ -11,6 +12,11 @@ public class DialogueManager : MonoBehaviour
     public Image characterLeftPortrait; // Portrait for the character on the left
     public Image characterRightPortrait; // Portrait for the character on the right
     public GameObject dialogueUI; // Reference to the dialogue UI panel
+    public GameObject skipDialoguePanel; // UI panel for skip confirmation
+    public TMP_Text skipSummaryText; // Text for skip summary
+    public Button skipButton; // Button to trigger skip confirmation
+    public Button confirmSkipButton; // Button to confirm skipping dialogue
+    public Button cancelSkipButton; // Button to cancel skipping dialogue
 
     public float typingSpeed = 0.05f;
     public float bounceAmount = 5f; // Amount of movement for the hop
@@ -45,7 +51,12 @@ public class DialogueManager : MonoBehaviour
         dialogueUI.SetActive(false);
         characterLeftPortrait.gameObject.SetActive(false);
         characterRightPortrait.gameObject.SetActive(false);
-        //TriggerDialogue();
+        skipDialoguePanel.SetActive(false);
+
+        // Add listeners to buttons
+        skipButton.onClick.AddListener(ShowSkipConfirmation);
+        confirmSkipButton.onClick.AddListener(SkipDialogue);
+        cancelSkipButton.onClick.AddListener(HideSkipConfirmation);
     }
 
     void Update()
@@ -84,6 +95,7 @@ public class DialogueManager : MonoBehaviour
     {
         // Show the dialogue UI
         dialogueUI.SetActive(true);
+        skipButton.gameObject.SetActive(true);
 
         // Clear out any existing sentences
         sentences.Clear();
@@ -225,11 +237,35 @@ public class DialogueManager : MonoBehaviour
         characterLeftPortrait.rectTransform.localPosition = initialLeftPortraitPosition;
         characterRightPortrait.rectTransform.localPosition = initialRightPortraitPosition;
 
-        // Hide the dialogue UI and portraits
+        // Hide the dialogue UI, portraits, and skip button
         dialogueUI.SetActive(false);
         characterLeftPortrait.gameObject.SetActive(false);
         characterRightPortrait.gameObject.SetActive(false);
+        skipButton.gameObject.SetActive(false);
 
         isFinished = true;
+    }
+
+    // Show the skip confirmation panel
+    void ShowSkipConfirmation()
+    {
+        skipDialoguePanel.SetActive(true);
+        if (testDialogue != null)
+        {
+            skipSummaryText.text = testDialogue.dialogueSummary; // Use the summary from the dialogue object
+        }
+    }
+
+    // Hide the skip confirmation panel
+    void HideSkipConfirmation()
+    {
+        skipDialoguePanel.SetActive(false);
+    }
+
+    // Skip the current dialogue and load the next scene
+    void SkipDialogue()
+    {
+        skipDialoguePanel.SetActive(false);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
