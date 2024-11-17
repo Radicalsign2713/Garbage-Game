@@ -1040,7 +1040,7 @@ GameObject:
   - component: {fileID: 960358891}
   m_Layer: 4
   m_Name: Water (2)
-  m_TagString: Liquid
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1266,7 +1266,7 @@ GameObject:
   - component: {fileID: 1017859246}
   m_Layer: 4
   m_Name: Water (1)
-  m_TagString: Liquid
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2042,7 +2042,7 @@ GameObject:
   - component: {fileID: 1721457561}
   m_Layer: 4
   m_Name: Water (3)
-  m_TagString: Liquid
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2308,7 +2308,7 @@ GameObject:
   - component: {fileID: 1848042850}
   m_Layer: 4
   m_Name: Water (4)
-  m_TagString: Liquid
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
