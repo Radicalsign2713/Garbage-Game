@@ -184,13 +184,46 @@ public class DialogueManager : MonoBehaviour
     {
         isTyping = true;
         dialogueText.text = "";
-        foreach (char letter in sentence.ToCharArray())
+
+        // Convert any markdown-like syntax for bold into TMP rich text tags
+        string parsedSentence = sentence.Replace("**", "<b>");
+
+        // Use a flag to determine if we are in the middle of a rich text tag
+        bool inTag = false;
+
+        for (int i = 0; i < parsedSentence.Length; i++)
         {
-            dialogueText.text += letter;
-            yield return new WaitForSeconds(typingSpeed);
+            char currentChar = parsedSentence[i];
+
+            // Check if we are entering or exiting a rich text tag
+            if (currentChar == '<')
+            {
+                inTag = true;
+            }
+
+            // Append the current character
+            dialogueText.text += currentChar;
+
+            // If we are at the end of a tag
+            if (currentChar == '>')
+            {
+                inTag = false;
+            }
+
+            // If not in a tag, wait before adding the next character
+            if (!inTag)
+            {
+                yield return new WaitForSeconds(typingSpeed);
+            }
         }
+
+        // Ensure the final text is displayed correctly at the end
+        dialogueText.text = parsedSentence;
+
         isTyping = false;
     }
+
+
 
     void FinishTyping()
     {
