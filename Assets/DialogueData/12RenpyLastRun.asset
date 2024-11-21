@@ -87,3 +87,7 @@ MonoBehaviour:
     characterPortrait: {fileID: 21300000, guid: 3f6c269d49154cc4e8772fa752cae3ad, type: 3}
     sentence: "I can\u2019t wait to see Mars! Off you go, Steve-E. Open the gate!"
     side: 0
+  dialogueSummary: Steve-E194 returns from the organic wasteland with the final resources.
+    Back at the base, preparations for the rocket's launch are in full swing as Scrapp
+    and Salvage hustle to fuel the ship. With the clock ticking, the team braces
+    for their escape, envisioning Earth from the stars by the next day.
