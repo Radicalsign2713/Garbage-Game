@@ -17,6 +17,7 @@ public class DialogueManager : MonoBehaviour
     public Button skipButton;
     public Button confirmSkipButton;
     public Button cancelSkipButton;
+    public Toggle skipToNextSceneToggle; // Checkbox to skip to the next scene automatically
 
     public Image backgroundImage;
     public Image fadePanel;
@@ -306,6 +307,12 @@ public class DialogueManager : MonoBehaviour
         skipButton.gameObject.SetActive(false);
 
         isFinished = true;
+
+        // Check if we should skip to the next scene
+        if (skipToNextSceneToggle != null && skipToNextSceneToggle.isOn)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
 
     void ShowSkipConfirmation()
