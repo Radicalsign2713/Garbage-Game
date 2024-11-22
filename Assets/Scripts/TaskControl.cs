@@ -17,7 +17,11 @@ public class TaskControl : MonoBehaviour
         if(tag == "Garbage") {collected_garbages ++;}
         else if(tag == "Upgrade") {collected_upgrades ++;}
         if(total_garbages == collected_garbages & total_upgrades == collected_upgrades) {tasks_completed = true;}
+        if(total_upgrades != 0){
         ui.text = $"Garbage: {collected_garbages}/{total_garbages}\nUpgrade: {collected_upgrades}/{total_upgrades}";
+        } else{
+             ui.text = $"Garbage: {collected_garbages}/{total_garbages}";
+        }
     }
 
     // Start is called before the first frame update
@@ -29,7 +33,11 @@ public class TaskControl : MonoBehaviour
         total_garbages = GameObject.FindGameObjectsWithTag("Garbage").Length;
         total_upgrades = GameObject.FindGameObjectsWithTag("Upgrade").Length;
         ui = gameObject.GetComponentInChildren<TMP_Text>();
+        if(total_upgrades != 0){
         ui.text = $"Garbage: {collected_garbages}/{total_garbages}\nUpgrade: {collected_upgrades}/{total_upgrades}";
+        } else{
+             ui.text = $"Garbage: {collected_garbages}/{total_garbages}";
+        }
     }
     private void UPdateUI()
     {

@@ -242,8 +242,8 @@ public class PlayerMovementController : MonoBehaviour
 
             float battery_scaler = 1;
             if(on_lava){
+                lava_intensity = 5;
                 battery_scaler += lava_intensity;
-                lava_intensity += 2*Time.deltaTime;
             }
             else{lava_intensity = 0;}
             if(dh == "none" & dv == "none"){battery -= 0.1f*Time.deltaTime*battery_scaler;}
