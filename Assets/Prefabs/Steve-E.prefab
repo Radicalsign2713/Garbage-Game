@@ -135,7 +135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd9364fee1c884ea884c9645e89c6ba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  battery: 100
+  battery: 80
   max_speed: 5.5
   acelleration: 60
   player_friction: 45
