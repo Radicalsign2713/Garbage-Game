@@ -28,6 +28,11 @@ public class DialogueManager : MonoBehaviour
 
     public Dialogue testDialogue;
 
+    // New fields for music playback
+    public AudioSource audioSource;
+    public AudioClip introMusicClip; // First part of the song that plays once
+    public AudioClip loopMusicClip;  // Looping part of the song that plays indefinitely after intro ends
+
     private Coroutine typingCoroutine;
     private Coroutine portraitCoroutine;
     private Coroutine fadeCoroutine;
@@ -61,6 +66,9 @@ public class DialogueManager : MonoBehaviour
         skipButton.onClick.AddListener(ShowSkipConfirmation);
         confirmSkipButton.onClick.AddListener(SkipDialogue);
         cancelSkipButton.onClick.AddListener(HideSkipConfirmation);
+
+        // Start playing the music
+        PlayMusic();
     }
 
     void Update()
@@ -74,10 +82,12 @@ public class DialogueManager : MonoBehaviour
 
             if (isTyping)
             {
+                // If typing, complete the current line first
                 FinishTyping();
             }
             else if (fadeCoroutine == null)
             {
+                // Move to the next line if typing is finished
                 DisplayNextSentence();
             }
         }
@@ -224,11 +234,31 @@ public class DialogueManager : MonoBehaviour
     {
         isTyping = true;
         dialogueText.text = "";
-        foreach (char letter in sentence.ToCharArray())
+
+        int charIndex = 0;
+        bool insideTag = false;
+
+        while (charIndex < sentence.Length)
         {
-            dialogueText.text += letter;
-            yield return new WaitForSeconds(typingSpeed);
+            if (sentence[charIndex] == '<') // Begin a tag
+            {
+                insideTag = true;
+            }
+
+            dialogueText.text += sentence[charIndex];
+            charIndex++;
+
+            if (sentence[charIndex - 1] == '>') // End a tag
+            {
+                insideTag = false;
+            }
+
+            if (!insideTag)
+            {
+                yield return new WaitForSeconds(typingSpeed);
+            }
         }
+
         isTyping = false;
     }
 
@@ -326,5 +356,33 @@ public class DialogueManager : MonoBehaviour
     {
         skipDialoguePanel.SetActive(false);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    // New methods for music playback
+    private void PlayMusic()
+    {
+        if (audioSource == null || introMusicClip == null || loopMusicClip == null)
+        {
+            Debug.LogWarning("Missing audio source or music clips. Please assign them in the Inspector.");
+            return;
+        }
+
+        // Start with intro clip and set callback for when it finishes
+        audioSource.clip = introMusicClip;
+        audioSource.loop = false;
+        audioSource.Play();
+        Invoke(nameof(StartLoopingMusic), introMusicClip.length);
+    }
+
+    private void StartLoopingMusic()
+    {
+        if (audioSource == null || loopMusicClip == null)
+        {
+            return;
+        }
+
+        audioSource.clip = loopMusicClip;
+        audioSource.loop = true;
+        audioSource.Play();
     }
 }
