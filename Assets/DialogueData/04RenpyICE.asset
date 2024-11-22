@@ -79,3 +79,6 @@ MonoBehaviour:
     characterPortrait: {fileID: 21300000, guid: e1c9d15029099db408049ff37f8c7812, type: 3}
     sentence: Open the gate!
     side: 1
+  dialogueSummary: Steve-E194 is sent on a mission to the plastic fields up north,
+    a wasteland of debris from an old logistics hub explosion, to scavenge much-needed
+    plastic supplies as a looming storm approaches.

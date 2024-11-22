@@ -101,3 +101,6 @@ MonoBehaviour:
     characterPortrait: {fileID: 21300000, guid: f619f38b297f67c47ab9a994081a0854, type: 3}
     sentence: "Open the gate! and let\u2019s get the collecting starting!"
     side: 0
+  dialogueSummary: "After an upgrade to handle radioactive terrain, Steve-E194 is
+    sent south to the toxic lake\u2014a hazardous former reactor site turned deadly
+    lake\u2014to scavenge crucial fuel resources for the mission."

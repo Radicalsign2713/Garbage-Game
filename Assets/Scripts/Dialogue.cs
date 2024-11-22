@@ -10,8 +10,14 @@ public class Dialogue : ScriptableObject
         public Sprite characterPortrait; // Character's portrait
         public string sentence; // The sentence they speak
         public CharacterSide side; // Which side they are on (left or right)
+        
+        // New fields
+        public bool fadeToBlackBefore; // Should fade to black before this line?
+        public bool unFadeBefore; // Should un-fade before this line?
+        public Sprite newBackground; // Optional new background for this line
     }
 
+    public string dialogueSummary; // Summary of the dialogue for the skip option
     public DialogueLine[] lines; // Array of all dialogue lines
 
     // Enum to define which side the character is on
