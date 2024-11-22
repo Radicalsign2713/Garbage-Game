@@ -17,7 +17,6 @@ public class DialogueManager : MonoBehaviour
     public Button skipButton;
     public Button confirmSkipButton;
     public Button cancelSkipButton;
-    public Toggle skipToNextSceneToggle; // Checkbox to skip to the next scene automatically
 
     public Image backgroundImage;
     public Image fadePanel;
@@ -75,14 +74,17 @@ public class DialogueManager : MonoBehaviour
 
             if (isTyping)
             {
+                // If typing, complete the current line first
                 FinishTyping();
             }
             else if (fadeCoroutine == null)
             {
+                // Move to the next line if typing is finished
                 DisplayNextSentence();
             }
         }
     }
+
 
     public void TriggerDialogue()
     {
@@ -225,11 +227,31 @@ public class DialogueManager : MonoBehaviour
     {
         isTyping = true;
         dialogueText.text = "";
-        foreach (char letter in sentence.ToCharArray())
+
+        int charIndex = 0;
+        bool insideTag = false;
+
+        while (charIndex < sentence.Length)
         {
-            dialogueText.text += letter;
-            yield return new WaitForSeconds(typingSpeed);
+            if (sentence[charIndex] == '<') // Begin a tag
+            {
+                insideTag = true;
+            }
+
+            dialogueText.text += sentence[charIndex];
+            charIndex++;
+
+            if (sentence[charIndex - 1] == '>') // End a tag
+            {
+                insideTag = false;
+            }
+
+            if (!insideTag)
+            {
+                yield return new WaitForSeconds(typingSpeed);
+            }
         }
+
         isTyping = false;
     }
 
@@ -307,12 +329,6 @@ public class DialogueManager : MonoBehaviour
         skipButton.gameObject.SetActive(false);
 
         isFinished = true;
-
-        // Check if we should skip to the next scene
-        if (skipToNextSceneToggle != null && skipToNextSceneToggle.isOn)
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        }
     }
 
     void ShowSkipConfirmation()

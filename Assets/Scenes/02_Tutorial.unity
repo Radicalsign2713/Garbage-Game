@@ -1056,7 +1056,6 @@ MonoBehaviour:
   skipButton: {fileID: 832904410}
   confirmSkipButton: {fileID: 1812901479}
   cancelSkipButton: {fileID: 183331807}
-  skipToNextSceneToggle: {fileID: 0}
   backgroundImage: {fileID: 1613484873}
   fadePanel: {fileID: 165155775}
   typingSpeed: 0.03
@@ -3326,82 +3325,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 1
   m_SpriteSortPoint: 0
---- !u!1 &1784289170
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1784289173}
-  - component: {fileID: 1784289172}
-  - component: {fileID: 1784289171}
-  m_Layer: 0
-  m_Name: DialogueManager (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1784289171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1784289170}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8faa315f74da546dca952d44ca813469, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1784289172
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1784289170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5faa7b2119eb646fea349cb3b8fa630e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueText: {fileID: 396427814}
-  characterNameText: {fileID: 1088421064}
-  characterLeftPortrait: {fileID: 2130994850}
-  characterRightPortrait: {fileID: 1082295201}
-  dialogueUI: {fileID: 337407028}
-  skipDialoguePanel: {fileID: 1087801795}
-  skipSummaryText: {fileID: 554561672}
-  skipButton: {fileID: 832904410}
-  confirmSkipButton: {fileID: 1812901479}
-  cancelSkipButton: {fileID: 183331807}
-  skipToNextSceneToggle: {fileID: 0}
-  backgroundImage: {fileID: 1613484873}
-  fadePanel: {fileID: 165155775}
-  typingSpeed: 0.03
-  bounceAmount: 5
-  bounceSpeed: 2
-  fadeDuration: 1
-  testDialogue: {fileID: 11400000, guid: 4094f7e11a61b40edacbfe500f89a323, type: 2}
-  isFinished: 1
---- !u!4 &1784289173
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1784289170}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5774.6416, y: 1805.8838, z: 6.308716}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1812901474
 GameObject:
   m_ObjectHideFlags: 0
@@ -4005,4 +3928,3 @@ SceneRoots:
   - {fileID: 585984625}
   - {fileID: 1223737527}
   - {fileID: 436037987}
-  - {fileID: 1784289173}
