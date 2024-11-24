@@ -2329,6 +2329,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6987048420066011384, guid: 3a09d1328a9454c7cbe7361410b1dc96, type: 3}
+      propertyPath: movementController
+      value: 
+      objectReference: {fileID: 1422826356}
     - target: {fileID: 8778476990557322194, guid: 3a09d1328a9454c7cbe7361410b1dc96, type: 3}
       propertyPath: m_Name
       value: Map (static)
@@ -3066,6 +3070,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f22819bf132b84eeaae8ef8d5f5849db, type: 3}
+--- !u!114 &1422826356 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4056893500182110581, guid: f22819bf132b84eeaae8ef8d5f5849db, type: 3}
+  m_PrefabInstance: {fileID: 1422826355}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956686562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd9364fee1c884ea884c9645e89c6ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1459078490
 PrefabInstance:
   m_ObjectHideFlags: 0
