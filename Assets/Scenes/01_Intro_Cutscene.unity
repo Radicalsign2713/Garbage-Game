@@ -122,6 +122,81 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &61937517
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 61937518}
+  - component: {fileID: 61937519}
+  - component: {fileID: 61937520}
+  m_Layer: 5
+  m_Name: SecondaryBackgroundImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &61937518
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61937517}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.2552, y: 2.2552, z: 2.2552}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1144093642}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1000, y: 1000}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &61937519
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61937517}
+  m_CullTransparentMesh: 1
+--- !u!114 &61937520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61937517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 6bd4b8142a6f04e2db7e7979f9274ae1, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &67035393
 GameObject:
   m_ObjectHideFlags: 0
@@ -597,6 +672,7 @@ MonoBehaviour:
   confirmSkipButton: {fileID: 1552062674}
   cancelSkipButton: {fileID: 1012736661}
   backgroundImage: {fileID: 1623196962}
+  secondaryBackgroundImage: {fileID: 61937520}
   fadePanel: {fileID: 2125092784}
   typingSpeed: 0.03
   bounceAmount: 5
@@ -604,8 +680,8 @@ MonoBehaviour:
   fadeDuration: 1
   testDialogue: {fileID: 11400000, guid: cc9b02cbf05c00c438abdae4a7d30583, type: 2}
   audioSource: {fileID: 452371640}
-  introMusicClip: {fileID: 8300000, guid: de709b5458a5a448eabc7aaa8593d381, type: 3}
-  loopMusicClip: {fileID: 8300000, guid: 1d4d4c33090134b40ad22222f0fe292c, type: 3}
+  introMusicClip: {fileID: 8300000, guid: 2395a15121c9e433dbe7e0975e193583, type: 3}
+  loopMusicClip: {fileID: 8300000, guid: 6e5548cf8fcc8464281554d54b6519dc, type: 3}
   isFinished: 0
 --- !u!4 &452371638
 Transform:
@@ -1358,10 +1434,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1623196960}
-  - {fileID: 2125092786}
+  - {fileID: 61937518}
   - {fileID: 2069351291}
   - {fileID: 806512248}
   - {fileID: 213533010}
+  - {fileID: 2125092786}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1747,7 +1824,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 02986c0d5dc5a43f795f37d6d2901a9a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6bd4b8142a6f04e2db7e7979f9274ae1, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

@@ -19,7 +19,8 @@ public class DialogueManager : MonoBehaviour
     public Button cancelSkipButton;
 
     public Image backgroundImage;
-    public Image fadePanel;
+    public Image secondaryBackgroundImage; // Used for cross-fading backgrounds
+    public Image fadePanel; // Panel used for fade-to-black transition
 
     public float typingSpeed = 0.05f;
     public float bounceAmount = 5f;
@@ -28,14 +29,15 @@ public class DialogueManager : MonoBehaviour
 
     public Dialogue testDialogue;
 
-    // New fields for music playback
+    // Music playback
     public AudioSource audioSource;
-    public AudioClip introMusicClip; // First part of the song that plays once
-    public AudioClip loopMusicClip;  // Looping part of the song that plays indefinitely after intro ends
+    public AudioClip introMusicClip;
+    public AudioClip loopMusicClip;
 
     private Coroutine typingCoroutine;
     private Coroutine portraitCoroutine;
     private Coroutine fadeCoroutine;
+    private Coroutine backgroundFadeCoroutine;
     private Vector3 initialLeftPortraitPosition;
     private Vector3 initialRightPortraitPosition;
 
@@ -46,7 +48,6 @@ public class DialogueManager : MonoBehaviour
 
     private bool isTyping;
     private bool isFading;
-    private bool isUnFading;
 
     public bool isFinished = false;
 
@@ -62,6 +63,7 @@ public class DialogueManager : MonoBehaviour
         characterRightPortrait.gameObject.SetActive(false);
         skipDialoguePanel.SetActive(false);
         fadePanel.gameObject.SetActive(false);
+        secondaryBackgroundImage.gameObject.SetActive(false);
 
         skipButton.onClick.AddListener(ShowSkipConfirmation);
         confirmSkipButton.onClick.AddListener(SkipDialogue);
@@ -75,19 +77,17 @@ public class DialogueManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return) || Input.GetMouseButtonDown(0))
         {
-            if (isFading || isUnFading)
+            if (isFading)
             {
-                return; // Prevent any interaction while fading/un-fading is in progress
+                return; // Prevent any interaction while fading is in progress
             }
 
             if (isTyping)
             {
-                // If typing, complete the current line first
                 FinishTyping();
             }
             else if (fadeCoroutine == null)
             {
-                // Move to the next line if typing is finished
                 DisplayNextSentence();
             }
         }
@@ -143,14 +143,15 @@ public class DialogueManager : MonoBehaviour
 
         currentLine = sentences.Dequeue();
 
-        // Fade transition before showing the new dialogue line
-        if (currentLine.fadeToBlackBefore)
+        // Handle fade-to-black transitions
+        if (currentLine.fadeToBlackTransitionBefore)
         {
-            fadeCoroutine = StartCoroutine(FadeToBlackAndDisplay());
+            fadeCoroutine = StartCoroutine(FadeToBlackTransition(() => DisplayLineWithTransitions()));
         }
-        else if (currentLine.unFadeBefore)
+        else if (currentLine.fadeToBlackTransitionAfter)
         {
-            fadeCoroutine = StartCoroutine(FadeFromBlackAndDisplay());
+            DisplayLineWithTransitions();
+            fadeCoroutine = StartCoroutine(FadeToBlackTransition(null));
         }
         else
         {
@@ -158,30 +159,23 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    private IEnumerator FadeToBlackAndDisplay()
+    private IEnumerator FadeToBlackTransition(System.Action callback)
     {
         isFading = true;
 
         fadePanel.gameObject.SetActive(true);
         yield return StartCoroutine(FadeIn(fadePanel, fadeDuration));
 
-        DisplayLineWithTransitions();
+        // Execute the callback (e.g., update the dialogue) while the screen is black
+        callback?.Invoke();
 
-        isFading = false;
-        fadeCoroutine = null;
-    }
+        yield return new WaitForSeconds(0.1f); // Pause briefly while the screen is black
 
-    private IEnumerator FadeFromBlackAndDisplay()
-    {
-        isUnFading = true;
-
-        fadePanel.gameObject.SetActive(true);
         yield return StartCoroutine(FadeOut(fadePanel, fadeDuration));
 
         fadePanel.gameObject.SetActive(false);
-        DisplayLineWithTransitions();
 
-        isUnFading = false;
+        isFading = false;
         fadeCoroutine = null;
     }
 
@@ -191,7 +185,15 @@ public class DialogueManager : MonoBehaviour
 
         if (currentLine.newBackground != null)
         {
-            backgroundImage.sprite = currentLine.newBackground;
+            // Cross-fade to the new background if they are different
+            if (backgroundImage.sprite != currentLine.newBackground)
+            {
+                if (backgroundFadeCoroutine != null)
+                {
+                    StopCoroutine(backgroundFadeCoroutine);
+                }
+                backgroundFadeCoroutine = StartCoroutine(CrossFadeBackground(currentLine.newBackground));
+            }
         }
 
         if (currentLine.side == Dialogue.CharacterSide.Left)
@@ -230,6 +232,36 @@ public class DialogueManager : MonoBehaviour
         typingCoroutine = StartCoroutine(TypeSentence(currentLine.sentence));
     }
 
+    IEnumerator CrossFadeBackground(Sprite newBackground)
+    {
+        isFading = true;
+
+        secondaryBackgroundImage.sprite = newBackground;
+        secondaryBackgroundImage.color = new Color(1, 1, 1, 0);
+        secondaryBackgroundImage.gameObject.SetActive(true);
+
+        float elapsedTime = 0;
+
+        while (elapsedTime < fadeDuration)
+        {
+            float alpha = elapsedTime / fadeDuration;
+
+            // Keep original background fully visible and fade in new background on top
+            secondaryBackgroundImage.color = new Color(1, 1, 1, alpha);
+
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        // Set the new background fully visible and deactivate the secondary background
+        backgroundImage.sprite = newBackground;
+        backgroundImage.color = new Color(1, 1, 1, 1);
+        secondaryBackgroundImage.gameObject.SetActive(false);
+
+        isFading = false;
+        backgroundFadeCoroutine = null;
+    }
+
     IEnumerator TypeSentence(string sentence)
     {
         isTyping = true;
@@ -240,7 +272,7 @@ public class DialogueManager : MonoBehaviour
 
         while (charIndex < sentence.Length)
         {
-            if (sentence[charIndex] == '<') // Begin a tag
+            if (sentence[charIndex] == '<')
             {
                 insideTag = true;
             }
@@ -248,7 +280,7 @@ public class DialogueManager : MonoBehaviour
             dialogueText.text += sentence[charIndex];
             charIndex++;
 
-            if (sentence[charIndex - 1] == '>') // End a tag
+            if (sentence[charIndex - 1] == '>')
             {
                 insideTag = false;
             }
@@ -358,7 +390,7 @@ public class DialogueManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    // New methods for music playback
+    // Music playback methods
     private void PlayMusic()
     {
         if (audioSource == null || introMusicClip == null || loopMusicClip == null)
@@ -367,11 +399,10 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
-        // Start with intro clip and set callback for when it finishes
         audioSource.clip = introMusicClip;
         audioSource.loop = false;
         audioSource.Play();
-        Invoke(nameof(StartLoopingMusic), introMusicClip.length);
+        Invoke(nameof(StartLoopingMusic), Mathf.Max(introMusicClip.length - 0.5f, 0));
     }
 
     private void StartLoopingMusic()

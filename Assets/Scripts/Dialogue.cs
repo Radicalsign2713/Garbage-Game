@@ -11,9 +11,9 @@ public class Dialogue : ScriptableObject
         public string sentence; // The sentence they speak
         public CharacterSide side; // Which side they are on (left or right)
         
-        // New fields
-        public bool fadeToBlackBefore; // Should fade to black before this line?
-        public bool unFadeBefore; // Should un-fade before this line?
+        // Updated fields for new transitions
+        public bool fadeToBlackTransitionBefore; // Should do a fade-to-black transition before this line?
+        public bool fadeToBlackTransitionAfter; // Should do a fade-to-black transition after this line?
         public Sprite newBackground; // Optional new background for this line
     }
 
