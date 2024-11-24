@@ -4,11 +4,9 @@ using UnityEngine;
 public class WaterOverlayController : MonoBehaviour
 {
     public PlayerMovementController movementController; // Reference to the PlayerMovementController script
-    public float fadeInSpeed = 2f;  // Speed for fading in
-    public float maxYOffset = 0.5f;  // Maximum upward movement offset when appearing
+    public float fadeSpeed = 0.1f;  // Speed for both fading in and fading out
 
     private SpriteRenderer spriteRenderer;  // Reference to SpriteRenderer for controlling the sprite's visibility
-    private Vector3 originalPosition;  // Store the original local position of the overlay
     private bool isActive = false;  // Check if the overlay is currently active
 
     void Start()
@@ -23,17 +21,16 @@ public class WaterOverlayController : MonoBehaviour
 
         // Make sure the sprite is initially invisible
         spriteRenderer.color = new Color(1, 1, 1, 0);
-        originalPosition = transform.localPosition;
     }
 
     void Update()
     {
-        if (movementController.on_liquid && !isActive)
+        if (movementController.on_liquid && !movementController.on_island && !isActive)
         {
             StartCoroutine(FadeInOverlay());
             isActive = true;
         }
-        else if (!movementController.on_liquid && isActive)
+        else if ((!movementController.on_liquid || movementController.on_island) && isActive)
         {
             StartCoroutine(FadeOutOverlay());
             isActive = false;
@@ -52,38 +49,31 @@ public class WaterOverlayController : MonoBehaviour
     {
         float elapsedTime = 0f;
 
-        Vector3 startPosition = originalPosition - new Vector3(0, maxYOffset, 0);
-        Vector3 targetPosition = originalPosition;
-
-        // Gradually increase alpha and move the overlay upwards
-        while (elapsedTime < fadeInSpeed)
+        // Gradually increase alpha to fade in quickly
+        while (elapsedTime < fadeSpeed)
         {
             elapsedTime += Time.deltaTime;
 
             // Adjust alpha to gradually fade in
-            float newAlpha = Mathf.Clamp01(elapsedTime / fadeInSpeed);
+            float newAlpha = Mathf.Clamp01(elapsedTime / fadeSpeed);
             spriteRenderer.color = new Color(1, 1, 1, newAlpha);
-
-            // Move the overlay upwards
-            transform.localPosition = Vector3.Lerp(startPosition, targetPosition, newAlpha);
 
             yield return null;
         }
 
         spriteRenderer.color = new Color(1, 1, 1, 1);
-        transform.localPosition = targetPosition;
     }
 
     IEnumerator FadeOutOverlay()
     {
         float elapsedTime = 0f;
 
-        // Gradually decrease alpha to fade out
-        while (elapsedTime < fadeInSpeed)
+        // Gradually decrease alpha to fade out quickly
+        while (elapsedTime < fadeSpeed)
         {
             elapsedTime += Time.deltaTime;
 
-            float newAlpha = Mathf.Clamp01(1 - (elapsedTime / fadeInSpeed));
+            float newAlpha = Mathf.Clamp01(1 - (elapsedTime / fadeSpeed));
             spriteRenderer.color = new Color(1, 1, 1, newAlpha);
 
             yield return null;
@@ -91,5 +81,24 @@ public class WaterOverlayController : MonoBehaviour
 
         // Make sure the sprite is completely invisible
         spriteRenderer.color = new Color(1, 1, 1, 0);
+    }
+
+    void OnTriggerStay2D(Collider2D other)
+    {
+        // Ensure the overlay fades out when touching anything tagged as "Island"
+        if (other.CompareTag("Island") && isActive)
+        {
+            StartCoroutine(FadeOutOverlay());
+            isActive = false;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        // Reset the overlay status when leaving the island
+        if (other.CompareTag("Island"))
+        {
+            isActive = false;
+        }
     }
 }
