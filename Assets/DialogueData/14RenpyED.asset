@@ -12,179 +12,287 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 764f48e2076824ba58cc3eb7f0536e0b, type: 3}
   m_Name: 14RenpyED
   m_EditorClassIdentifier: 
-  lines:
-  - characterName: Scrapp
-    characterPortrait: {fileID: 21300000, guid: 3f6c269d49154cc4e8772fa752cae3ad, type: 3}
-    sentence: "Welcome back, Steve-E! You gotta move fast\u2014the ship\u2019s set
-      to ascend tomorrow!"
-    side: 0
-  - characterName: Salvage
-    characterPortrait: {fileID: 21300000, guid: ce6a7aa7e94d6a84b88e322731465de8, type: 3}
-    sentence: Unload your resources here, right by the base!
-    side: 1
-  - characterName: Salvage
-    characterPortrait: {fileID: 21300000, guid: d61176972e8d1e440a7cdaa0f39d7409, type: 3}
-    sentence: "Scrapp, I need a hand with the fuel cells\u2014every unit counts!"
-    side: 1
-  - characterName: Scrapp
-    characterPortrait: {fileID: 21300000, guid: 376349d1c4716cb42b7369453ee22532, type: 3}
-    sentence: "AHHH, I\u2019m on it! You\u2019d think after all these years, fuel
-      those bots would be the easy part!"
-    side: 0
-  - characterName: Salvage
-    characterPortrait: {fileID: 21300000, guid: 03b3f5f793980224da33e03501db8a8e, type: 3}
-    sentence: "We\u2019re down to the wire here, so let\u2019s get this done right.
-      No mistakes."
-    side: 1
-  - characterName: Salvage
-    characterPortrait: {fileID: 21300000, guid: 03b3f5f793980224da33e03501db8a8e, type: 3}
-    sentence: "We\u2019re down to the wire here, so let\u2019s get this done right.
-      No mistakes."
-    side: 1
-  - characterName: Scrapp
-    characterPortrait: {fileID: 21300000, guid: 3f6c269d49154cc4e8772fa752cae3ad, type: 3}
-    sentence: "Hey, Steve-E, by this time tomorrow, we\u2019ll be looking down at
-      Earth\u2026"
-    side: 0
-  - characterName: Scrapp
-    characterPortrait: {fileID: 21300000, guid: f619f38b297f67c47ab9a994081a0854, type: 3}
-    sentence: From the space!
-    side: 0
-  - characterName: 'Last Chapter:'
-    characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
-    sentence: 
-    side: 0
-  - characterName: 'Last Chapter: Goodbye, to the earth '
-    characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
-    sentence: 
-    side: 1
-  - characterName: Captain Elias 'Salvage' Galileo
-    characterPortrait: {fileID: 21300000, guid: 03b3f5f793980224da33e03501db8a8e, type: 3}
-    sentence: When I was a kid, I remember summers by the river...
-    side: 1
-  - characterName: Captain Elias 'Salvage' Galileo
-    characterPortrait: {fileID: 21300000, guid: 03b3f5f793980224da33e03501db8a8e, type: 3}
-    sentence: "Green fields, flowers blooming\u2026"
-    side: 1
-  - characterName: Captain Elias 'Salvage' Galileo
-    characterPortrait: {fileID: 21300000, guid: ce6a7aa7e94d6a84b88e322731465de8, type: 3}
-    sentence: Maple trees taller than you could imagine.
-    side: 1
-  - characterName: Captain Elias 'Salvage' Galileo
-    characterPortrait: {fileID: 21300000, guid: 03b3f5f793980224da33e03501db8a8e, type: 3}
-    sentence: "The air smelled of rain, not\u2026"
-    side: 1
-  - characterName: Captain Elias 'Salvage' Galileo
-    characterPortrait: {fileID: 21300000, guid: ce6a7aa7e94d6a84b88e322731465de8, type: 3}
-    sentence: Rust and acid.
-    side: 1
-  - characterName: Doctor. Hikari 'Scrapp' Hoshino
-    characterPortrait: {fileID: 21300000, guid: 3f6c269d49154cc4e8772fa752cae3ad, type: 3}
-    sentence: And blue seas, endless skies. We could look up and actually see stars,
-    side: 0
-  - characterName: Doctor. Hikari 'Scrapp' Hoshino
-    characterPortrait: {fileID: 21300000, guid: 3627770099f24d54393a5aca19110a00, type: 3}
-    sentence: Not just..
-    side: 0
-  - characterName: Doctor. Hikari 'Scrapp' Hoshino
-    characterPortrait: {fileID: 21300000, guid: 3f6c269d49154cc4e8772fa752cae3ad, type: 3}
-    sentence: ...this toxic haze and this ruin world.
-    side: 0
-  - characterName: Doctor. Hikari 'Scrapp' Hoshino
-    characterPortrait: {fileID: 21300000, guid: 3627770099f24d54393a5aca19110a00, type: 3}
-    sentence: ' I used to think Earth was invincible. I guess we all did.'
-    side: 0
-  - characterName: Captain Elias 'Salvage' Galileo
-    characterPortrait: {fileID: 21300000, guid: ce6a7aa7e94d6a84b88e322731465de8, type: 3}
-    sentence: 'Guess we took her for granted  used her up and left nothing but bones. '
-    side: 1
-  - characterName: Captain Elias 'Salvage' Galileo
-    characterPortrait: {fileID: 21300000, guid: 03b3f5f793980224da33e03501db8a8e, type: 3}
-    sentence: Now, here we are,
-    side: 1
-  - characterName: Captain Elias 'Salvage' Galileo
-    characterPortrait: {fileID: 21300000, guid: e1c9d15029099db408049ff37f8c7812, type: 3}
-    sentence: 'Running away from the mess we made. '
-    side: 1
-  - characterName: Doctor. Hikari 'Scrapp' Hoshino
-    characterPortrait: {fileID: 21300000, guid: 3627770099f24d54393a5aca19110a00, type: 3}
-    sentence: ...
-    side: 0
-  - characterName: Doctor. Hikari 'Scrapp' Hoshino
-    characterPortrait: {fileID: 21300000, guid: 3f6c269d49154cc4e8772fa752cae3ad, type: 3}
-    sentence: "I always hoped we\u2019d find a way to stay. To heal this land of
-      birth. But now...  "
-    side: 0
-  - characterName: Doctor. Hikari 'Scrapp' Hoshino
-    characterPortrait: {fileID: 21300000, guid: 3627770099f24d54393a5aca19110a00, type: 3}
-    sentence: "...now it's too late, isn\u2019t it?"
-    side: 0
-  - characterName: Captain Elias 'Salvage' Galileo
-    characterPortrait: {fileID: 21300000, guid: 03b3f5f793980224da33e03501db8a8e, type: 3}
-    sentence: ......
-    side: 1
-  - characterName: Captain Elias 'Salvage' Galileo
-    characterPortrait: {fileID: 21300000, guid: ce6a7aa7e94d6a84b88e322731465de8, type: 3}
-    sentence: Yeah. Too late.
-    side: 1
-  - characterName: Doctor. Hikari 'Scrapp' Hoshino
-    characterPortrait: {fileID: 21300000, guid: 3627770099f24d54393a5aca19110a00, type: 3}
-    sentence: Goodbye, to our cradles and lullaby.
-    side: 0
-  - characterName: Doctor. Hikari 'Scrapp' Hoshino
-    characterPortrait: {fileID: 21300000, guid: 3f6c269d49154cc4e8772fa752cae3ad, type: 3}
-    sentence: ' wish if, we could have done better to you.'
-    side: 0
-  - characterName: Rocket System
-    characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
-    sentence: Captain, Doctor, E-194, please be embark in 3 minute.
-    side: 0
-  - characterName: Rocket System
-    characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
-    sentence: Countdown for ascent begins
-    side: 1
-  - characterName: Rocket System
-    characterPortrait: {fileID: 21300000, guid: 0c1943b4994a7b640a2ac6ddcbee8556, type: 3}
-    sentence: 5...
-    side: 0
-  - characterName: Rocket System
-    characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
-    sentence: 4...
-    side: 0
-  - characterName: Rocket System
-    characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
-    sentence: 3...
-    side: 1
-  - characterName: Rocket System
-    characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
-    sentence: 2...
-    side: 0
-  - characterName: Rocket System
-    characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
-    sentence: 1...
-    side: 1
-  - characterName: Rocket System
-    characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
-    sentence: We have a lift-off.
-    side: 1
-  - characterName: Rocket System
-    characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
-    sentence: 'Orbital location: 3rd Human Mars colonies, locked.'
-    side: 0
-  - characterName: Rocket System
-    characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
-    sentence: Prepare to engage second engine.
-    side: 1
-  - characterName: END
-    characterPortrait: {fileID: 21300000, guid: 0d8872f581c4cb94fa566cfa45ea86bd, type: 3}
-    sentence: 
-    side: 0
-  - characterName: THANK YOU
-    characterPortrait: {fileID: 21300000, guid: d61176972e8d1e440a7cdaa0f39d7409, type: 3}
-    sentence: 
-    side: 1
   dialogueSummary: As the rocket prepares for launch, Captain Salvage reminisces
     about green fields, clear skies, and rivers from a time long gone. With heavy
     hearts, they bid farewell to their cradle, lamenting humanity's failure to heal
     the planet. As flames engulf the rocket's base and it ascends into the sky, Earth
     is left behind, a scarred reminder of what was lost.
+  lines:
+  - characterName: Salvage
+    characterPortrait: {fileID: 21300000, guid: ce6a7aa7e94d6a84b88e322731465de8, type: 3}
+    sentence: Unload your resources here, right by the base!
+    side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 21300000, guid: e732ce27a355e43c4bbc6db144595fc3, type: 3}
+  - characterName: Salvage
+    characterPortrait: {fileID: 21300000, guid: d61176972e8d1e440a7cdaa0f39d7409, type: 3}
+    sentence: "Scrapp, I need a hand with the fuel cells\u2014every unit counts!"
+    side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
+  - characterName: Scrapp
+    characterPortrait: {fileID: 21300000, guid: 376349d1c4716cb42b7369453ee22532, type: 3}
+    sentence: "AHHH, I\u2019m on it! You\u2019d think after all these years, fuel
+      those bots would be the easy part!"
+    side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
+  - characterName: Salvage
+    characterPortrait: {fileID: 21300000, guid: 03b3f5f793980224da33e03501db8a8e, type: 3}
+    sentence: "We\u2019re down to the wire here, so let\u2019s get this done right.
+      No mistakes."
+    side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
+  - characterName: Salvage
+    characterPortrait: {fileID: 21300000, guid: 03b3f5f793980224da33e03501db8a8e, type: 3}
+    sentence: "We\u2019re down to the wire here, so let\u2019s get this done right.
+      No mistakes."
+    side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
+  - characterName: Scrapp
+    characterPortrait: {fileID: 21300000, guid: 3f6c269d49154cc4e8772fa752cae3ad, type: 3}
+    sentence: "Hey, Steve-E, by this time tomorrow, we\u2019ll be looking down at
+      Earth\u2026"
+    side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
+  - characterName: Scrapp
+    characterPortrait: {fileID: 21300000, guid: f619f38b297f67c47ab9a994081a0854, type: 3}
+    sentence: From the space!
+    side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
+  - characterName: 'Goodbye, to the earth '
+    characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
+    sentence: 
+    side: 0
+    fadeToBlackTransitionBefore: 1
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 21300000, guid: 6b63e5074a71c497b90268404b81fcb7, type: 3}
+  - characterName: Captain Elias 'Salvage' Galileo
+    characterPortrait: {fileID: 21300000, guid: 03b3f5f793980224da33e03501db8a8e, type: 3}
+    sentence: When I was a kid, I remember summers by the river...
+    side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
+  - characterName: Captain Elias 'Salvage' Galileo
+    characterPortrait: {fileID: 21300000, guid: 03b3f5f793980224da33e03501db8a8e, type: 3}
+    sentence: "Green fields, flowers blooming\u2026"
+    side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
+  - characterName: Captain Elias 'Salvage' Galileo
+    characterPortrait: {fileID: 21300000, guid: ce6a7aa7e94d6a84b88e322731465de8, type: 3}
+    sentence: Maple trees taller than you could imagine.
+    side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
+  - characterName: Captain Elias 'Salvage' Galileo
+    characterPortrait: {fileID: 21300000, guid: 03b3f5f793980224da33e03501db8a8e, type: 3}
+    sentence: "The air smelled of rain, not\u2026"
+    side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
+  - characterName: Captain Elias 'Salvage' Galileo
+    characterPortrait: {fileID: 21300000, guid: ce6a7aa7e94d6a84b88e322731465de8, type: 3}
+    sentence: Rust and acid.
+    side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
+  - characterName: Doctor. Hikari 'Scrapp' Hoshino
+    characterPortrait: {fileID: 21300000, guid: 3f6c269d49154cc4e8772fa752cae3ad, type: 3}
+    sentence: And blue seas, endless skies. We could look up and actually see stars,
+    side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
+  - characterName: Doctor. Hikari 'Scrapp' Hoshino
+    characterPortrait: {fileID: 21300000, guid: 3627770099f24d54393a5aca19110a00, type: 3}
+    sentence: Not just..
+    side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
+  - characterName: Doctor. Hikari 'Scrapp' Hoshino
+    characterPortrait: {fileID: 21300000, guid: 3f6c269d49154cc4e8772fa752cae3ad, type: 3}
+    sentence: ...this toxic haze and this ruin world.
+    side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
+  - characterName: Doctor. Hikari 'Scrapp' Hoshino
+    characterPortrait: {fileID: 21300000, guid: 3627770099f24d54393a5aca19110a00, type: 3}
+    sentence: ' I used to think Earth was invincible. I guess we all did.'
+    side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
+  - characterName: Captain Elias 'Salvage' Galileo
+    characterPortrait: {fileID: 21300000, guid: ce6a7aa7e94d6a84b88e322731465de8, type: 3}
+    sentence: 'Guess we took her for granted, used her up and left nothing but bones. '
+    side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
+  - characterName: Captain Elias 'Salvage' Galileo
+    characterPortrait: {fileID: 21300000, guid: 03b3f5f793980224da33e03501db8a8e, type: 3}
+    sentence: Now, here we are,
+    side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
+  - characterName: Captain Elias 'Salvage' Galileo
+    characterPortrait: {fileID: 21300000, guid: e1c9d15029099db408049ff37f8c7812, type: 3}
+    sentence: 'Running away from the mess we made. '
+    side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
+  - characterName: Doctor. Hikari 'Scrapp' Hoshino
+    characterPortrait: {fileID: 21300000, guid: 3627770099f24d54393a5aca19110a00, type: 3}
+    sentence: ...
+    side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
+  - characterName: Doctor. Hikari 'Scrapp' Hoshino
+    characterPortrait: {fileID: 21300000, guid: 3f6c269d49154cc4e8772fa752cae3ad, type: 3}
+    sentence: "I always hoped we\u2019d find a way to stay. To heal this land of
+      birth. But now...  "
+    side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
+  - characterName: Doctor. Hikari 'Scrapp' Hoshino
+    characterPortrait: {fileID: 21300000, guid: 3627770099f24d54393a5aca19110a00, type: 3}
+    sentence: "...now it's too late, isn\u2019t it?"
+    side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
+  - characterName: Captain Elias 'Salvage' Galileo
+    characterPortrait: {fileID: 21300000, guid: 03b3f5f793980224da33e03501db8a8e, type: 3}
+    sentence: ......
+    side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
+  - characterName: Captain Elias 'Salvage' Galileo
+    characterPortrait: {fileID: 21300000, guid: ce6a7aa7e94d6a84b88e322731465de8, type: 3}
+    sentence: Yeah. Too late.
+    side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
+  - characterName: Doctor. Hikari 'Scrapp' Hoshino
+    characterPortrait: {fileID: 21300000, guid: 3627770099f24d54393a5aca19110a00, type: 3}
+    sentence: Goodbye, to our cradles and lullaby.
+    side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
+  - characterName: Doctor. Hikari 'Scrapp' Hoshino
+    characterPortrait: {fileID: 21300000, guid: 3f6c269d49154cc4e8772fa752cae3ad, type: 3}
+    sentence: ' wish if, we could have done better to you.'
+    side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
+  - characterName: Rocket System
+    characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
+    sentence: Captain, Doctor, and SteveE-194, please come aboard in three minutes.
+    side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
+  - characterName: Rocket System
+    characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
+    sentence: Countdown for ascent begins
+    side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
+  - characterName: Rocket System
+    characterPortrait: {fileID: 21300000, guid: 0c1943b4994a7b640a2ac6ddcbee8556, type: 3}
+    sentence: 5...
+    side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
+  - characterName: Rocket System
+    characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
+    sentence: 4...
+    side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
+  - characterName: Rocket System
+    characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
+    sentence: 3...
+    side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
+  - characterName: Rocket System
+    characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
+    sentence: 2...
+    side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
+  - characterName: Rocket System
+    characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
+    sentence: 1...
+    side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
+  - characterName: Rocket System
+    characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
+    sentence: We have a lift-off.
+    side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
+  - characterName: Rocket System
+    characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
+    sentence: 'Orbital location: 3rd Human Mars colonies, locked.'
+    side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
+  - characterName: Rocket System
+    characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
+    sentence: Prepare to engage second engine.
+    side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
+  - characterName: END
+    characterPortrait: {fileID: 21300000, guid: 0d8872f581c4cb94fa566cfa45ea86bd, type: 3}
+    sentence: 
+    side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
+  - characterName: THANK YOU
+    characterPortrait: {fileID: 21300000, guid: d61176972e8d1e440a7cdaa0f39d7409, type: 3}
+    sentence: 
+    side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}

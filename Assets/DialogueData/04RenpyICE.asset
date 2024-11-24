@@ -12,73 +12,107 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 764f48e2076824ba58cc3eb7f0536e0b, type: 3}
   m_Name: 04RenpyICE
   m_EditorClassIdentifier: 
+  dialogueSummary: Steve-E194 is sent on a mission to the plastic fields up north,
+    a wasteland of debris from an old logistics hub explosion, to scavenge much-needed
+    plastic supplies as a looming storm approaches.
   lines:
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: d61176972e8d1e440a7cdaa0f39d7409, type: 3}
     sentence: Welcome back!
     side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 21300000, guid: e732ce27a355e43c4bbc6db144595fc3, type: 3}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 3f6c269d49154cc4e8772fa752cae3ad, type: 3}
     sentence: "Not bad, not bad! You learn quickly for a little bot. Look at that\u2014"
     side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: f619f38b297f67c47ab9a994081a0854, type: 3}
     sentence: "Hey, this caterpillar track still works! Guess 193 wasn\u2019t a total
       loss after all. "
     side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 251eb05ff2cef5446aa4c0f3bdebe3b6, type: 3}
     sentence: Let me do the upgrade for you.
     side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Steve-E194
     characterPortrait: {fileID: 21300000, guid: 0c1943b4994a7b640a2ac6ddcbee8556, type: 3}
     sentence: 'UPGRADE GRANTED: Move on sleek surface'
     side: 1
-  - characterName: Day 3
-    characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
-    sentence: 
-    side: 0
-  - characterName: Day 3
-    characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
-    sentence: 
-    side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 251eb05ff2cef5446aa4c0f3bdebe3b6, type: 3}
     sentence: Hey, Salva, did you see the latest weather scans?
     side: 0
+    fadeToBlackTransitionBefore: 1
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 376349d1c4716cb42b7369453ee22532, type: 3}
     sentence: "A huge storm is getting closer\u2014might hit us in a few weeks."
     side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: e1c9d15029099db408049ff37f8c7812, type: 3}
     sentence: Well, then no time to chat now.
     side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: 3879ae633b8e1db408baaa58cdfc2915, type: 3}
-    sentence: " Steve-E\u2019s, you, are heading to the plastic snowfields up north."
+    sentence: ' Steve-E, you, are heading to the plastic snowfields up north.'
     side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 3f6c269d49154cc4e8772fa752cae3ad, type: 3}
     sentence: "Right. You probably remember that place\u2014it used to be the biggest
       logistics harbour for plastics, back before the explosion that tore it up."
     side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 376349d1c4716cb42b7369453ee22532, type: 3}
     sentence: The whole place turned into a blizzard of plastic waste.
     side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: e1c9d15029099db408049ff37f8c7812, type: 3}
     sentence: Save the history lesson. You can talk on the road.
     side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: 03b3f5f793980224da33e03501db8a8e, type: 3}
     sentence: Alright, Off you go, Steve-E!
     side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: e1c9d15029099db408049ff37f8c7812, type: 3}
     sentence: Open the gate!
     side: 1
-  dialogueSummary: Steve-E194 is sent on a mission to the plastic fields up north,
-    a wasteland of debris from an old logistics hub explosion, to scavenge much-needed
-    plastic supplies as a looming storm approaches.
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}

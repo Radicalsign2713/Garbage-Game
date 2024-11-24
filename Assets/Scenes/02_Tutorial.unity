@@ -1028,7 +1028,7 @@ GameObject:
   - component: {fileID: 436037986}
   - component: {fileID: 436037988}
   m_Layer: 0
-  m_Name: DialogueManager
+  m_Name: OverlayDialogueManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1057,12 +1057,16 @@ MonoBehaviour:
   confirmSkipButton: {fileID: 1812901479}
   cancelSkipButton: {fileID: 183331807}
   backgroundImage: {fileID: 1613484873}
+  secondaryBackgroundImage: {fileID: 1613484873}
   fadePanel: {fileID: 165155775}
   typingSpeed: 0.03
   bounceAmount: 5
   bounceSpeed: 2
   fadeDuration: 1
   testDialogue: {fileID: 11400000, guid: 5ea35869213ae4cf3bd0a196c6d5d319, type: 2}
+  audioSource: {fileID: 0}
+  introMusicClip: {fileID: 0}
+  loopMusicClip: {fileID: 0}
   isFinished: 0
 --- !u!4 &436037987
 Transform:
@@ -2334,7 +2338,7 @@ GameObject:
   - component: {fileID: 1223737529}
   - component: {fileID: 1223737528}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: OverlayCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

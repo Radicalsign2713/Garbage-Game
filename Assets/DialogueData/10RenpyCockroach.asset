@@ -12,134 +12,207 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 764f48e2076824ba58cc3eb7f0536e0b, type: 3}
   m_Name: 10RenpyCockroach
   m_EditorClassIdentifier: 
+  dialogueSummary: With a cockroach-proof upgrade, Steve-E194 ventures into the organic
+    wasteland to gather essential waste for the rocket ecosystem. Navigating through
+    sticky mud puddles, Steve-E must tread carefully to succeed.
   lines:
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 251eb05ff2cef5446aa4c0f3bdebe3b6, type: 3}
     sentence: Welcome back! I thought that volcano would swallow you alive!
     side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 21300000, guid: e732ce27a355e43c4bbc6db144595fc3, type: 3}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: ce6a7aa7e94d6a84b88e322731465de8, type: 3}
     sentence: Precious metals and structural metals acquired. We can start building
       with these.
     side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 376349d1c4716cb42b7369453ee22532, type: 3}
     sentence: "Aww, no one\u2019s praising my fire-proof armor layer?"
     side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 376349d1c4716cb42b7369453ee22532, type: 3}
     sentence: "Come on!! that\u2019s super ultra high level tech protection!"
     side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: 3879ae633b8e1db408baaa58cdfc2915, type: 3}
     sentence: "\u201C\u2026Looks like there\u2019s some extra upgrade gear here."
     side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 3627770099f24d54393a5aca19110a00, type: 3}
     sentence: (sighs)
     side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 3f6c269d49154cc4e8772fa752cae3ad, type: 3}
     sentence: Fine, fine, let me handle it.
     side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Steve-E194
     characterPortrait: {fileID: 21300000, guid: 0c1943b4994a7b640a2ac6ddcbee8556, type: 3}
     sentence: 'UPDATE GRANTED: ROACH CAMO SPRAY'
     side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 251eb05ff2cef5446aa4c0f3bdebe3b6, type: 3}
     sentence: "Special chemical coating\u2026"
     side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: f619f38b297f67c47ab9a994081a0854, type: 3}
     sentence: Hey, Salva! Remember those giant cockroaches we talked about? The ones
       up east?
     side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: 3879ae633b8e1db408baaa58cdfc2915, type: 3}
     sentence: Yes. What about them?
     side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 376349d1c4716cb42b7369453ee22532, type: 3}
     sentence: "Well, they\u2019re starting to eat metals like it\u2019s their new
       favorite snack"
     side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 3f6c269d49154cc4e8772fa752cae3ad, type: 3}
     sentence: " This chemical coating should help Steve-E blend in\u2014and keep
       him off the menu."
     side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: ce6a7aa7e94d6a84b88e322731465de8, type: 3}
     sentence: "Good. Now you\u2019re officially cockroach-proof, Steve-E"
     side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: f619f38b297f67c47ab9a994081a0854, type: 3}
     sentence: "Lucky you, Steve-E. Looks like you\u2019ll be the only one here making
       friends with roaches!"
     side: 0
-  - characterName: Day 6
-    characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
-    sentence: 
-    side: 0
-  - characterName: Day 6
-    characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
-    sentence: 
-    side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: e1c9d15029099db408049ff37f8c7812, type: 3}
     sentence: "All right, A new day, Steve-E, here\u2019s the mission: we\u2019re
       heading to the organic wasteland up east."
     side: 1
+    fadeToBlackTransitionBefore: 1
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 3627770099f24d54393a5aca19110a00, type: 3}
     sentence: ...We should plant trees on the rocket...
     side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: 3879ae633b8e1db408baaa58cdfc2915, type: 3}
     sentence: "There\u2019s a massive amount of cockroaches there, but we need the
       organic waste to help rebuild ecosystems and produce food for the rocket."
     side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: e1c9d15029099db408049ff37f8c7812, type: 3}
     sentence: So proceed with caution.
     side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 3f6c269d49154cc4e8772fa752cae3ad, type: 3}
     sentence: "Just a little heads-up\u2026 back when you were made, cockroaches
       weren\u2019t, you know, massive or smart enough to hold a conversation."
     side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: 03b3f5f793980224da33e03501db8a8e, type: 3}
     sentence: Correct. Based on recent investigations, the cockroaches at this site
       have evolved intelligence and developed a basic level of civilization.
     side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 251eb05ff2cef5446aa4c0f3bdebe3b6, type: 3}
     sentence: "Oh, they\u2019re even picking up languages now! I bet they can even
       do math!"
     side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: e1c9d15029099db408049ff37f8c7812, type: 3}
     sentence: "Scrapp, please. I doubt they\u2019re that smart, and I wouldn\u2019t
       call them friendly either."
     side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: 03b3f5f793980224da33e03501db8a8e, type: 3}
     sentence: Steve-E, avoid engaging with any cockroach if you get close.
     side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 251eb05ff2cef5446aa4c0f3bdebe3b6, type: 3}
     sentence: "Nah, don\u2019t listen to Salva\u2014cockroaches that can talk?"
     side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 0d8872f581c4cb94fa566cfa45ea86bd, type: 3}
     sentence: "That\u2019s cool as hell!"
     side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: 3879ae633b8e1db408baaa58cdfc2915, type: 3}
     sentence: "Let\u2019s just end this conversation here. Open the gate!"
     side: 1
-  dialogueSummary: With a cockroach-proof upgrade, Steve-E194 ventures into the organic
-    wasteland to gather essential waste for the rocket ecosystem. Navigating through
-    sticky mud puddles, Steve-E must tread carefully to succeed.
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}

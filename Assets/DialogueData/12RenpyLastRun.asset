@@ -12,82 +12,119 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 764f48e2076824ba58cc3eb7f0536e0b, type: 3}
   m_Name: 12RenpyLastRun
   m_EditorClassIdentifier: 
+  dialogueSummary: Steve-E194 returns from the organic wasteland with the final resources.
+    Back at the base, preparations for the rocket's launch are in full swing as Scrapp
+    and Salvage hustle to fuel the ship. With the clock ticking, the team braces
+    for their escape, envisioning Earth from the stars by the next day.
   lines:
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 251eb05ff2cef5446aa4c0f3bdebe3b6, type: 3}
     sentence: "Holy smokes\u2026"
     side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 21300000, guid: e732ce27a355e43c4bbc6db144595fc3, type: 3}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: ce6a7aa7e94d6a84b88e322731465de8, type: 3}
     sentence: "Never thought I\u2019d see a cockroach quoting the mass-energy equivalence
       theory."
     side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 376349d1c4716cb42b7369453ee22532, type: 3}
     sentence: "At this rate, they\u2019re gonna take over the world soon after we\u2019re
       gone!"
     side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: d61176972e8d1e440a7cdaa0f39d7409, type: 3}
     sentence: "\u201CInsane\u2026 Anyway, welcome back, Steve-E!"
     side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: 03b3f5f793980224da33e03501db8a8e, type: 3}
     sentence: "Looks like you\u2019ve gathered everything we need."
     side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: f619f38b297f67c47ab9a994081a0854, type: 3}
     sentence: Glad you made it through without becoming a cockroach snack!
     side: 0
-  - characterName: Day 7
-    characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
-    sentence: 
-    side: 0
-  - characterName: Day 7
-    characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
-    sentence: 
-    side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: d61176972e8d1e440a7cdaa0f39d7409, type: 3}
     sentence: "The ship finally has all its key components ready for assembly\u2026"
     side: 1
+    fadeToBlackTransitionBefore: 1
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: f619f38b297f67c47ab9a994081a0854, type: 3}
     sentence: "Booster, check. Structure bone, check. Ecology incubator, check\u2026"
     side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: 3879ae633b8e1db408baaa58cdfc2915, type: 3}
     sentence: "But remember, this is it. We\u2019re not coming back to Earth\u2026
       ever."
     side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: e1c9d15029099db408049ff37f8c7812, type: 3}
     sentence: "We\u2019ll need you to make one final sweep across every location
       we\u2019ve visited.  Collect as many resources as possible "
     side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: ce6a7aa7e94d6a84b88e322731465de8, type: 3}
     sentence: "\u2014anything that could help keep us alive on the journey to Mars."
     side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: ce6a7aa7e94d6a84b88e322731465de8, type: 3}
     sentence: This is your last mission, Steve-E.
     side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 3f6c269d49154cc4e8772fa752cae3ad, type: 3}
     sentence: "Good news, though! This should be the last trip out. By the time you\u2019re
       back, we\u2019ll be ready to lift off!"
     side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: 03b3f5f793980224da33e03501db8a8e, type: 3}
     sentence: "Right. I\u2019ve got my hands full preparing everything before the
       storm rolls in. Let\u2019s get this done."
     side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 3f6c269d49154cc4e8772fa752cae3ad, type: 3}
     sentence: "I can\u2019t wait to see Mars! Off you go, Steve-E. Open the gate!"
     side: 0
-  dialogueSummary: Steve-E194 returns from the organic wasteland with the final resources.
-    Back at the base, preparations for the rocket's launch are in full swing as Scrapp
-    and Salvage hustle to fuel the ship. With the clock ticking, the team braces
-    for their escape, envisioning Earth from the stars by the next day.
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}

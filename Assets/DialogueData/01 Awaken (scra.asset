@@ -70,15 +70,15 @@ MonoBehaviour:
     sentence: 'Year 2099, humanity is on the verge of extinction.  '
     side: 0
     fadeToBlackTransitionBefore: 0
-    fadeToBlackTransitionAfter: 1
+    fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 3f6c269d49154cc4e8772fa752cae3ad, type: 3}
     sentence: "You know, Salva, if you could just see it from my eyes\u2026...."
     side: 0
-    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionBefore: 1
     fadeToBlackTransitionAfter: 0
-    newBackground: {fileID: 21300000, guid: 3f06148216b854fb29a9daf85280b711, type: 3}
+    newBackground: {fileID: 21300000, guid: f2916b5b54fa64f479d31892ea7e5c4c, type: 3}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 3f6c269d49154cc4e8772fa752cae3ad, type: 3}
     sentence: This trash mountain would look exactly like a diamond mine!
@@ -198,7 +198,7 @@ MonoBehaviour:
     characterPortrait: {fileID: 21300000, guid: 3f6c269d49154cc4e8772fa752cae3ad, type: 3}
     sentence: "...All right, let\u2019s hear what you\u2019ve got to say, Steve-E."
     side: 0
-    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionBefore: 1
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 21300000, guid: e732ce27a355e43c4bbc6db144595fc3, type: 3}
   - characterName: Steve-E194
@@ -275,8 +275,8 @@ MonoBehaviour:
   - characterName: Steve-E194
     characterPortrait: {fileID: 21300000, guid: 0c1943b4994a7b640a2ac6ddcbee8556, type: 3}
     sentence: (......)
-    side: 1
-    fadeToBlackTransitionBefore: 0
+    side: 0
+    fadeToBlackTransitionBefore: 1
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Salvage
