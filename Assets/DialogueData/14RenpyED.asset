@@ -48,14 +48,6 @@ MonoBehaviour:
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
-  - characterName: Salvage
-    characterPortrait: {fileID: 21300000, guid: 03b3f5f793980224da33e03501db8a8e, type: 3}
-    sentence: "We\u2019re down to the wire here, so let\u2019s get this done right.
-      No mistakes."
-    side: 1
-    fadeToBlackTransitionBefore: 0
-    fadeToBlackTransitionAfter: 0
-    newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 3f6c269d49154cc4e8772fa752cae3ad, type: 3}
     sentence: "Hey, Steve-E, by this time tomorrow, we\u2019ll be looking down at
@@ -114,7 +106,7 @@ MonoBehaviour:
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Doctor. Hikari 'Scrapp' Hoshino
-    characterPortrait: {fileID: 21300000, guid: 3f6c269d49154cc4e8772fa752cae3ad, type: 3}
+    characterPortrait: {fileID: 21300000, guid: 34e3b4f91477c4f04adc95191e987fee, type: 3}
     sentence: And blue seas, endless skies. We could look up and actually see stars,
     side: 0
     fadeToBlackTransitionBefore: 0
@@ -128,8 +120,8 @@ MonoBehaviour:
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Doctor. Hikari 'Scrapp' Hoshino
-    characterPortrait: {fileID: 21300000, guid: 3f6c269d49154cc4e8772fa752cae3ad, type: 3}
-    sentence: ...this toxic haze and this ruin world.
+    characterPortrait: {fileID: 21300000, guid: 34e3b4f91477c4f04adc95191e987fee, type: 3}
+    sentence: ...... This ruined world blanketed by this toxic haze.
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
@@ -170,16 +162,16 @@ MonoBehaviour:
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Doctor. Hikari 'Scrapp' Hoshino
-    characterPortrait: {fileID: 21300000, guid: 3f6c269d49154cc4e8772fa752cae3ad, type: 3}
-    sentence: "I always hoped we\u2019d find a way to stay. To heal this land of
-      birth. But now...  "
+    characterPortrait: {fileID: 21300000, guid: 34e3b4f91477c4f04adc95191e987fee, type: 3}
+    sentence: 'I keep hoping we''ll find a way to stay. To heal the land that gave
+      birth to us, but now... '
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Doctor. Hikari 'Scrapp' Hoshino
     characterPortrait: {fileID: 21300000, guid: 3627770099f24d54393a5aca19110a00, type: 3}
-    sentence: "...now it's too late, isn\u2019t it?"
+    sentence: "...It's too late, isn\u2019t it?"
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
@@ -200,14 +192,14 @@ MonoBehaviour:
     newBackground: {fileID: 0}
   - characterName: Doctor. Hikari 'Scrapp' Hoshino
     characterPortrait: {fileID: 21300000, guid: 3627770099f24d54393a5aca19110a00, type: 3}
-    sentence: Goodbye, to our cradles and lullaby.
+    sentence: Farewell, our cradle and lullaby.
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Doctor. Hikari 'Scrapp' Hoshino
-    characterPortrait: {fileID: 21300000, guid: 3f6c269d49154cc4e8772fa752cae3ad, type: 3}
-    sentence: ' wish if, we could have done better to you.'
+    characterPortrait: {fileID: 21300000, guid: 34e3b4f91477c4f04adc95191e987fee, type: 3}
+    sentence: May we treat you better in another universe.
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
@@ -215,14 +207,14 @@ MonoBehaviour:
   - characterName: Rocket System
     characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
     sentence: Captain, Doctor, and SteveE-194, please come aboard in three minutes.
-    side: 0
+    side: 1
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
-  - characterName: Rocket System
+  - characterName: 
     characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
-    sentence: Countdown for ascent begins
-    side: 1
+    sentence: And so the countdown for ascent begins......
+    side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
@@ -234,30 +226,30 @@ MonoBehaviour:
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Rocket System
-    characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
+    characterPortrait: {fileID: 21300000, guid: ce6a7aa7e94d6a84b88e322731465de8, type: 3}
     sentence: 4...
-    side: 0
+    side: 1
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Rocket System
-    characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
+    characterPortrait: {fileID: 21300000, guid: 0d8872f581c4cb94fa566cfa45ea86bd, type: 3}
     sentence: 3...
-    side: 1
+    side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Rocket System
     characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
     sentence: 2...
-    side: 0
+    side: 1
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Rocket System
     characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
     sentence: 1...
-    side: 1
+    side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}

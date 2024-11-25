@@ -22,35 +22,35 @@ MonoBehaviour:
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
-    newBackground: {fileID: 21300000, guid: 6bd4b8142a6f04e2db7e7979f9274ae1, type: 3}
+    newBackground: {fileID: 21300000, guid: aeafdf97da27e4c4796894cdd8f55ba6, type: 3}
   - characterName: 
     characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
     sentence: 'It was just a hill fire, '
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
-    newBackground: {fileID: 0}
+    newBackground: {fileID: 21300000, guid: 1cf0ef1d621bd47dea6f54717982b83e, type: 3}
   - characterName: 
     characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
     sentence: A drought,
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
-    newBackground: {fileID: 0}
+    newBackground: {fileID: 21300000, guid: e20d90dfcb3ba4dd09c1e155b947cba5, type: 3}
   - characterName: 
     characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
     sentence: An extinction of a species,
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
-    newBackground: {fileID: 0}
+    newBackground: {fileID: 21300000, guid: db7820ea09ca64d0f8295701aecb35e7, type: 3}
   - characterName: 
     characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
     sentence: And a disappearance of a city.
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
-    newBackground: {fileID: 0}
+    newBackground: {fileID: 21300000, guid: 85675da46c40647ec83442ec0d0d9cff, type: 3}
   - characterName: 
     characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
     sentence: We thought our home could handle everything.
@@ -276,7 +276,7 @@ MonoBehaviour:
     characterPortrait: {fileID: 21300000, guid: 0c1943b4994a7b640a2ac6ddcbee8556, type: 3}
     sentence: (......)
     side: 0
-    fadeToBlackTransitionBefore: 1
+    fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Salvage
@@ -318,8 +318,8 @@ MonoBehaviour:
     newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 0d8872f581c4cb94fa566cfa45ea86bd, type: 3}
-    sentence: "\u201CYeah, picture it\u2014a bunch of scrappy,  rusty little rockets
-      blasting out of Earth like, whoosh!  "
+    sentence: "Yeah, picture it\u2014a bunch of scrappy,  rusty little rockets blasting
+      out of Earth like, whoosh!  "
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
@@ -447,5 +447,5 @@ MonoBehaviour:
     sentence: Open the Gate!
     side: 1
     fadeToBlackTransitionBefore: 0
-    fadeToBlackTransitionAfter: 0
+    fadeToBlackTransitionAfter: 1
     newBackground: {fileID: 0}

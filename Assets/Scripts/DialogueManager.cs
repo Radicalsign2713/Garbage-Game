@@ -48,6 +48,7 @@ public class DialogueManager : MonoBehaviour
 
     private bool isTyping;
     private bool isFading;
+    private bool isWaitingForFade = false; // New flag to manage waiting for fade
 
     public bool isFinished = false;
 
@@ -77,9 +78,9 @@ public class DialogueManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return) || Input.GetMouseButtonDown(0))
         {
-            if (isFading)
+            if (isFading || isWaitingForFade)
             {
-                return; // Prevent any interaction while fading is in progress
+                return; // Prevent any interaction while fading is in progress or waiting for fade
             }
 
             if (isTyping)
@@ -88,7 +89,15 @@ public class DialogueManager : MonoBehaviour
             }
             else if (fadeCoroutine == null)
             {
-                DisplayNextSentence();
+                if (currentLine != null && currentLine.fadeToBlackTransitionAfter)
+                {
+                    // Start fading to black after this line when the player tries to proceed
+                    fadeCoroutine = StartCoroutine(FadeToBlackAndAutoAdvance());
+                }
+                else
+                {
+                    DisplayNextSentence();
+                }
             }
         }
     }
@@ -143,15 +152,10 @@ public class DialogueManager : MonoBehaviour
 
         currentLine = sentences.Dequeue();
 
-        // Handle fade-to-black transitions
+        // Handle fade-to-black transitions before
         if (currentLine.fadeToBlackTransitionBefore)
         {
             fadeCoroutine = StartCoroutine(FadeToBlackTransition(() => DisplayLineWithTransitions()));
-        }
-        else if (currentLine.fadeToBlackTransitionAfter)
-        {
-            DisplayLineWithTransitions();
-            fadeCoroutine = StartCoroutine(FadeToBlackTransition(null));
         }
         else
         {
@@ -177,6 +181,19 @@ public class DialogueManager : MonoBehaviour
 
         isFading = false;
         fadeCoroutine = null;
+    }
+
+    private IEnumerator FadeToBlackAndAutoAdvance()
+    {
+        isWaitingForFade = true;
+
+        fadePanel.gameObject.SetActive(true);
+        yield return StartCoroutine(FadeIn(fadePanel, fadeDuration));
+
+        // Automatically advance to the next line once fade to black completes
+        DisplayNextSentence();
+
+        isWaitingForFade = false;
     }
 
     private void DisplayLineWithTransitions()
