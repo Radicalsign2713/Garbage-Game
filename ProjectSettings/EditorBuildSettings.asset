@@ -53,7 +53,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/12_renpy.unity
     guid: 0ee2c7904802a4caeae8e849e5203b4e
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/13_Everywhere.unity
     guid: da4e30b5a89c8441698e6ab11813b86d
   - enabled: 1
