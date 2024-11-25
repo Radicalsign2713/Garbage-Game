@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TaskControl : MonoBehaviour
 {
@@ -33,7 +34,10 @@ public class TaskControl : MonoBehaviour
         total_garbages = GameObject.FindGameObjectsWithTag("Garbage").Length;
         total_upgrades = GameObject.FindGameObjectsWithTag("Upgrade").Length;
         ui = gameObject.GetComponentInChildren<TMP_Text>();
-        if(total_upgrades != 0){
+        if(SceneManager.GetActiveScene().buildIndex == 11){
+            ui.text = "Talk to Cockroach";
+        }
+        else if(total_upgrades != 0){
         ui.text = $"Garbage: {collected_garbages}/{total_garbages}\nUpgrade: {collected_upgrades}/{total_upgrades}";
         } else{
              ui.text = $"Garbage: {collected_garbages}/{total_garbages}";
