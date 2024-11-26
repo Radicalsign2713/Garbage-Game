@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 764f48e2076824ba58cc3eb7f0536e0b, type: 3}
-  m_Name: Tutorial_01_WASD
+  m_Name: 02Tutorial_01_WASD
   m_EditorClassIdentifier: 
   dialogueSummary: 
   lines:
@@ -19,13 +19,13 @@ MonoBehaviour:
     sentence: "Let\u2019s get you moving, Steve-E. Use <b>WASD</b> or the <b>Arrow
       keys</b> to walk around. "
     side: 1
-    fadeToBlackBefore: 0
-    unFadeBefore: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: d61176972e8d1e440a7cdaa0f39d7409, type: 3}
     sentence: Head over to that highlighted spot in front to get a feel for it.
     side: 1
-    fadeToBlackBefore: 0
-    unFadeBefore: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
