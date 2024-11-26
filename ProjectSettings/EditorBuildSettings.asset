@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/02_Tutorial.unity
     guid: 92564af21066b48e9adea0647f58f908
   - enabled: 1
+    path: Assets/Scenes/03.5_Ren'Py.unity
+    guid: 7c3a31eab2b2a4128aa26f98c28c7449
+  - enabled: 1
     path: Assets/Scenes/03_MainArea.unity
     guid: b5e867f763116484391fa3af74529376
   - enabled: 1
