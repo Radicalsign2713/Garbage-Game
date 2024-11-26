@@ -18,90 +18,90 @@ MonoBehaviour:
     characterPortrait: {fileID: 21300000, guid: 070602d5b5a7b4b07a9be99dd7f1d288, type: 3}
     sentence: jduifdiaifnuandkfhesbfhjbdhubaufbabduabfuyesfuesfbuefbuefbaubuehbfuhesbubuefushnbfes
     side: 1
-    fadeToBlackBefore: 0
-    unFadeBefore: 0
-    newBackground: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 21300000, guid: e732ce27a355e43c4bbc6db144595fc3, type: 3}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: 070602d5b5a7b4b07a9be99dd7f1d288, type: 3}
     sentence: ????
     side: 1
-    fadeToBlackBefore: 0
-    unFadeBefore: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: f38e3df6c765246d6a25281e74e4297f, type: 3}
     sentence: ??????????????????????
     side: 0
-    fadeToBlackBefore: 0
-    unFadeBefore: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: f38e3df6c765246d6a25281e74e4297f, type: 3}
     sentence: ajkdsnAQHSWNIQWUQIUQWdabdjw
     side: 0
-    fadeToBlackBefore: 0
-    unFadeBefore: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: f38e3df6c765246d6a25281e74e4297f, type: 3}
     sentence: ?????????????????????
     side: 0
-    fadeToBlackBefore: 0
-    unFadeBefore: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: 070602d5b5a7b4b07a9be99dd7f1d288, type: 3}
     sentence: AUHWNDMWUEODWEODMEWDUWEHDWUEHDUOEWHOEOHWW
     side: 1
-    fadeToBlackBefore: 0
-    unFadeBefore: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: 070602d5b5a7b4b07a9be99dd7f1d288, type: 3}
     sentence: ????????????????????
     side: 1
-    fadeToBlackBefore: 0
-    unFadeBefore: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: 070602d5b5a7b4b07a9be99dd7f1d288, type: 3}
     sentence: frefdf
     side: 1
-    fadeToBlackBefore: 0
-    unFadeBefore: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: 070602d5b5a7b4b07a9be99dd7f1d288, type: 3}
     sentence: ???????????????????
     side: 1
-    fadeToBlackBefore: 0
-    unFadeBefore: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: 070602d5b5a7b4b07a9be99dd7f1d288, type: 3}
     sentence: saffewwfwf
     side: 1
-    fadeToBlackBefore: 0
-    unFadeBefore: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: 070602d5b5a7b4b07a9be99dd7f1d288, type: 3}
     sentence: ????????????????????????
     side: 1
-    fadeToBlackBefore: 0
-    unFadeBefore: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: 070602d5b5a7b4b07a9be99dd7f1d288, type: 3}
     sentence: dwf
     side: 1
-    fadeToBlackBefore: 0
-    unFadeBefore: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: sdsf
     characterPortrait: {fileID: 21300000, guid: 070602d5b5a7b4b07a9be99dd7f1d288, type: 3}
     sentence: ?????????????????????S
     side: 1
-    fadeToBlackBefore: 0
-    unFadeBefore: 0
-    newBackground: {fileID: 0}
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}

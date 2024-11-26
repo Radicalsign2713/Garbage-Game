@@ -274,7 +274,7 @@ MonoBehaviour:
     newBackground: {fileID: 0}
   - characterName: Steve-E194
     characterPortrait: {fileID: 21300000, guid: 0c1943b4994a7b640a2ac6ddcbee8556, type: 3}
-    sentence: (......)
+    sentence: (beep)
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
@@ -288,8 +288,8 @@ MonoBehaviour:
     newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: 03b3f5f793980224da33e03501db8a8e, type: 3}
-    sentence: " We\u2019re part of the HUMAN FLY FAR project \u2014last-ditch plan
-      to get off this wreck of a planet.  "
+    sentence: "We\u2019re part of the <i>human fly far</i> project \u2014 the ultimate
+      escape plan from this crumbling planet.   "
     side: 1
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
@@ -311,7 +311,7 @@ MonoBehaviour:
     newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: d61176972e8d1e440a7cdaa0f39d7409, type: 3}
-    sentence: "\u2026 if we\u2019re lucky."
+    sentence: ...... If we're lucky.
     side: 1
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
@@ -362,15 +362,15 @@ MonoBehaviour:
     newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 3627770099f24d54393a5aca19110a00, type: 3}
-    sentence: metal, fuel cells, and circuits you can dig up in the wild
+    sentence: Metal, fuel cells, and circuits you can dig up out there.
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 376349d1c4716cb42b7369453ee22532, type: 3}
-    sentence: "Since everything here is either broken, buried, or both,  so you\u2019ll
-      be sent out to salvage what\u2019s left. "
+    sentence: Since everything here is either broken, buried, or both, you, my dearest
+      Steve-E will be sent to salvage what is left.
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
@@ -378,7 +378,7 @@ MonoBehaviour:
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 251eb05ff2cef5446aa4c0f3bdebe3b6, type: 3}
     sentence: Every bolt you bring back means one more piece we can use to build
-      these rockets
+      these rockets.
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
@@ -429,7 +429,7 @@ MonoBehaviour:
     newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 3f6c269d49154cc4e8772fa752cae3ad, type: 3}
-    sentence: "we\u2019ve turned worse into wonders "
+    sentence: "We\u2019ve turned worse into wonders!"
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
