@@ -759,6 +759,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bananna_Peel
       objectReference: {fileID: 0}
+    - target: {fileID: 7844788440054502672, guid: 4bb7cb758295d49ea961c6206ee24e94, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7844788440054502672, guid: 4bb7cb758295d49ea961c6206ee24e94, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1521808341
+      objectReference: {fileID: 0}
     - target: {fileID: 8616150452453185082, guid: 4bb7cb758295d49ea961c6206ee24e94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 22.12976
@@ -1770,6 +1778,10 @@ PrefabInstance:
     - target: {fileID: 2263208197557889762, guid: f22819bf132b84eeaae8ef8d5f5849db, type: 3}
       propertyPath: m_Name
       value: Steve-E
+      objectReference: {fileID: 0}
+    - target: {fileID: 4056893500182110581, guid: f22819bf132b84eeaae8ef8d5f5849db, type: 3}
+      propertyPath: battery
+      value: 52
       objectReference: {fileID: 0}
     - target: {fileID: 4056893500182110581, guid: f22819bf132b84eeaae8ef8d5f5849db, type: 3}
       propertyPath: max_speed
