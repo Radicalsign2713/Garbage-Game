@@ -114,5 +114,5 @@ MonoBehaviour:
     sentence: Open the gate!
     side: 1
     fadeToBlackTransitionBefore: 0
-    fadeToBlackTransitionAfter: 0
+    fadeToBlackTransitionAfter: 1
     newBackground: {fileID: 0}

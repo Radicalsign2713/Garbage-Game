@@ -126,5 +126,5 @@ MonoBehaviour:
     sentence: "I can\u2019t wait to see Mars! Off you go, Steve-E. Open the gate!"
     side: 0
     fadeToBlackTransitionBefore: 0
-    fadeToBlackTransitionAfter: 0
+    fadeToBlackTransitionAfter: 1
     newBackground: {fileID: 0}

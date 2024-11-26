@@ -214,5 +214,5 @@ MonoBehaviour:
     sentence: "Let\u2019s just end this conversation here. Open the gate!"
     side: 1
     fadeToBlackTransitionBefore: 0
-    fadeToBlackTransitionAfter: 0
+    fadeToBlackTransitionAfter: 1
     newBackground: {fileID: 0}
