@@ -13,4 +13,35 @@ MonoBehaviour:
   m_Name: 03Upgrade
   m_EditorClassIdentifier: 
   dialogueSummary: 
-  lines: []
+  lines:
+  - characterName: Scrapp
+    characterPortrait: {fileID: 21300000, guid: 3627770099f24d54393a5aca19110a00, type: 3}
+    sentence: "You\u2019ll come across parts left from Steve-E-193\u2014your \u2018older
+      sibling.\u2019  The poor guy didn\u2019t make it. "
+    side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
+  - characterName: Scrapp
+    characterPortrait: {fileID: 21300000, guid: f619f38b297f67c47ab9a994081a0854, type: 3}
+    sentence: "Just walk over those shiny bits to collect upgrades for yourself.
+      They\u2019ll come in handy!"
+    side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
+  - characterName: Scrapp
+    characterPortrait: {fileID: 21300000, guid: 3627770099f24d54393a5aca19110a00, type: 3}
+    sentence: 'Now, follow the menu to track your progress, and make sure you collect
+      everything on the map. '
+    side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
+  - characterName: Scrapp
+    characterPortrait: {fileID: 21300000, guid: 251eb05ff2cef5446aa4c0f3bdebe3b6, type: 3}
+    sentence: Go on, explore!
+    side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}

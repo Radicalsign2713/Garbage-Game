@@ -18,6 +18,14 @@ MonoBehaviour:
     the planet. As flames engulf the rocket's base and it ascends into the sky, Earth
     is left behind, a scarred reminder of what was lost.
   lines:
+  - characterName: Scrapp
+    characterPortrait: {fileID: 21300000, guid: 251eb05ff2cef5446aa4c0f3bdebe3b6, type: 3}
+    sentence: "Welcome back, Steve-E! You gotta move fast\u2014the ship\u2019s set
+      to ascend tomorrow!"
+    side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 21300000, guid: e732ce27a355e43c4bbc6db144595fc3, type: 3}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: ce6a7aa7e94d6a84b88e322731465de8, type: 3}
     sentence: Unload your resources here, right by the base!
@@ -206,14 +214,15 @@ MonoBehaviour:
     newBackground: {fileID: 0}
   - characterName: Rocket System
     characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
-    sentence: Captain, Doctor, and SteveE-194, please come aboard in three minutes.
+    sentence: Captain, Doctor, Scavanger Unit SteveE-194, please be on board in T
+      - 3:00 minutes.
     side: 1
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
-    newBackground: {fileID: 0}
-  - characterName: 
+    newBackground: {fileID: 21300000, guid: a4a0537bf51f046348b1a7297b589fea, type: 3}
+  - characterName: Rocket System
     characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
-    sentence: And so the countdown for ascent begins......
+    sentence: Countdown for ascent begins.
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
@@ -252,7 +261,7 @@ MonoBehaviour:
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
-    newBackground: {fileID: 0}
+    newBackground: {fileID: 21300000, guid: 065dbe760c7fb4b8c8f9ef03e28f2fde, type: 3}
   - characterName: Rocket System
     characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
     sentence: We have a lift-off.

@@ -195,6 +195,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: a8ed792ea9326407cb3e40ea49a21893, type: 2}
     - target: {fileID: 7219166433631634220, guid: 7d5e9de0d76d84a0aaac3f2124cafb59, type: 3}
+      propertyPath: loopMusicClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3ff92f2fa23f24a358fcb39375af6eee, type: 3}
+    - target: {fileID: 7219166433631634220, guid: 7d5e9de0d76d84a0aaac3f2124cafb59, type: 3}
+      propertyPath: introMusicClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3ff92f2fa23f24a358fcb39375af6eee, type: 3}
+    - target: {fileID: 7219166433631634220, guid: 7d5e9de0d76d84a0aaac3f2124cafb59, type: 3}
       propertyPath: backgroundImage
       value: 
       objectReference: {fileID: 1691743034}

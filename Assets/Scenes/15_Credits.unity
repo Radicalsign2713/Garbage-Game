@@ -132,6 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 356745918}
   - component: {fileID: 356745917}
+  - component: {fileID: 356745919}
   m_Layer: 0
   m_Name: CreditsController
   m_TagString: Untagged
@@ -168,6 +169,102 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1762804022}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &356745919
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 356745916}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 597e30af3629d4f72b1fb7dd912ab6dc, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1149035939
 GameObject:
   m_ObjectHideFlags: 0
@@ -225,146 +322,20 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'CREDITS
-
-
-
-    Programmers
-
-
-
-    Crystal H. - Project Lead, Programmer
-
-    Troy
-    W. - Lead Programmer, Mechanics Designer
-
-    Sophie W. - Programmer(?)
-
-
-
-    Artists
-
-
-    Faryal
-    L. - Environment/Sprite Artist
-
-    Sophie W. - Character/Environment/Sprite
-    Artist
-
-    Audio & Writing
-
-
-
-    Jonathan L. - Audio Designer, Composer, Story
-    Writer
-
-
-
-
-    BETA TESTERS
-
-
-    Alex L.
-
-    Anthony A.
-
-    Anna M.
-
-    April
-    H.
-
-    Arhun P.
-
-    Aurora M.
-
-    Behnazgh B.
-
-    Chiharu L.
-
-    Dan H.
-
-    Eavsar12345
-
-    Faith
-    N.
-
-    Farrah M.
-
-    Fengqin Y.
-
-    Funmilola O.
-
-    Georgia
-
-    Isaac C.
-
-    Iqra
-    L.
-
-    Ivy H.
-
-    Jayleen K.
-
-    Josephine B.
-
-    Judy Z.
-
-    Lawrence I.
-
-    Marvin
-    M.
-
-    Mary Q.
-
-    Naira L.
-
-    Nicole Y.
-
-    Roscoe L.
-
-    Lord Ivan Y.H.C.
-
-    Stanley
-    L.
-
-    Steven L.
-
-    Sunny Z.
-
-    Taeyun K.
-
-    Vinoth R.
-
-
-
-
-    SPECIAL
-    THANKS
-
-
-    CSC194 Class
-
-    Thank you to all our classmates in CSC194 for
-    your support, feedback, and enthusiasm!
-
-
-    Steve-E(?)
-
-    A huge shout-out
-    to Steve for being our main character! :D
-
-
-
-
-
-    And You!
-
-
-
-
-
-    THANK YOU
-    FOR BEING A PART OF THIS GAME!'
+  m_text: "CREDITS\r\n\r\n\r\n\r\nProgrammers\r\n\r\n\r\nCrystal H. - Project Lead,
+    Programmer\r\nTroy W. - Lead Programmer, Mechanics Designer\r\nSophie W. - Dialogue
+    System Programmer(?)\r\n\r\n\r\n\r\nArtists\r\n\r\nFaryal L. - Environment/Sprite
+    Artist\r\nSophie W. - Animator, Character/Concept/Environment/Sprite Artist\r\n\r\n\r\n\r\nAudio
+    & Writing\r\n\r\n\r\nJonathan L. - Audio Designer, Composer, Story Writer\r\n\r\n\r\n\r\n\r\nBETA
+    TESTERS\r\n\r\nAlex L.\r\nAnthony A.\r\nAnna M.\r\nApril H.\r\nArhun P.\r\nAurora
+    M.\r\nBehnazgh B.\r\nChiharu L.\r\nDan H.\r\nEavsar12345\r\nFaith N.\r\nFarrah
+    M.\r\nFengqin Y.\r\nFunmilola O.\r\nGeorgia\r\nIsaac C.\r\nIqra L.\r\nIvy H.\r\nJayleen
+    K.\r\nJosephine B.\r\nJudy Z.\r\nLawrence I.\r\nMarvin M.\r\nMary Q.\r\nNaira
+    L.\r\nNicole Y.\r\nRoscoe L.\r\nLord Ivan Y.H.C.\r\nStanley L.\r\nSteven L.\r\nSunny
+    Z.\r\nTaeyun K.\r\nVinoth R.\r\n\r\n\r\n\r\nSPECIAL THANKS\r\n\r\nCSC194 Class\r\nThank
+    you to all our classmates in CSC194 for your support, feedback, and enthusiasm!\r\n\r\nSteve-E(?)\r\nA
+    huge shout-out to Steve for being our main character! :D\r\n\r\n\r\n\r\n\r\nAnd
+    You!\r\n\r\n\r\n\r\n\r\nTHANK YOU FOR BEING A PART OF THIS GAME!\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

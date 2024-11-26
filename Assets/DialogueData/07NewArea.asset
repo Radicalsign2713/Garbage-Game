@@ -13,4 +13,25 @@ MonoBehaviour:
   m_Name: 07NewArea
   m_EditorClassIdentifier: 
   dialogueSummary: 
-  lines: []
+  lines:
+  - characterName: Scrapp
+    characterPortrait: {fileID: 21300000, guid: 251eb05ff2cef5446aa4c0f3bdebe3b6, type: 3}
+    sentence: "Wow\u2026 has that lake always been that green?"
+    side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
+  - characterName: Salvage
+    characterPortrait: {fileID: 21300000, guid: 03b3f5f793980224da33e03501db8a8e, type: 3}
+    sentence: "Yes, it\u2019s been like that since 2067"
+    side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
+  - characterName: Scrapp
+    characterPortrait: {fileID: 21300000, guid: 3627770099f24d54393a5aca19110a00, type: 3}
+    sentence: No wonder my parents never let me swim in there
+    side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
