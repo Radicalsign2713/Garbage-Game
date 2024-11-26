@@ -225,15 +225,146 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "CREDITS\n\nCrystal H.\nProject Lead, Programmer\n\nFaryal L.\nEnvironment/Sprite
-    Artist\n\nTroy W.\nLead Programmer, Mechanics Designer\n\nSophie W.\nCharacter/Environment/Sprite
-    Artist, Programmer?\n\nJonathan L.\nAudio Designer, Composer, Story Writer\n\_
-    \n\nBETA TESTERS\n\nAlex L.\nAnthony A.\nAnna M.\nApril H.\nArhun P.\nAurora
-    M.\nBehnazgh B.\nChiharu L.\nDan H.\nEavsar12345\nFaith N.\nFarrah M.\nFengqin
-    Y.\nFunmilola O.\nGeorgia\nIsaac C.\nIqra L.\nIvy H.\nJayleen K.\nJosephine B.\nJudy
-    Z.\nLawrence I.\nMarvin M.\nMary Q.\nNaira L.\nNicole Y.\nRoscoe L.\nLord Ivan
-    Y.H.C.\nStanley L.\nSteven L.\nSunny Z.\nTaeyun K.\nVinoth R.\n\n\n\nTHANK YOU
-    FOR BEING A PART OF THIS GAME!\n"
+  m_text: 'CREDITS
+
+
+
+    Programmers
+
+
+
+    Crystal H. - Project Lead, Programmer
+
+    Troy
+    W. - Lead Programmer, Mechanics Designer
+
+    Sophie W. - Programmer(?)
+
+
+
+    Artists
+
+
+    Faryal
+    L. - Environment/Sprite Artist
+
+    Sophie W. - Character/Environment/Sprite
+    Artist
+
+    Audio & Writing
+
+
+
+    Jonathan L. - Audio Designer, Composer, Story
+    Writer
+
+
+
+
+    BETA TESTERS
+
+
+    Alex L.
+
+    Anthony A.
+
+    Anna M.
+
+    April
+    H.
+
+    Arhun P.
+
+    Aurora M.
+
+    Behnazgh B.
+
+    Chiharu L.
+
+    Dan H.
+
+    Eavsar12345
+
+    Faith
+    N.
+
+    Farrah M.
+
+    Fengqin Y.
+
+    Funmilola O.
+
+    Georgia
+
+    Isaac C.
+
+    Iqra
+    L.
+
+    Ivy H.
+
+    Jayleen K.
+
+    Josephine B.
+
+    Judy Z.
+
+    Lawrence I.
+
+    Marvin
+    M.
+
+    Mary Q.
+
+    Naira L.
+
+    Nicole Y.
+
+    Roscoe L.
+
+    Lord Ivan Y.H.C.
+
+    Stanley
+    L.
+
+    Steven L.
+
+    Sunny Z.
+
+    Taeyun K.
+
+    Vinoth R.
+
+
+
+
+    SPECIAL
+    THANKS
+
+
+    CSC194 Class
+
+    Thank you to all our classmates in CSC194 for
+    your support, feedback, and enthusiasm!
+
+
+    Steve-E(?)
+
+    A huge shout-out
+    to Steve for being our main character! :D
+
+
+
+
+
+    And You!
+
+
+
+
+
+    THANK YOU
+    FOR BEING A PART OF THIS GAME!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

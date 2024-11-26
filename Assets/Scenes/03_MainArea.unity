@@ -1212,7 +1212,7 @@ PrefabInstance:
     - target: {fileID: 8010029299635604777, guid: 5f04a12cd35bf445c912094c02b3e807, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 6e19fcba83828489fb436f2a1b5bf727, type: 3}
+      objectReference: {fileID: 8300000, guid: de709b5458a5a448eabc7aaa8593d381, type: 3}
     - target: {fileID: 8622900138863407209, guid: 5f04a12cd35bf445c912094c02b3e807, type: 3}
       propertyPath: m_Name
       value: coner_dimmer

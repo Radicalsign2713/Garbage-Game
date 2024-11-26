@@ -1163,6 +1163,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8010029299635604777, guid: 5f04a12cd35bf445c912094c02b3e807, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 24c73cbeff5b74a34b8e6e26e4cb5260, type: 3}
     - target: {fileID: 8622900138863407209, guid: 5f04a12cd35bf445c912094c02b3e807, type: 3}
       propertyPath: m_Name
       value: coner_dimmer
