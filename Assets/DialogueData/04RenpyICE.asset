@@ -40,64 +40,71 @@ MonoBehaviour:
     newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 251eb05ff2cef5446aa4c0f3bdebe3b6, type: 3}
-    sentence: Let me do the upgrade for you.
+    sentence: Let me get you upgraded.
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Steve-E194
     characterPortrait: {fileID: 21300000, guid: 0c1943b4994a7b640a2ac6ddcbee8556, type: 3}
-    sentence: 'UPGRADE GRANTED: Move on sleek surface'
+    sentence: <b>Update Granted:</b> Moving on slippery surfaces
     side: 1
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 251eb05ff2cef5446aa4c0f3bdebe3b6, type: 3}
-    sentence: Hey, Salva, did you see the latest weather scans?
+    sentence: Hey Salva, have you seen the latest weather forecast?
     side: 0
     fadeToBlackTransitionBefore: 1
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 376349d1c4716cb42b7369453ee22532, type: 3}
-    sentence: "A huge storm is getting closer\u2014might hit us in a few weeks."
+    sentence: A huge storm is approaching - and could hit us in a few weeks.
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: e1c9d15029099db408049ff37f8c7812, type: 3}
-    sentence: Well, then no time to chat now.
+    sentence: Then there's no time to chat now.
     side: 1
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: 3879ae633b8e1db408baaa58cdfc2915, type: 3}
-    sentence: ' Steve-E, you, are heading to the plastic snowfields up north.'
+    sentence: Steve-E194, you, need to head to the plastic snowfields up north.
     side: 1
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 3f6c269d49154cc4e8772fa752cae3ad, type: 3}
-    sentence: "Right. You probably remember that place\u2014it used to be the biggest
-      logistics harbour for plastics, back before the explosion that tore it up."
+    sentence: That's right. You might remember the place, it used to be the largest
+      plastic logistics port,
+    side: 0
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
+  - characterName: Scrapp
+    characterPortrait: {fileID: 21300000, guid: 3627770099f24d54393a5aca19110a00, type: 3}
+    sentence: That is, before the explosion tore it up.
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 376349d1c4716cb42b7369453ee22532, type: 3}
-    sentence: The whole place turned into a blizzard of plastic waste.
+    sentence: The whole place turned into a blizzard of plastic trash.
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: e1c9d15029099db408049ff37f8c7812, type: 3}
-    sentence: Save the history lesson. You can talk on the road.
+    sentence: Save the history lesson. You can talk on the way.
     side: 1
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
@@ -111,7 +118,7 @@ MonoBehaviour:
     newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: e1c9d15029099db408049ff37f8c7812, type: 3}
-    sentence: Open the gate!
+    sentence: Open the gates!
     side: 1
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 1

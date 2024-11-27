@@ -16,8 +16,8 @@ MonoBehaviour:
   lines:
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 251eb05ff2cef5446aa4c0f3bdebe3b6, type: 3}
-    sentence: Wow...... I've never really been here before. It's like we walked right
-      into an old movie...... What was it called again?
+    sentence: Wow...... I've never actually been here before. It's like we walked
+      right into an old movie...... What was it called again?
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0

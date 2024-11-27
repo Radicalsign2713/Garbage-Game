@@ -32,21 +32,21 @@ MonoBehaviour:
     newBackground: {fileID: 0}
   - characterName: Steve-E194
     characterPortrait: {fileID: 21300000, guid: 0c1943b4994a7b640a2ac6ddcbee8556, type: 3}
-    sentence: 'UPGRADE GRANTED: Move on liquid'
+    sentence: <b>Update Granted:</b> Moving through liquids
     side: 1
-    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionBefore: 1
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 3f6c269d49154cc4e8772fa752cae3ad, type: 3}
-    sentence: Now you can move faster through that radioactive water
+    sentence: Now you can cross toxic waters faster,
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 376349d1c4716cb42b7369453ee22532, type: 3}
-    sentence: "\u2014and avoid getting stuck in poison pools!"
+    sentence: And avoid drowning in nuclear wastewater!
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
@@ -67,37 +67,31 @@ MonoBehaviour:
     newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: 03b3f5f793980224da33e03501db8a8e, type: 3}
-    sentence: Your objective is to collect some resources from the ponds for fuels.
+    sentence: Your goal is to collect some resources from the wastewater to be used
+      as fuel.
     side: 1
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: e1c9d15029099db408049ff37f8c7812, type: 3}
-    sentence: " And remember, this area\u2019s no safer than the last, so keep your
-      sensors sharp"
+    sentence: "And remember, this area\u2019s no safer than the last, so keep your
+      sensors sharp!"
     side: 1
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Scrapp
-    characterPortrait: {fileID: 21300000, guid: f619f38b297f67c47ab9a994081a0854, type: 3}
-    sentence: (singing)
-    side: 0
-    fadeToBlackTransitionBefore: 0
-    fadeToBlackTransitionAfter: 0
-    newBackground: {fileID: 0}
-  - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 3f6c269d49154cc4e8772fa752cae3ad, type: 3}
-    sentence: " There once was a ship that put to sea\u2026\u201D"
+    sentence: "There once was a ship that put to sea\u266A"
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: 3879ae633b8e1db408baaa58cdfc2915, type: 3}
-    sentence: "You won\u2019t be swimming in a sea, just some poison ponds. Please
-      ignore Dr. Scrapp."
+    sentence: You will not be swimming in the ocean, only in some toxic ponds. Please
+      ignore Dr. Scrapp.
     side: 1
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
@@ -111,8 +105,8 @@ MonoBehaviour:
     newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 0d8872f581c4cb94fa566cfa45ea86bd, type: 3}
-    sentence: "This used to be a massive nuclear reactor down the hill, handling
-      biowaste and all that good stuff\u2026"
+    sentence: Down there was once a giant nuclear reactor that generated energy and
+      all that good stuff...
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
@@ -126,8 +120,8 @@ MonoBehaviour:
     newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: ce6a7aa7e94d6a84b88e322731465de8, type: 3}
-    sentence: Right. And now all those toxic rivers flow down into tons of little
-      lovely, deadly basins.
+    sentence: That's right, and now all these poisonous waters flow into these lovely,
+      deadly little basins to form this lake.
     side: 1
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
@@ -141,7 +135,7 @@ MonoBehaviour:
     newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: f619f38b297f67c47ab9a994081a0854, type: 3}
-    sentence: "Open the gate! and let\u2019s get the collecting starting!"
+    sentence: "Open the gates! And let\u2019s get collecting!"
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 1

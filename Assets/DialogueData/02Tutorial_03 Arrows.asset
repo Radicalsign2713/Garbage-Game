@@ -16,7 +16,7 @@ MonoBehaviour:
   lines:
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: f619f38b297f67c47ab9a994081a0854, type: 3}
-    sentence: 'Great! Now, see those arrows on your screen? '
+    sentence: 'Great! Now, see those <b>arrows</b> on your screen? '
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
@@ -31,7 +31,7 @@ MonoBehaviour:
     newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 3f6c269d49154cc4e8772fa752cae3ad, type: 3}
-    sentence: Make sure you collect everything on the map. Go on, explore!
+    sentence: Double-check if everything on the map has been collected!
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0

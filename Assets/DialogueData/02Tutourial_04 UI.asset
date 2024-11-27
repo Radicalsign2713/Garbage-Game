@@ -23,8 +23,8 @@ MonoBehaviour:
     newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: 3879ae633b8e1db408baaa58cdfc2915, type: 3}
-    sentence: This is the remaining battery power you have for this mission. When
-      it runs out, you're gone.
+    sentence: This is the remaining <b>battery power</b> you have for this mission.
+      When it runs out, you're gone.
     side: 1
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
@@ -38,7 +38,7 @@ MonoBehaviour:
     newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: bcf11dc7082314f318b907e322db16c6, type: 3}
-    sentence: 'Now, on the top left of the screen is your task list. '
+    sentence: Now, on the top left of the screen is your <b>task list. </b>
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0

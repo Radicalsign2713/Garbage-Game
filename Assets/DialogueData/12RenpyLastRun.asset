@@ -26,15 +26,15 @@ MonoBehaviour:
     newBackground: {fileID: 21300000, guid: e732ce27a355e43c4bbc6db144595fc3, type: 3}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: ce6a7aa7e94d6a84b88e322731465de8, type: 3}
-    sentence: "Never thought I\u2019d see a cockroach quoting the mass-energy equivalence
-      theory."
+    sentence: Never in 3 lifetimes did I expect to see a cockroach quoting the mass-energy
+      equivalence theory......
     side: 1
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 376349d1c4716cb42b7369453ee22532, type: 3}
-    sentence: "At this rate, they\u2019re gonna take over the world soon after we\u2019re
+    sentence: "At this rate, they\u2019re gonna take over the world once we\u2019re
       gone!"
     side: 0
     fadeToBlackTransitionBefore: 0
@@ -42,35 +42,35 @@ MonoBehaviour:
     newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: d61176972e8d1e440a7cdaa0f39d7409, type: 3}
-    sentence: "\u201CInsane\u2026 Anyway, welcome back, Steve-E!"
+    sentence: "Insane\u2026 Anyway, welcome back, Steve-E!"
     side: 1
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: 03b3f5f793980224da33e03501db8a8e, type: 3}
-    sentence: "Looks like you\u2019ve gathered everything we need."
+    sentence: "Looks like you\u2019ve gathered mostly everything we need."
     side: 1
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: f619f38b297f67c47ab9a994081a0854, type: 3}
-    sentence: Glad you made it through without becoming a cockroach snack!
+    sentence: Glad you made it through without becoming cockroach snack!
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: d61176972e8d1e440a7cdaa0f39d7409, type: 3}
-    sentence: "The ship finally has all its key components ready for assembly\u2026"
+    sentence: All the key components of the spacecraft have been assembled at last...
     side: 1
     fadeToBlackTransitionBefore: 1
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: f619f38b297f67c47ab9a994081a0854, type: 3}
-    sentence: "Booster, check. Structure bone, check. Ecology incubator, check\u2026"
+    sentence: Boosters, check. Structural supports, check. Eco-incubators, check...
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
@@ -86,14 +86,21 @@ MonoBehaviour:
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: e1c9d15029099db408049ff37f8c7812, type: 3}
     sentence: "We\u2019ll need you to make one final sweep across every location
-      we\u2019ve visited.  Collect as many resources as possible "
+      we\u2019ve visited. "
+    side: 1
+    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
+  - characterName: Salvage
+    characterPortrait: {fileID: 21300000, guid: e1c9d15029099db408049ff37f8c7812, type: 3}
+    sentence: Collect as many resources as possible.
     side: 1
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: ce6a7aa7e94d6a84b88e322731465de8, type: 3}
-    sentence: "\u2014anything that could help keep us alive on the journey to Mars."
+    sentence: Anything to help us stay alive on our trip to Mars.
     side: 1
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
@@ -123,7 +130,7 @@ MonoBehaviour:
     newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 3f6c269d49154cc4e8772fa752cae3ad, type: 3}
-    sentence: "I can\u2019t wait to see Mars! Off you go, Steve-E. Open the gate!"
+    sentence: "I can\u2019t wait to see Mars! Off you go, Steve-E. Open the gates!"
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 1

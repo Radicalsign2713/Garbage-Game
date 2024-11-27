@@ -42,8 +42,8 @@ MonoBehaviour:
     newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 376349d1c4716cb42b7369453ee22532, type: 3}
-    sentence: "AHHH, I\u2019m on it! You\u2019d think after all these years, fuel
-      those bots would be the easy part!"
+    sentence: "AHHH, I\u2019m on it! You'd think after all these years, refueling
+      these robots would be easy!"
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
@@ -108,7 +108,7 @@ MonoBehaviour:
     newBackground: {fileID: 0}
   - characterName: Captain Elias 'Salvage' Galileo
     characterPortrait: {fileID: 21300000, guid: ce6a7aa7e94d6a84b88e322731465de8, type: 3}
-    sentence: Rust and acid.
+    sentence: ...Rust and acid.
     side: 1
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
@@ -129,14 +129,14 @@ MonoBehaviour:
     newBackground: {fileID: 0}
   - characterName: Doctor. Hikari 'Scrapp' Hoshino
     characterPortrait: {fileID: 21300000, guid: 34e3b4f91477c4f04adc95191e987fee, type: 3}
-    sentence: ...... This ruined world blanketed by this toxic haze.
+    sentence: ......This ruined world blanketed by this toxic haze.
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Doctor. Hikari 'Scrapp' Hoshino
     characterPortrait: {fileID: 21300000, guid: 3627770099f24d54393a5aca19110a00, type: 3}
-    sentence: ' I used to think Earth was invincible. I guess we all did.'
+    sentence: I used to think Earth was invincible. I guess we all did.
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
@@ -164,7 +164,7 @@ MonoBehaviour:
     newBackground: {fileID: 0}
   - characterName: Doctor. Hikari 'Scrapp' Hoshino
     characterPortrait: {fileID: 21300000, guid: 3627770099f24d54393a5aca19110a00, type: 3}
-    sentence: ...
+    sentence: ......
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0

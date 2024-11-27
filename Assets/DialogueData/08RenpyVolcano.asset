@@ -19,8 +19,8 @@ MonoBehaviour:
   lines:
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: 03b3f5f793980224da33e03501db8a8e, type: 3}
-    sentence: "These resources might actually help us with fuel\u2026 and decent
-      hauls this time."
+    sentence: "These resources might actually help us fuel our rocket\u2026it's a
+      decent haul."
     side: 1
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
@@ -50,22 +50,22 @@ MonoBehaviour:
     newBackground: {fileID: 0}
   - characterName: Steve-E194
     characterPortrait: {fileID: 21300000, guid: 0c1943b4994a7b640a2ac6ddcbee8556, type: 3}
-    sentence: 'UPGRADE GRANTED: HEAT ARMOR'
+    sentence: <b>Update Granted:</b> Thermal Armor
     side: 1
-    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionBefore: 1
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 0d8872f581c4cb94fa566cfa45ea86bd, type: 3}
-    sentence: "Well, look at you\u2014fireproof now! Ready to face the heat!"
+    sentence: "Well, look at you\u2014 All fireproof now! Ready to face the heat!"
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: 3879ae633b8e1db408baaa58cdfc2915, type: 3}
-    sentence: "Good. Just don\u2019t go jumping into any volcanoes\u2026 that\u2019s
-      not in the mission plan."
+    sentence: That's great. Just don't go jumping into a volcano...... It's not in
+      the mission plan.
     side: 1
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
@@ -86,16 +86,15 @@ MonoBehaviour:
     newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: d61176972e8d1e440a7cdaa0f39d7409, type: 3}
-    sentence: "we\u2019re running low on metal for the rocket\u2019s shell and structural
-      components."
+    sentence: There is not much metal left for rocket casings and structural components.
     side: 1
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: 03b3f5f793980224da33e03501db8a8e, type: 3}
-    sentence: "Head to the volcanic hills up west\u2014there should be plenty of
-      metal scraps to salvage there"
+    sentence: "Steve-E, head to the volcanic hills up west\u2014there should be plenty
+      of metal scraps to salvage there."
     side: 1
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
@@ -116,7 +115,7 @@ MonoBehaviour:
     newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: 03b3f5f793980224da33e03501db8a8e, type: 3}
-    sentence: Yeah. They never managed the place properly and seriously.
+    sentence: Yeah, they've never managed this place properly or seriously.
     side: 1
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
@@ -146,22 +145,23 @@ MonoBehaviour:
     newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: 3879ae633b8e1db408baaa58cdfc2915, type: 3}
-    sentence: 'Speaking of plans, remember, Steve-E, very important:'
+    sentence: Speaking of plans...... Steve-E, I have an important reminder for you
+      -
     side: 1
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: ce6a7aa7e94d6a84b88e322731465de8, type: 3}
-    sentence: Those Orange Lava Blocks can drain your Batteries fast. So watch your
-      step!
+    sentence: Those orange lava lumps will <b>drain your battery</b> quickly. So
+      watch your step!
     side: 1
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: e1c9d15029099db408049ff37f8c7812, type: 3}
-    sentence: "Off you go\u2014Open the gate!"
+    sentence: "Off you go\u2014Open the gates!"
     side: 1
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 1

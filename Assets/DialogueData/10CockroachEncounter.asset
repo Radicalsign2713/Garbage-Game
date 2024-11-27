@@ -16,7 +16,7 @@ MonoBehaviour:
   lines:
   - characterName: Steve-E194
     characterPortrait: {fileID: 21300000, guid: 0c1943b4994a7b640a2ac6ddcbee8556, type: 3}
-    sentence: (beep)
+    sentence: (Beep beep)
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
@@ -31,7 +31,7 @@ MonoBehaviour:
   - characterName: Roach Eteinsten
     characterPortrait: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
     sentence: "Hmm\u2026 you don\u2019t speak, do you? No matter! I, Roach Eteinsten,
-      hereby declare another groundbreaking discovery!"
+      hereby declare another <i>groundbreaking</i> discovery!"
     side: 1
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0

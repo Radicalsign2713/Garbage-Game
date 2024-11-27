@@ -95,7 +95,7 @@ MonoBehaviour:
     newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: 03b3f5f793980224da33e03501db8a8e, type: 3}
-    sentence: is the one buried under five tons of broken toilets and plastic bags.
+    sentence: Is the one buried under five tons of broken toilets and plastic bags.
     side: 1
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
@@ -109,29 +109,36 @@ MonoBehaviour:
     newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: e1c9d15029099db408049ff37f8c7812, type: 3}
-    sentence: "Can\u2019t believe we\u2019re out here searching for another Steve-E"
+    sentence: "Can\u2019t believe we\u2019re out here searching for another Steve-E......"
     side: 1
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: 3879ae633b8e1db408baaa58cdfc2915, type: 3}
-    sentence: What was wrong with the last one, and the one before last one, again?
+    sentence: What happened to the last one, and the one before that again?
     side: 1
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 3627770099f24d54393a5aca19110a00, type: 3}
-    sentence: "Steve-E193 had\u2026"
+    sentence: "Well...Steve-E193 had\u2026"
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 376349d1c4716cb42b7369453ee22532, type: 3}
-    sentence: "Well, let\u2019s say an \u2018accident\u2019 with the shredder drone.
-      I told him to zig, and he zagged, 192 soaked itself in a green pond."
+    sentence: "Let\u2019s say an \u2018accident\u2019 with the shredder drone - I
+      told it to zig, but it zagged......"
+    side: 0
+    fadeToBlackTransitionBefore: 1
+    fadeToBlackTransitionAfter: 0
+    newBackground: {fileID: 0}
+  - characterName: Scrapp
+    characterPortrait: {fileID: 21300000, guid: 376349d1c4716cb42b7369453ee22532, type: 3}
+    sentence: "192 dipped itself in a suspiciously luminous green pond\u2026"
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
@@ -145,7 +152,7 @@ MonoBehaviour:
     newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: e1c9d15029099db408049ff37f8c7812, type: 3}
-    sentence: "...All right, let\u2019s find 194 before he decides to join his siblings
+    sentence: "...All right, let\u2019s find 194 before it decides to join its siblings
       under this \u2018diamond mine\u2019 of yours."
     side: 1
     fadeToBlackTransitionBefore: 0
@@ -155,26 +162,26 @@ MonoBehaviour:
     characterPortrait: {fileID: 21300000, guid: d61176972e8d1e440a7cdaa0f39d7409, type: 3}
     sentence: Hey, Scrap! Got something here.
     side: 1
-    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionBefore: 1
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Steve-E194
     characterPortrait: {fileID: 21300000, guid: 0c1943b4994a7b640a2ac6ddcbee8556, type: 3}
-    sentence: (...)
+    sentence: (......)
     side: 1
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: d61176972e8d1e440a7cdaa0f39d7409, type: 3}
-    sentence: "Think it\u2019s him?"
+    sentence: Think that's our Steve-E?
     side: 1
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 0d8872f581c4cb94fa566cfa45ea86bd, type: 3}
-    sentence: (wipes some dust off)
+    sentence: (Wipes off some dust)
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
@@ -189,7 +196,7 @@ MonoBehaviour:
     newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: f619f38b297f67c47ab9a994081a0854, type: 3}
-    sentence: " Let\u2019s haul him back to base and see what he remembers."
+    sentence: " Let\u2019s haul it back to base and see what it remembers."
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
@@ -217,14 +224,14 @@ MonoBehaviour:
     newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 0d8872f581c4cb94fa566cfa45ea86bd, type: 3}
-    sentence: "(fiddling with the bot\u2019s settings)"
+    sentence: (Fiddles with the bot's settings)
     side: 0
     fadeToBlackTransitionBefore: 0
-    fadeToBlackTransitionAfter: 0
+    fadeToBlackTransitionAfter: 1
     newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 251eb05ff2cef5446aa4c0f3bdebe3b6, type: 3}
-    sentence: " Strange\u2026 he should be talking. "
+    sentence: "Strange\u2026 it should be talking. "
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
@@ -245,21 +252,21 @@ MonoBehaviour:
     newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 376349d1c4716cb42b7369453ee22532, type: 3}
-    sentence: "It's like he\u2019s stuck back when Earth was still green."
+    sentence: "It's like he\u2019s stuck back when the Earth was still green."
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 3627770099f24d54393a5aca19110a00, type: 3}
-    sentence: "Poor thing has no idea what he\u2019s woken up to."
+    sentence: Poor little guy has no idea what it woke up to...
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: ce6a7aa7e94d6a84b88e322731465de8, type: 3}
-    sentence: "He\u2019ll have to learn fast. This place isn\u2019t a picnic anymore."
+    sentence: "It\u2019ll have to learn fast. This place isn\u2019t a picnic anymore."
     side: 1
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
@@ -304,7 +311,7 @@ MonoBehaviour:
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: 03b3f5f793980224da33e03501db8a8e, type: 3}
     sentence: We are building Small rockets, each just strong enough to make it to
-      Mars
+      Mars.
     side: 1
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
@@ -333,7 +340,7 @@ MonoBehaviour:
     newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 251eb05ff2cef5446aa4c0f3bdebe3b6, type: 3}
-    sentence: Headed to a whole new life on the red planet.
+    sentence: Heading for a new life on the Red Planet!
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
@@ -347,7 +354,7 @@ MonoBehaviour:
     newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 3627770099f24d54393a5aca19110a00, type: 3}
-    sentence: And you, Steve-E, get to help make it happen by fetching us the goodies
+    sentence: And you, Steve-E, got to help make it happen by fetching us the goodies
       we need.
     side: 0
     fadeToBlackTransitionBefore: 0
@@ -370,7 +377,7 @@ MonoBehaviour:
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 376349d1c4716cb42b7369453ee22532, type: 3}
     sentence: Since everything here is either broken, buried, or both, you, my dearest
-      Steve-E will be sent to salvage what is left.
+      Steve-E, will be sent to salvage what is left.
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
@@ -421,7 +428,7 @@ MonoBehaviour:
     newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 0d8872f581c4cb94fa566cfa45ea86bd, type: 3}
-    sentence: "So, Steve-E, just bring us whatever junk you find, and we\u2019ll
+    sentence: "So, Steve-E194, just bring us whatever junk you find, and we\u2019ll
       make it shine. Trust us-"
     side: 0
     fadeToBlackTransitionBefore: 0
@@ -444,7 +451,7 @@ MonoBehaviour:
     newBackground: {fileID: 0}
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: 3879ae633b8e1db408baaa58cdfc2915, type: 3}
-    sentence: Open the Gate!
+    sentence: Open the Gates!
     side: 1
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 1
