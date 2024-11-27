@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 764f48e2076824ba58cc3eb7f0536e0b, type: 3}
   m_Name: 03RenPy
   m_EditorClassIdentifier: 
-  dialogueSummary: 
+  dialogueSummary: Scrapp and Salvage congratulated Steve E on its successful trip
+    home, complimented its ability to learn, and sent Steve-E194 on its first real-world
+    mission.
   lines:
   - characterName: Salvage
     characterPortrait: {fileID: 21300000, guid: d61176972e8d1e440a7cdaa0f39d7409, type: 3}

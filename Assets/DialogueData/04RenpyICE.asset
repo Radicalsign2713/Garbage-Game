@@ -49,14 +49,14 @@ MonoBehaviour:
     characterPortrait: {fileID: 21300000, guid: 0c1943b4994a7b640a2ac6ddcbee8556, type: 3}
     sentence: <b>Update Granted:</b> Moving on slippery surfaces
     side: 1
-    fadeToBlackTransitionBefore: 0
+    fadeToBlackTransitionBefore: 1
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: 251eb05ff2cef5446aa4c0f3bdebe3b6, type: 3}
     sentence: Hey Salva, have you seen the latest weather forecast?
     side: 0
-    fadeToBlackTransitionBefore: 1
+    fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 0}
   - characterName: Scrapp

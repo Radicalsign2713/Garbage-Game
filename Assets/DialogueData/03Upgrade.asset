@@ -24,15 +24,15 @@ MonoBehaviour:
     newBackground: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: f619f38b297f67c47ab9a994081a0854, type: 3}
-    sentence: 'Just walk over those shiny bits to collect upgrades for yourself. '
+    sentence: Walk over to those shiny bits to collect upgrades parts.
     side: 0
-    fadeToBlackTransitionBefore: 1
+    fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
     newBackground: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
   - characterName: Scrapp
     characterPortrait: {fileID: 21300000, guid: f619f38b297f67c47ab9a994081a0854, type: 3}
-    sentence: Gather upgrade parts and bring them back, and I'll build something
-      to help you get to the next area!
+    sentence: Gather those, bring them back, and I'll build something to help you
+      get to the <b>next area!</b>
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
@@ -41,13 +41,6 @@ MonoBehaviour:
     characterPortrait: {fileID: 21300000, guid: bcf11dc7082314f318b907e322db16c6, type: 3}
     sentence: Now, follow the menu to track your progress, and make sure you collect
       everything on the map!
-    side: 0
-    fadeToBlackTransitionBefore: 0
-    fadeToBlackTransitionAfter: 0
-    newBackground: {fileID: 21300000, guid: b02462ff35e4e6d49abd175bab9d8420, type: 3}
-  - characterName: Scrapp
-    characterPortrait: {fileID: 21300000, guid: 0d8872f581c4cb94fa566cfa45ea86bd, type: 3}
-    sentence: Go on, explore!
     side: 0
     fadeToBlackTransitionBefore: 0
     fadeToBlackTransitionAfter: 0
