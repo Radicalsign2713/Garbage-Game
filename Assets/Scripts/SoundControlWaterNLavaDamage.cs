@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 
 public class PlayerSoundController : MonoBehaviour
@@ -39,7 +38,8 @@ public class PlayerSoundController : MonoBehaviour
 
     void HandleWaterSound()
     {
-        if (player.on_liquid && !player.on_island)
+        // Play water sound whenever the player is on liquid
+        if (player.on_liquid)
         {
             if (!isPlayingWaterSound && waterSoundSource != null)
             {
@@ -69,7 +69,6 @@ public class PlayerSoundController : MonoBehaviour
     void FlashRedEffect()
     {
         // Implement flashing red effect for the player taking damage
-        // You could add logic here to make the player flash red
         // This could be done by altering the player's SpriteRenderer color, for example
     }
 }
