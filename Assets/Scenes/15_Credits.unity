@@ -324,7 +324,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "CREDITS\r\n\r\n\r\n\r\nProgrammers\r\n\r\n\r\nCrystal H. - Project Lead,
     Programmer\r\nTroy W. - Lead Programmer, Mechanics Designer\r\nSophie W. - Dialogue
-    System Programmer(?)\r\n\r\n\r\n\r\nArtists\r\n\r\nFaryal L. - Environment/Sprite
+    System Programmer\n\r\n\r\n\r\nArtists\r\n\r\nFaryal L. - Environment/Sprite
     Artist\r\nSophie W. - Animator, Character/Concept/Environment/Sprite Artist\r\n\r\n\r\n\r\nAudio
     & Writing\r\n\r\n\r\nJonathan L. - Audio Designer, Composer, Story Writer\r\n\r\n\r\n\r\n\r\nBETA
     TESTERS\r\n\r\nAlex L.\r\nAnthony A.\r\nAnna M.\r\nApril H.\r\nArhun P.\r\nAurora
@@ -333,9 +333,9 @@ MonoBehaviour:
     K.\r\nJosephine B.\r\nJudy Z.\r\nLawrence I.\r\nMarvin M.\r\nMary Q.\r\nNaira
     L.\r\nNicole Y.\r\nRoscoe L.\r\nLord Ivan Y.H.C.\r\nStanley L.\r\nSteven L.\r\nSunny
     Z.\r\nTaeyun K.\r\nVinoth R.\r\n\r\n\r\n\r\nSPECIAL THANKS\r\n\r\nCSC194 Class\r\nThank
-    you to all our classmates in CSC194 for your support, feedback, and enthusiasm!\r\n\r\nSteve-E(?)\r\nA
-    huge shout-out to Steve for being our main character! :D\r\n\r\n\r\n\r\n\r\nAnd
-    You!\r\n\r\n\r\n\r\n\r\nTHANK YOU FOR BEING A PART OF THIS GAME!\r"
+    you to all our classmates in CSC194\nFor your support, feedback, and enthusiasm!\r\n\r\nSteve
+    E.\nShout-out to Professer Engels for being our main character (?)\n\n\r\n\r\n\r\nAnd
+    You!\r\n\rThank you for being part of this game!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
